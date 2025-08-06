@@ -1,0 +1,217 @@
+# No Poverty
+
+![](images/icons/E-WEB-Goal-01.png){style="float:right; width: 25%;"}
+
+## Original Data
+
+
+```{r}
+library(tidyverse)
+theme_set(theme_bw())
+
+pip <- read_csv("data/01/pip.csv", show_col_types = FALSE)
+```
+
+Source: World Bank (2025), Poverty and Inequality Platform (version 20250401_2021_01_02_PROD) [data set]. pip.worldbank.org. Accessed on 2025-08-05
+
+Download all country data from <https://pip.worldbank.org/poverty-calculator>
+
+- [pip.csv](data/01/pip.csv){download=""}
+ 
+Column names are below, with my best guess at the meaning for some columns. You can learn more at the [methodology handbook](https://datanalytics.worldbank.org/PIP-Methodology/).
+
+::: {.callout-tip title="Codebook" collapse="true"}
+
+- region_name 
+- region_code: "SSA" "ECA" "OHI" "LAC" "SAS" "EAP" "MNA"
+- country_name 
+- country_code: 3-letter country code 
+- reporting_year: 1963 - 2024
+- reporting_level: "national", "urban", or "rural"
+- survey_acronym 
+- survey_coverage 
+- survey_year 
+- welfare_type 
+- survey_comparability 
+- comparable_spell 
+- poverty_line 
+- headcount: The poverty headcount ratio measures the proportion of the population that is counted as poor
+- poverty_gap: The poverty gap index is a measure that adds up the extent to which individuals on average fall below the poverty line (i.e. the depth of poverty), and expresses it as a percentage of the poverty line.
+- poverty_severity: The poverty severity index is a measure of the weighted sum of poverty gaps (as a proportion of the poverty line), where the weights are the proportionate poverty gaps themselves. 
+- watts: The Watts index is an inequality-sensitive poverty measure
+- mean: Average welfare per capita
+- median: The median is the amount of welfare per capita that divides the distribution into two equal halves.
+- mld: The mean log deviation belongs to the family of generalized entropy inequality measures
+- gini: The Gini index ranges from 0 (perfect equality) to 1 (complete inequality)
+- polarization: The Wolfson polarization index measures the extent to which the distribution of welfare is “spread out” and bi-modal.
+- decile1:decile10 
+- cpi: Consumer Price Index
+- ppp: Purchasing Power Parity
+- reporting_pop 
+- reporting_gdp 
+- reporting_pce 
+- is_interpolated 
+- distribution_type 
+- estimation_type 
+- spl 
+- spr 
+- pg: The prosperity gap is the average factor by which incomes fall short of a prosperity standard of $28 per person per day (expressed in 2021 PPP dollars) 
+- estimate_type 
+
+:::
+
+```{r}
+#| label: fig-pip-region-year
+#| fig-cap: Number of countries per region per year in the dataset
+#| fig-width: 8
+#| fig-height: 2
+count(pip, region_name, country_name, reporting_year) |>
+  count(region_name, reporting_year) |>
+  ggplot(aes(y = fct_rev(region_name), x = reporting_year, fill = n)) +
+  geom_tile() +
+  scale_fill_viridis_c(limits = c(0, 30),
+    guide = guide_colourbar(
+      position = "inside", 
+      nbin = 4, 
+      display = "rectangles", 
+      draw.ulim = TRUE
+    )) +
+  scale_x_continuous(breaks = seq(1960, 2030, 10)) +
+  labs(x = NULL,
+       y = NULL,
+       fill = NULL) +
+  theme(legend.position.inside = c(.06, .7),
+        legend.key.height = unit(0.4, "cm"),
+        legend.background = element_blank())
+```
+
+## Simplified Subsets
+
+### GINI 2010
+
+This data set provides the GINI index for each country, at the national *reporting_level*, in the *reporting_year* 2010. Where there is more than one survery per country, we choose the first.
+
+This data set is good for distribution plots and descriptive analyses, grouped by world region. 
+
+```{r}
+pip_gini_2010 <- pip |>
+  filter(reporting_year == 2010, 
+         reporting_level == "national") |>
+  filter(n() == 1, .by = country_name) |>
+  select(region_name:reporting_year, reporting_level, gini)
+
+write_csv(pip_gini_2010, "data/01/pip-gini-2010.csv")
+```
+
+[pip-gini-2010.csv](data/01/pip-gini-2010.csv){download=""}
+
+```{r}
+#| label: fig-gini-region-2010
+#| fig-cap: The distribution of wealth inequality across the world regions in 2010
+ggplot(pip_gini_2010, aes(x = fct_rev(region_name), 
+                          y = gini, 
+                          fill = region_name)) +
+  geom_violin(alpha = 0.5, 
+              bounds = c(0, 1), 
+              scale = "width",
+              show.legend = FALSE) +
+  scale_y_continuous(breaks = seq(0, 1, .1)) +
+  labs(x = NULL, y = "GINI Index") +
+  coord_flip()
+```
+
+### Welfare 2010
+
+This data file provides the mean and median welfare per capita for all countries, at the national *reporting_level*, in the *reporting_year* 2010. Where there is more than one survey per country, we choose the first.
+
+In combination with the Gini set above, it is good for teaching about data joining. The resulting set is good for plotting the relationship between two continuous variables and related descriptive and inferential statistics. 
+
+```{r}
+pip_welfare_2010 <- pip |>
+  filter(reporting_year == 2010, 
+         reporting_level == "national") |>
+  filter(n() == 1, .by = country_name) |>
+  select(region_name:reporting_year, reporting_level, mean, median)
+
+write_csv(pip_welfare_2010, "data/01/pip-welfare-2010.csv")
+```
+
+- [pip-welfare-2010.csv](data/01/pip-welfare-2010.csv){download=""}
+
+
+```{r}
+#| label: fig-gini-median-2010
+#| fig.cap: The relationship between the Gini index and median welfare per captia across world regions in 2010
+
+inner_join(pip_gini_2010, pip_welfare_2010, 
+           by = c("region_name", "region_code", "country_name", "country_code", "reporting_year", "reporting_level")) |>
+  ggplot(aes(x = gini, y = median, colour = region_name)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = lm, formula = y ~ x, se = F) +
+  scale_x_continuous(breaks = seq(0, 1, .1)) +
+  labs(x = "GINI Index", y = "Median Welfare per Capita", colour = NULL) +
+  scale_color_discrete(
+    guide = guide_legend(position = "inside")
+  ) +
+  theme(
+    legend.position.inside = c(.8, .75),
+    legend.background = element_blank(),
+    legend.key = element_blank()
+  )
+```
+
+
+### Gini for USA, UK and China
+
+These three data files provide all of the available years of the GINI index for China, USA, and the UK (countries with many years of data). 
+
+This set is good for teaching about data merging and reshaping.
+
+```{r}
+gini <- pip |>
+  filter(reporting_level == "national") |>
+  select(region_name:reporting_year, reporting_level, gini)
+
+pip_gini_usa <- filter(gini, country_code == "USA")
+write_csv(pip_gini_usa, "data/01/pip-gini-usa.csv")
+
+pip_gini_china <- filter(gini, country_name == "China")
+write_csv(pip_gini_china, "data/01/pip-gini-china.csv")
+
+pip_gini_uk <- filter(gini, country_name == "United Kingdom")
+write_csv(pip_gini_uk, "data/01/pip-gini-uk.csv")
+```
+
+- [pip-gini-china.csv](data/01/pip-gini-china.csv){download=""}
+- [pip-gini-uk.csv](data/01/pip-gini-uk.csv){download=""}
+- [pip-gini-usa.csv](data/01/pip-gini-usa.csv){download=""}
+
+```{r}
+#| label: fig-gini-countries
+#| fig.cap: The change in Gini index across time for China, USA and UK
+#| 
+bind_rows(pip_gini_china, pip_gini_uk, pip_gini_usa) |>
+  ggplot(aes(x = reporting_year, y = gini, color = country_name)) +
+  geom_point(alpha = 0.5) +
+  geom_line(show.legend = FALSE) +
+  scale_x_continuous(breaks = seq(1960, 2030, 10)) +
+  scale_color_manual(
+    values = c("firebrick", "darkgreen", "royalblue4"), 
+    guide = guide_legend(position = "inside")
+  ) +
+  labs(x = NULL, y = "Gini Index", color = NULL) +
+  theme(
+    legend.position.inside = c(.15, .85),
+    legend.background = element_blank(),
+    legend.key = element_blank()
+  )
+```
+
+
+
+
+
+## Resources
+
+- [Our World in Data: Poverty](https://ourworldindata.org/poverty)
+- [The World Bank: Poverty and Inequality Platform](https://pip.worldbank.org/home)

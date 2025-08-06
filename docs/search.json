@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SDG Data",
+    "section": "",
+    "text": "Overview\nThis book provides resources and datasets related to the United Nations Sustainable Development Goals. All original data sources are cited and linked, but these datasets are curated at varying levels of complexity for teaching purposes. The code for creating the dataset from the original data sources is included in the appendices.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "01-no-poverty.html",
+    "href": "01-no-poverty.html",
+    "title": "\n1  No Poverty\n",
+    "section": "",
+    "text": "1.1 Original Data\nSource: World Bank (2025), Poverty and Inequality Platform (version 20250401_2021_01_02_PROD) [data set]. pip.worldbank.org. Accessed on 2025-08-05\nDownload all country data from https://pip.worldbank.org/poverty-calculator\nColumn names are below, with my best guess at the meaning for some columns. You can learn more at the methodology handbook.\nFigure 1.1: Number of countries per region per year in the dataset",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>No Poverty</span>"
+    ]
+  },
+  {
+    "objectID": "01-no-poverty.html#original-data",
+    "href": "01-no-poverty.html#original-data",
+    "title": "\n1  No Poverty\n",
+    "section": "",
+    "text": "pip.csv\n\n\n\n\n\n\n\n\nCodebook\n\n\n\n\n\n\nregion_name\nregion_code: “SSA” “ECA” “OHI” “LAC” “SAS” “EAP” “MNA”\ncountry_name\ncountry_code: 3-letter country code\nreporting_year: 1963 - 2024\nreporting_level: “national”, “urban”, or “rural”\nsurvey_acronym\nsurvey_coverage\nsurvey_year\nwelfare_type\nsurvey_comparability\ncomparable_spell\npoverty_line\nheadcount: The poverty headcount ratio measures the proportion of the population that is counted as poor\npoverty_gap: The poverty gap index is a measure that adds up the extent to which individuals on average fall below the poverty line (i.e. the depth of poverty), and expresses it as a percentage of the poverty line.\npoverty_severity: The poverty severity index is a measure of the weighted sum of poverty gaps (as a proportion of the poverty line), where the weights are the proportionate poverty gaps themselves.\nwatts: The Watts index is an inequality-sensitive poverty measure\nmean: Average welfare per capita\nmedian: The median is the amount of welfare per capita that divides the distribution into two equal halves.\nmld: The mean log deviation belongs to the family of generalized entropy inequality measures\ngini: The Gini index ranges from 0 (perfect equality) to 1 (complete inequality)\npolarization: The Wolfson polarization index measures the extent to which the distribution of welfare is “spread out” and bi-modal.\ndecile1:decile10\ncpi: Consumer Price Index\nppp: Purchasing Power Parity\nreporting_pop\nreporting_gdp\nreporting_pce\nis_interpolated\ndistribution_type\nestimation_type\nspl\nspr\npg: The prosperity gap is the average factor by which incomes fall short of a prosperity standard of $28 per person per day (expressed in 2021 PPP dollars)\nestimate_type",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>No Poverty</span>"
+    ]
+  },
+  {
+    "objectID": "01-no-poverty.html#simplified-subsets",
+    "href": "01-no-poverty.html#simplified-subsets",
+    "title": "\n1  No Poverty\n",
+    "section": "\n1.2 Simplified Subsets",
+    "text": "1.2 Simplified Subsets\n\n1.2.1 GINI 2010\nThis data set provides the GINI index for each country, at the national reporting_level, in the reporting_year 2010. Where there is more than one survery per country, we choose the first.\nThis data set is good for distribution plots and descriptive analyses, grouped by world region.\npip-gini-2010.csv\n\n\n\n\n\n\n\nFigure 1.2: The distribution of wealth inequality across the world regions in 2010\n\n\n\n\n\n1.2.2 Welfare 2010\nThis data file provides the mean and median welfare per capita for all countries, at the national reporting_level, in the reporting_year 2010. Where there is more than one survey per country, we choose the first.\nIn combination with the Gini set above, it is good for teaching about data joining. The resulting set is good for plotting the relationship between two continuous variables and related descriptive and inferential statistics.\n\npip-welfare-2010.csv\n\n\n\n\n\n\n\n\nFigure 1.3: The relationship between the Gini index and median welfare per captia across world regions in 2010\n\n\n\n\n\n1.2.3 Gini for USA, UK and China\nThese three data files provide all of the available years of the GINI index for China, USA, and the UK (countries with many years of data).\nThis set is good for teaching about data merging and reshaping.\n\npip-gini-china.csv\npip-gini-uk.csv\npip-gini-usa.csv\n\n\n\n\n\n\n\n\nFigure 1.4: The change in Gini index across time for China, USA and UK",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>No Poverty</span>"
+    ]
+  },
+  {
+    "objectID": "01-no-poverty.html#resources",
+    "href": "01-no-poverty.html#resources",
+    "title": "\n1  No Poverty\n",
+    "section": "\n1.3 Resources",
+    "text": "1.3 Resources\n\nOur World in Data: Poverty\nThe World Bank: Poverty and Inequality Platform",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>No Poverty</span>"
+    ]
+  }
+]

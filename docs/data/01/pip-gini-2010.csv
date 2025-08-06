@@ -1,0 +1,84 @@
+region_name,region_code,country_name,country_code,reporting_year,reporting_level,gini
+Europe & Central Asia,ECA,Armenia,ARM,2010,national,0.299925823432
+Other High Income Countries,OHI,Australia,AUS,2010,national,0.346567275956
+Other High Income Countries,OHI,Austria,AUT,2010,national,0.302516641462
+Other High Income Countries,OHI,Belgium,BEL,2010,national,0.283748302801
+South Asia,SAS,Bangladesh,BGD,2010,national,0.321303193871
+Europe & Central Asia,ECA,Bulgaria,BGR,2010,national,0.35653467247
+Europe & Central Asia,ECA,Belarus,BLR,2010,national,0.285665997589
+Other High Income Countries,OHI,Canada,CAN,2010,national,0.335926033624
+Other High Income Countries,OHI,Switzerland,CHE,2010,national,0.325530304316
+East Asia & Pacific,EAP,China,CHN,2010,national,0.437449533883
+Latin America & Caribbean,LAC,Colombia,COL,2010,national,0.546163353687
+Latin America & Caribbean,LAC,Costa Rica,CRI,2010,national,0.480430384444
+Other High Income Countries,OHI,Cyprus,CYP,2010,national,0.314577890712
+Europe & Central Asia,ECA,Czechia,CZE,2010,national,0.266235137503
+Other High Income Countries,OHI,Germany,DEU,2010,national,0.302184137459
+Other High Income Countries,OHI,Denmark,DNK,2010,national,0.271985592215
+Latin America & Caribbean,LAC,Dominican Republic,DOM,2010,national,0.473259435756
+Latin America & Caribbean,LAC,Ecuador,ECU,2010,national,0.488000833146
+Middle East & North Africa,MNA,"Egypt, Arab Rep.",EGY,2010,national,0.30191457698
+Other High Income Countries,OHI,Spain,ESP,2010,national,0.352444838666
+Europe & Central Asia,ECA,Estonia,EST,2010,national,0.31999837179
+Sub-Saharan Africa,SSA,Ethiopia,ETH,2010,national,0.331706008147
+Other High Income Countries,OHI,Finland,FIN,2010,national,0.277139625581
+Other High Income Countries,OHI,France,FRA,2010,national,0.337204200513
+Other High Income Countries,OHI,United Kingdom,GBR,2010,national,0.337056002415
+Europe & Central Asia,ECA,Georgia,GEO,2010,national,0.394583876996
+Sub-Saharan Africa,SSA,"Gambia, The",GMB,2010,national,0.435684210413
+Sub-Saharan Africa,SSA,Guinea-Bissau,GNB,2010,national,0.506020918888
+Other High Income Countries,OHI,Greece,GRC,2010,national,0.340987598947
+Latin America & Caribbean,LAC,Honduras,HND,2010,national,0.530856367444
+Europe & Central Asia,ECA,Hungary,HUN,2010,national,0.294441228087
+East Asia & Pacific,EAP,Indonesia,IDN,2010,national,0.34586310727
+Other High Income Countries,OHI,Ireland,IRL,2010,national,0.322948274136
+Other High Income Countries,OHI,Iceland,ISL,2010,national,0.261712973881
+Other High Income Countries,OHI,Israel,ISR,2010,national,0.425594672551
+Other High Income Countries,OHI,Italy,ITA,2010,national,0.347168565507
+Middle East & North Africa,MNA,Jordan,JOR,2010,national,0.33655730311
+Other High Income Countries,OHI,Japan,JPN,2010,national,0.314922603647
+Europe & Central Asia,ECA,Kazakhstan,KAZ,2010,national,0.279545117521
+Europe & Central Asia,ECA,Kyrgyz Republic,KGZ,2010,national,0.301338041218
+Other High Income Countries,OHI,"Korea, Rep.",KOR,2010,national,0.320212245633
+Europe & Central Asia,ECA,Lithuania,LTU,2010,national,0.336087138218
+Other High Income Countries,OHI,Luxembourg,LUX,2010,national,0.3050437807
+Europe & Central Asia,ECA,Latvia,LVA,2010,national,0.350302148551
+Europe & Central Asia,ECA,Moldova,MDA,2010,national,0.320509202089
+Sub-Saharan Africa,SSA,Madagascar,MDG,2010,national,0.42371822482
+Latin America & Caribbean,LAC,Mexico,MEX,2010,national,0.47657931478
+Europe & Central Asia,ECA,North Macedonia,MKD,2010,national,0.400655486596
+Other High Income Countries,OHI,Malta,MLT,2010,national,0.290257594734
+Europe & Central Asia,ECA,Montenegro,MNE,2010,national,0.288930967349
+East Asia & Pacific,EAP,Mongolia,MNG,2010,national,0.330812121
+Sub-Saharan Africa,SSA,Malawi,MWI,2010,national,0.454730151401
+Sub-Saharan Africa,SSA,Nigeria,NGA,2010,national,0.356502096912
+Other High Income Countries,OHI,Netherlands,NLD,2010,national,0.278452395039
+Other High Income Countries,OHI,Norway,NOR,2010,national,0.257237077893
+South Asia,SAS,Nepal,NPL,2010,national,0.328405861769
+South Asia,SAS,Pakistan,PAK,2010,national,0.287808638323
+Latin America & Caribbean,LAC,Panama,PAN,2010,national,0.516085734821
+Latin America & Caribbean,LAC,Peru,PER,2010,national,0.455376516029
+Other High Income Countries,OHI,Portugal,PRT,2010,national,0.358446704837
+Latin America & Caribbean,LAC,Paraguay,PRY,2010,national,0.509824376863
+Middle East & North Africa,MNA,West Bank and Gaza,PSE,2010,national,0.352944324702
+Europe & Central Asia,ECA,Russian Federation,RUS,2010,national,0.395489775983
+Sub-Saharan Africa,SSA,Rwanda,RWA,2010,national,0.472219151074
+Latin America & Caribbean,LAC,El Salvador,SLV,2010,national,0.43513260154
+Europe & Central Asia,ECA,Serbia,SRB,2010,national,0.290166052713
+Sub-Saharan Africa,SSA,Sao Tome and Principe,STP,2010,national,0.308212690338
+Europe & Central Asia,ECA,Slovak Republic,SVK,2010,national,0.273157199355
+Europe & Central Asia,ECA,Slovenia,SVN,2010,national,0.249332595298
+Other High Income Countries,OHI,Sweden,SWE,2010,national,0.277361496799
+East Asia & Pacific,EAP,Thailand,THA,2010,national,0.394027714251
+Middle East & North Africa,MNA,Tunisia,TUN,2010,national,0.384664866168
+Europe & Central Asia,ECA,Turkiye,TUR,2010,national,0.387850803086
+East Asia & Pacific,EAP,Tuvalu,TUV,2010,national,0.391390333816
+Other High Income Countries,OHI,"Taiwan, China",TWN,2010,national,0.332133256866
+Europe & Central Asia,ECA,Ukraine,UKR,2010,national,0.248189755857
+Latin America & Caribbean,LAC,Uruguay,URY,2010,national,0.444748109134
+Other High Income Countries,OHI,United States,USA,2010,national,0.402413573331
+East Asia & Pacific,EAP,Viet Nam,VNM,2010,national,0.392527247821
+East Asia & Pacific,EAP,Vanuatu,VUT,2010,national,0.373512982494
+Europe & Central Asia,ECA,Kosovo,XKX,2010,national,0.33254300156
+Sub-Saharan Africa,SSA,South Africa,ZAF,2010,national,0.633825605008
+Sub-Saharan Africa,SSA,Zambia,ZMB,2010,national,0.520121966258

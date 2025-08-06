@@ -1,0 +1,97 @@
+project:
+  type: book
+  output-dir: docs
+  resources: data
+  preview:
+    port: 4200
+
+execute:
+  freeze: auto
+  echo: false
+  message: false
+  warning: false
+
+book:
+  title: 'SDG Data'
+  author: "Lisa DeBruine"
+  cover-image: images/icons/E_SDG_logo_square.png
+  image: images/icons/E_SDG_logo_square.png
+  # favicon: images/logos/favicon.ico
+  #cookie-consent: true
+  google-analytics: "G-6NP3MF25W3"
+  page-navigation: true
+  search: true
+  # comments:
+  #   hypothesis:
+  #     theme: clean
+  #     openSidebar: false
+  repo-url: https://github.com/psyteachr/sdg-data/
+  repo-branch: master
+  repo-actions: [edit, issue, source]
+#  downloads: [pdf, epub]
+  # sharing: [facebook, linkedin]
+  # sidebar:
+  #   style: docked
+  #   background: light
+  # margin-header: "<a href='https://doi.org/10.5281/zenodo.6365077'><img src='https://zenodo.org/badge/DOI/10.5281/zenodo.6365077.svg' alt='DOI'></a>"
+  page-footer:
+    left: "CC-BY 2025, psyTeachR"
+    right:
+      - icon: github
+        href: https://github.com/psyteachr/sdg-data
+      - icon: butterfly
+        href: https://psyteachr.bsky.social
+      # - icon: https://zenodo.org/badge/DOI/10.5281/zenodo.6365077.svg
+      #   href: https://doi.org/10.5281/zenodo.6365077
+  chapters:
+  - index.qmd
+  - 01-no-poverty.qmd
+  - 02-zero-hunger.qmd
+  - 03-good-health.qmd
+  - 04-quality-education.qmd
+  - 05-gender-equality.qmd
+  - 06-clean-water.qmd
+  - 07-clean-energy.qmd
+  - 08-decent-work.qmd
+  - 09-industry.qmd
+  - 10-reduced-inequalities.qmd
+  - 11-sustainable-cities.qmd
+  - 12-responsible-consumption.qmd
+  - 13-climate-action.qmd
+  - 14-water-life.qmd
+  - 15-land-life.qmd
+  - 16-peace-justice.qmd
+
+bibliography:
+  - include/book.bib
+  - include/packages.bib
+csl: include/apa.csl
+
+format:
+  html:
+    theme:
+      light:
+      - flatly
+      - include/light.scss
+      dark:
+      - darkly
+      - include/dark.scss
+    css:
+    - include/psyteachr.css
+    - include/webex.css
+    - include/style.css
+    number-depth: 3
+    code-link: true
+    code-fold: false
+    df-print: kable
+    # cap-location: margin
+    # reference-location: margin
+    # citation-location: margin
+    code-line-numbers: true
+    code-overflow: wrap
+    code-copy: hover
+    # code-block-border-left: "#4864DB"
+    highlight-style: a11y
+    # monofont: Fira Code
+    # mainfont: Open Sans
+    include-after-body: [include/webex.js, include/script.js]

@@ -1,0 +1,18 @@
+# Overview {.unnumbered}
+
+This book provides resources and datasets related to the United Nations [Sustainable Development Goals](https://sdgs.un.org/goals). All original data sources are cited and linked, but these datasets are curated at varying levels of complexity for teaching purposes. The code for creating the dataset from the original data sources is included in the appendices.
+
+::: {layout-ncol=4}
+
+```{r}
+#| echo: false
+#| results: asis
+
+chapters <- list.files(".", "\\d{2}-.*\\.qmd")
+icons <- sprintf("\n\n[![](images/icons/E-WEB-Goal-%02d.png)](%s)", 1:16, chapters)
+
+cat(icons)
+```
+
+:::
+
