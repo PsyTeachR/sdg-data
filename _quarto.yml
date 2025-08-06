@@ -6,8 +6,8 @@ project:
     port: 4200
 
 execute:
-  freeze: auto
-  echo: false
+  freeze: false
+  echo: true
   message: false
   warning: false
 
@@ -82,13 +82,14 @@ format:
     - include/style.css
     number-depth: 3
     code-link: true
-    code-fold: false
+    code-fold: true
+    code-tools: true
     df-print: kable
     # cap-location: margin
     # reference-location: margin
     # citation-location: margin
     code-line-numbers: true
-    code-overflow: wrap
+    code-overflow: scroll
     code-copy: hover
     # code-block-border-left: "#4864DB"
     highlight-style: a11y

@@ -1,6 +1,6 @@
 # Overview {.unnumbered}
 
-This book provides resources and datasets related to the United Nations [Sustainable Development Goals](https://sdgs.un.org/goals). All original data sources are cited and linked, but these datasets are curated at varying levels of complexity for teaching purposes. The code for creating the dataset from the original data sources is included in the appendices.
+This book provides resources and datasets related to the United Nations [Sustainable Development Goals](https://sdgs.un.org/goals). All original data sources are cited and linked, but these datasets are curated at varying levels of complexity for teaching purposes. The code for creating the dataset from the original data sources is included in code blocks in each chapter.
 
 ::: {layout-ncol=4}
 

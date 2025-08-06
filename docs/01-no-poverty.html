@@ -17,6 +17,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -37,8 +71,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8e00f2f28a1266a720913de837032221.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f3e25e36da68531933d16fe9428bd359.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-31f5e28bcb8f5c736a9021cbb3ac8e8c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-c99093b127bbf7463951177fc80c9973.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-08a5cd32523586bf9cec4cacca6c1bbd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -230,9 +264,9 @@ gtag('config', 'G-6NP3MF25W3', { 'anonymize_ip': true});
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">
+<div class="quarto-title-block"><div><h1 class="title">
 <span class="chapter-number">1</span>&nbsp; <span class="chapter-title">No Poverty</span>
-</h1>
+</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -249,6 +283,13 @@ gtag('config', 'G-6NP3MF25W3', { 'anonymize_ip': true});
 </header><p><img src="images/icons/E-WEB-Goal-01.png" class="img-fluid" style="float:right; width: 25%;"></p>
 <section id="original-data" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="original-data">
 <span class="header-section-number">1.1</span> Original Data</h2>
+<div class="cell">
+<details class="code-fold"><summary>Setup Code</summary><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">theme_set</span>(<span class="fu">theme_bw</span>())</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>pip <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/01/pip.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 <p>Source: World Bank (2025), Poverty and Inequality Platform (version 20250401_2021_01_02_PROD) [data set]. pip.worldbank.org. Accessed on 2025-08-05</p>
 <p>Download all country data from <a href="https://pip.worldbank.org/poverty-calculator" class="uri">https://pip.worldbank.org/poverty-calculator</a></p>
 <ul>
@@ -308,7 +349,25 @@ Codebook
 </div>
 </div>
 <div class="cell">
-<div class="cell-output-display">
+<details class="code-fold"><summary>Plot Code</summary><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">count</span>(pip, region_name, country_name, reporting_year) <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">count</span>(region_name, reporting_year) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">fct_rev</span>(region_name), <span class="at">x =</span> reporting_year, <span class="at">fill =</span> n)) <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">scale_fill_viridis_c</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">30</span>),</span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="at">guide =</span> <span class="fu">guide_colourbar</span>(</span>
+<span id="cb2-7"><a href="#cb2-7"></a>      <span class="at">position =</span> <span class="st">"inside"</span>, </span>
+<span id="cb2-8"><a href="#cb2-8"></a>      <span class="at">nbin =</span> <span class="dv">4</span>, </span>
+<span id="cb2-9"><a href="#cb2-9"></a>      <span class="at">display =</span> <span class="st">"rectangles"</span>, </span>
+<span id="cb2-10"><a href="#cb2-10"></a>      <span class="at">draw.ulim =</span> <span class="cn">TRUE</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>    )) <span class="sc">+</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1960</span>, <span class="dv">2030</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb2-14"><a href="#cb2-14"></a>       <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb2-15"><a href="#cb2-15"></a>       <span class="at">fill =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a>  <span class="fu">theme</span>(<span class="at">legend.position.inside =</span> <span class="fu">c</span>(.<span class="dv">06</span>, .<span class="dv">7</span>),</span>
+<span id="cb2-17"><a href="#cb2-17"></a>        <span class="at">legend.key.height =</span> <span class="fu">unit</span>(<span class="fl">0.4</span>, <span class="st">"cm"</span>),</span>
+<span id="cb2-18"><a href="#cb2-18"></a>        <span class="at">legend.background =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><div class="cell-output-display">
 <div id="fig-pip-region-year" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-pip-region-year-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="01-no-poverty_files/figure-html/fig-pip-region-year-1.png" class="img-fluid figure-img" width="768">
@@ -325,9 +384,29 @@ Figure&nbsp;1.1: Number of countries per region per year in the dataset
 <span class="header-section-number">1.2.1</span> GINI 2010</h3>
 <p>This data set provides the GINI index for each country, at the national <em>reporting_level</em>, in the <em>reporting_year</em> 2010. Where there is more than one survery per country, we choose the first.</p>
 <p>This data set is good for distribution plots and descriptive analyses, grouped by world region.</p>
-<p><a href="data/01/pip-gini-2010.csv" download="">pip-gini-2010.csv</a></p>
 <div class="cell">
-<div class="cell-output-display">
+<details class="code-fold"><summary>Code to create pip_gini_2010</summary><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>pip_gini_2010 <span class="ot">&lt;-</span> pip <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">filter</span>(reporting_year <span class="sc">==</span> <span class="dv">2010</span>, </span>
+<span id="cb3-3"><a href="#cb3-3"></a>         reporting_level <span class="sc">==</span> <span class="st">"national"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">==</span> <span class="dv">1</span>, <span class="at">.by =</span> country_name) <span class="sc">|&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">select</span>(region_name<span class="sc">:</span>reporting_year, reporting_level, gini)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<ul>
+<li><a href="data/01/pip-gini-2010.csv" download="">pip-gini-2010.csv</a></li>
+</ul>
+<div class="cell">
+<details class="code-fold"><summary>Plot Code</summary><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">ggplot</span>(pip_gini_2010, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_rev</span>(region_name), </span>
+<span id="cb4-2"><a href="#cb4-2"></a>                          <span class="at">y =</span> gini, </span>
+<span id="cb4-3"><a href="#cb4-3"></a>                          <span class="at">fill =</span> region_name)) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, </span>
+<span id="cb4-5"><a href="#cb4-5"></a>              <span class="at">bounds =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), </span>
+<span id="cb4-6"><a href="#cb4-6"></a>              <span class="at">scale =</span> <span class="st">"width"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7"></a>              <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, .<span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"GINI Index"</span>) <span class="sc">+</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>  <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><div class="cell-output-display">
 <div id="fig-gini-region-2010" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-gini-region-2010-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="01-no-poverty_files/figure-html/fig-gini-region-2010-1.png" class="img-fluid figure-img" width="672">
@@ -342,11 +421,34 @@ Figure&nbsp;1.2: The distribution of wealth inequality across the world regions 
 <span class="header-section-number">1.2.2</span> Welfare 2010</h3>
 <p>This data file provides the mean and median welfare per capita for all countries, at the national <em>reporting_level</em>, in the <em>reporting_year</em> 2010. Where there is more than one survey per country, we choose the first.</p>
 <p>In combination with the Gini set above, it is good for teaching about data joining. The resulting set is good for plotting the relationship between two continuous variables and related descriptive and inferential statistics.</p>
+<div class="cell">
+<details class="code-fold"><summary>Code to create pip_welfare_2010</summary><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>pip_welfare_2010 <span class="ot">&lt;-</span> pip <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">filter</span>(reporting_year <span class="sc">==</span> <span class="dv">2010</span>, </span>
+<span id="cb5-3"><a href="#cb5-3"></a>         reporting_level <span class="sc">==</span> <span class="st">"national"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">==</span> <span class="dv">1</span>, <span class="at">.by =</span> country_name) <span class="sc">|&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>  <span class="fu">select</span>(region_name<span class="sc">:</span>reporting_year, reporting_level, mean, median)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 <ul>
 <li><a href="data/01/pip-welfare-2010.csv" download="">pip-welfare-2010.csv</a></li>
 </ul>
 <div class="cell">
-<div class="cell-output-display">
+<details class="code-fold"><summary>Plot Code</summary><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">inner_join</span>(pip_gini_2010, pip_welfare_2010, </span>
+<span id="cb6-2"><a href="#cb6-2"></a>           <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"region_name"</span>, <span class="st">"region_code"</span>, <span class="st">"country_name"</span>, <span class="st">"country_code"</span>, <span class="st">"reporting_year"</span>, <span class="st">"reporting_level"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> gini, <span class="at">y =</span> median, <span class="at">colour =</span> region_name)) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">se =</span> F) <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, .<span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GINI Index"</span>, <span class="at">y =</span> <span class="st">"Median Welfare per Capita"</span>, <span class="at">colour =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>  <span class="fu">scale_color_discrete</span>(</span>
+<span id="cb6-9"><a href="#cb6-9"></a>    <span class="at">guide =</span> <span class="fu">guide_legend</span>(<span class="at">position =</span> <span class="st">"inside"</span>)</span>
+<span id="cb6-10"><a href="#cb6-10"></a>  ) <span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a>  <span class="fu">theme</span>(</span>
+<span id="cb6-12"><a href="#cb6-12"></a>    <span class="at">legend.position.inside =</span> <span class="fu">c</span>(.<span class="dv">8</span>, .<span class="dv">75</span>),</span>
+<span id="cb6-13"><a href="#cb6-13"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb6-14"><a href="#cb6-14"></a>    <span class="at">legend.key =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb6-15"><a href="#cb6-15"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><div class="cell-output-display">
 <div id="fig-gini-median-2010" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-gini-median-2010-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="01-no-poverty_files/figure-html/fig-gini-median-2010-1.png" class="img-fluid figure-img" width="672">
@@ -361,13 +463,38 @@ Figure&nbsp;1.3: The relationship between the Gini index and median welfare per 
 <span class="header-section-number">1.2.3</span> Gini for USA, UK and China</h3>
 <p>These three data files provide all of the available years of the GINI index for China, USA, and the UK (countries with many years of data).</p>
 <p>This set is good for teaching about data merging and reshaping.</p>
+<div class="cell">
+<details class="code-fold"><summary>Code to create pip_gini_china, pip_gini_usa, pip_gini_uk</summary><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>gini <span class="ot">&lt;-</span> pip <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">filter</span>(reporting_level <span class="sc">==</span> <span class="st">"national"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">select</span>(region_name<span class="sc">:</span>reporting_year, reporting_level, gini)</span>
+<span id="cb7-4"><a href="#cb7-4"></a></span>
+<span id="cb7-5"><a href="#cb7-5"></a>pip_gini_usa <span class="ot">&lt;-</span> <span class="fu">filter</span>(gini, country_code <span class="sc">==</span> <span class="st">"USA"</span>)</span>
+<span id="cb7-6"><a href="#cb7-6"></a>pip_gini_china <span class="ot">&lt;-</span> <span class="fu">filter</span>(gini, country_name <span class="sc">==</span> <span class="st">"China"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7"></a>pip_gini_uk <span class="ot">&lt;-</span> <span class="fu">filter</span>(gini, country_name <span class="sc">==</span> <span class="st">"United Kingdom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 <ul>
 <li><a href="data/01/pip-gini-china.csv" download="">pip-gini-china.csv</a></li>
 <li><a href="data/01/pip-gini-uk.csv" download="">pip-gini-uk.csv</a></li>
 <li><a href="data/01/pip-gini-usa.csv" download="">pip-gini-usa.csv</a></li>
 </ul>
 <div class="cell">
-<div class="cell-output-display">
+<details class="code-fold"><summary>Plot Code</summary><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">bind_rows</span>(pip_gini_china, pip_gini_uk, pip_gini_usa) <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> reporting_year, <span class="at">y =</span> gini, <span class="at">color =</span> country_name)) <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">geom_line</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1960</span>, <span class="dv">2030</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb8-7"><a href="#cb8-7"></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"firebrick"</span>, <span class="st">"darkgreen"</span>, <span class="st">"royalblue4"</span>), </span>
+<span id="cb8-8"><a href="#cb8-8"></a>    <span class="at">guide =</span> <span class="fu">guide_legend</span>(<span class="at">position =</span> <span class="st">"inside"</span>)</span>
+<span id="cb8-9"><a href="#cb8-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Gini Index"</span>, <span class="at">color =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a>  <span class="fu">theme</span>(</span>
+<span id="cb8-12"><a href="#cb8-12"></a>    <span class="at">legend.position.inside =</span> <span class="fu">c</span>(.<span class="dv">15</span>, .<span class="dv">85</span>),</span>
+<span id="cb8-13"><a href="#cb8-13"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb8-14"><a href="#cb8-14"></a>    <span class="at">legend.key =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb8-15"><a href="#cb8-15"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><div class="cell-output-display">
 <div id="fig-gini-countries" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-gini-countries-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="01-no-poverty_files/figure-html/fig-gini-countries-1.png" class="img-fluid figure-img" width="672">
@@ -385,6 +512,8 @@ Figure&nbsp;1.4: The change in Gini index across time for China, USA and UK
 <li><a href="https://pip.worldbank.org/home">The World Bank: Poverty and Inequality Platform</a></li>
 </ul>
 
+
+<!-- -->
 
 </section></main><!-- /main --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><script>
 
@@ -812,6 +941,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     });
     clipboardModal.on('success', onCopySuccess);
   }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1150,7 +1330,248 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Zero Hunger</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb9" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu"># No Poverty</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="al">![](images/icons/E-WEB-Goal-01.png)</span>{style="float:right; width: 25%;"}</span>
+<span id="cb9-4"><a href="#cb9-4"></a></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="fu">## Original Data</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a></span>
+<span id="cb9-7"><a href="#cb9-7"></a></span>
+<span id="cb9-10"><a href="#cb9-10"></a><span class="in">```{r}</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a><span class="co">#| code-summary: Setup Code</span></span>
+<span id="cb9-12"><a href="#cb9-12"></a></span>
+<span id="cb9-13"><a href="#cb9-13"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb9-14"><a href="#cb9-14"></a><span class="fu">theme_set</span>(<span class="fu">theme_bw</span>())</span>
+<span id="cb9-15"><a href="#cb9-15"></a></span>
+<span id="cb9-16"><a href="#cb9-16"></a>pip <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/01/pip.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb9-17"><a href="#cb9-17"></a><span class="in">```</span></span>
+<span id="cb9-18"><a href="#cb9-18"></a></span>
+<span id="cb9-19"><a href="#cb9-19"></a>Source: World Bank (2025), Poverty and Inequality Platform (version 20250401_2021_01_02_PROD) <span class="co">[</span><span class="ot">data set</span><span class="co">]</span>. pip.worldbank.org. Accessed on 2025-08-05</span>
+<span id="cb9-20"><a href="#cb9-20"></a></span>
+<span id="cb9-21"><a href="#cb9-21"></a>Download all country data from <span class="ot">&lt;https://pip.worldbank.org/poverty-calculator&gt;</span></span>
+<span id="cb9-22"><a href="#cb9-22"></a></span>
+<span id="cb9-23"><a href="#cb9-23"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip.csv</span><span class="co">](data/01/pip.csv)</span>{download=""}</span>
+<span id="cb9-24"><a href="#cb9-24"></a> </span>
+<span id="cb9-25"><a href="#cb9-25"></a>Column names are below, with my best guess at the meaning for some columns. You can learn more at the <span class="co">[</span><span class="ot">methodology handbook</span><span class="co">](https://datanalytics.worldbank.org/PIP-Methodology/)</span>.</span>
+<span id="cb9-26"><a href="#cb9-26"></a></span>
+<span id="cb9-27"><a href="#cb9-27"></a>::: {.callout-tip title="Codebook" collapse="true"}</span>
+<span id="cb9-28"><a href="#cb9-28"></a></span>
+<span id="cb9-29"><a href="#cb9-29"></a><span class="ss">- </span>region_name </span>
+<span id="cb9-30"><a href="#cb9-30"></a><span class="ss">- </span>region_code: "SSA" "ECA" "OHI" "LAC" "SAS" "EAP" "MNA"</span>
+<span id="cb9-31"><a href="#cb9-31"></a><span class="ss">- </span>country_name </span>
+<span id="cb9-32"><a href="#cb9-32"></a><span class="ss">- </span>country_code: 3-letter country code </span>
+<span id="cb9-33"><a href="#cb9-33"></a><span class="ss">- </span>reporting_year: 1963 - 2024</span>
+<span id="cb9-34"><a href="#cb9-34"></a><span class="ss">- </span>reporting_level: "national", "urban", or "rural"</span>
+<span id="cb9-35"><a href="#cb9-35"></a><span class="ss">- </span>survey_acronym </span>
+<span id="cb9-36"><a href="#cb9-36"></a><span class="ss">- </span>survey_coverage </span>
+<span id="cb9-37"><a href="#cb9-37"></a><span class="ss">- </span>survey_year </span>
+<span id="cb9-38"><a href="#cb9-38"></a><span class="ss">- </span>welfare_type </span>
+<span id="cb9-39"><a href="#cb9-39"></a><span class="ss">- </span>survey_comparability </span>
+<span id="cb9-40"><a href="#cb9-40"></a><span class="ss">- </span>comparable_spell </span>
+<span id="cb9-41"><a href="#cb9-41"></a><span class="ss">- </span>poverty_line </span>
+<span id="cb9-42"><a href="#cb9-42"></a><span class="ss">- </span>headcount: The poverty headcount ratio measures the proportion of the population that is counted as poor</span>
+<span id="cb9-43"><a href="#cb9-43"></a><span class="ss">- </span>poverty_gap: The poverty gap index is a measure that adds up the extent to which individuals on average fall below the poverty line (i.e. the depth of poverty), and expresses it as a percentage of the poverty line.</span>
+<span id="cb9-44"><a href="#cb9-44"></a><span class="ss">- </span>poverty_severity: The poverty severity index is a measure of the weighted sum of poverty gaps (as a proportion of the poverty line), where the weights are the proportionate poverty gaps themselves. </span>
+<span id="cb9-45"><a href="#cb9-45"></a><span class="ss">- </span>watts: The Watts index is an inequality-sensitive poverty measure</span>
+<span id="cb9-46"><a href="#cb9-46"></a><span class="ss">- </span>mean: Average welfare per capita</span>
+<span id="cb9-47"><a href="#cb9-47"></a><span class="ss">- </span>median: The median is the amount of welfare per capita that divides the distribution into two equal halves.</span>
+<span id="cb9-48"><a href="#cb9-48"></a><span class="ss">- </span>mld: The mean log deviation belongs to the family of generalized entropy inequality measures</span>
+<span id="cb9-49"><a href="#cb9-49"></a><span class="ss">- </span>gini: The Gini index ranges from 0 (perfect equality) to 1 (complete inequality)</span>
+<span id="cb9-50"><a href="#cb9-50"></a><span class="ss">- </span>polarization: The Wolfson polarization index measures the extent to which the distribution of welfare is “spread out” and bi-modal.</span>
+<span id="cb9-51"><a href="#cb9-51"></a><span class="ss">- </span>decile1:decile10 </span>
+<span id="cb9-52"><a href="#cb9-52"></a><span class="ss">- </span>cpi: Consumer Price Index</span>
+<span id="cb9-53"><a href="#cb9-53"></a><span class="ss">- </span>ppp: Purchasing Power Parity</span>
+<span id="cb9-54"><a href="#cb9-54"></a><span class="ss">- </span>reporting_pop </span>
+<span id="cb9-55"><a href="#cb9-55"></a><span class="ss">- </span>reporting_gdp </span>
+<span id="cb9-56"><a href="#cb9-56"></a><span class="ss">- </span>reporting_pce </span>
+<span id="cb9-57"><a href="#cb9-57"></a><span class="ss">- </span>is_interpolated </span>
+<span id="cb9-58"><a href="#cb9-58"></a><span class="ss">- </span>distribution_type </span>
+<span id="cb9-59"><a href="#cb9-59"></a><span class="ss">- </span>estimation_type </span>
+<span id="cb9-60"><a href="#cb9-60"></a><span class="ss">- </span>spl </span>
+<span id="cb9-61"><a href="#cb9-61"></a><span class="ss">- </span>spr </span>
+<span id="cb9-62"><a href="#cb9-62"></a><span class="ss">- </span>pg: The prosperity gap is the average factor by which incomes fall short of a prosperity standard of $28 per person per day (expressed in 2021 PPP dollars) </span>
+<span id="cb9-63"><a href="#cb9-63"></a><span class="ss">- </span>estimate_type </span>
+<span id="cb9-64"><a href="#cb9-64"></a></span>
+<span id="cb9-65"><a href="#cb9-65"></a>:::</span>
+<span id="cb9-66"><a href="#cb9-66"></a></span>
+<span id="cb9-69"><a href="#cb9-69"></a><span class="in">```{r}</span></span>
+<span id="cb9-70"><a href="#cb9-70"></a><span class="co">#| label: fig-pip-region-year</span></span>
+<span id="cb9-71"><a href="#cb9-71"></a><span class="co">#| fig-cap: Number of countries per region per year in the dataset</span></span>
+<span id="cb9-72"><a href="#cb9-72"></a><span class="co">#| fig-width: 8</span></span>
+<span id="cb9-73"><a href="#cb9-73"></a><span class="co">#| fig-height: 2</span></span>
+<span id="cb9-74"><a href="#cb9-74"></a><span class="co">#| code-summary: Plot Code</span></span>
+<span id="cb9-75"><a href="#cb9-75"></a><span class="fu">count</span>(pip, region_name, country_name, reporting_year) <span class="sc">|&gt;</span></span>
+<span id="cb9-76"><a href="#cb9-76"></a>  <span class="fu">count</span>(region_name, reporting_year) <span class="sc">|&gt;</span></span>
+<span id="cb9-77"><a href="#cb9-77"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">fct_rev</span>(region_name), <span class="at">x =</span> reporting_year, <span class="at">fill =</span> n)) <span class="sc">+</span></span>
+<span id="cb9-78"><a href="#cb9-78"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb9-79"><a href="#cb9-79"></a>  <span class="fu">scale_fill_viridis_c</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">30</span>),</span>
+<span id="cb9-80"><a href="#cb9-80"></a>    <span class="at">guide =</span> <span class="fu">guide_colourbar</span>(</span>
+<span id="cb9-81"><a href="#cb9-81"></a>      <span class="at">position =</span> <span class="st">"inside"</span>, </span>
+<span id="cb9-82"><a href="#cb9-82"></a>      <span class="at">nbin =</span> <span class="dv">4</span>, </span>
+<span id="cb9-83"><a href="#cb9-83"></a>      <span class="at">display =</span> <span class="st">"rectangles"</span>, </span>
+<span id="cb9-84"><a href="#cb9-84"></a>      <span class="at">draw.ulim =</span> <span class="cn">TRUE</span></span>
+<span id="cb9-85"><a href="#cb9-85"></a>    )) <span class="sc">+</span></span>
+<span id="cb9-86"><a href="#cb9-86"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1960</span>, <span class="dv">2030</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb9-87"><a href="#cb9-87"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb9-88"><a href="#cb9-88"></a>       <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb9-89"><a href="#cb9-89"></a>       <span class="at">fill =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb9-90"><a href="#cb9-90"></a>  <span class="fu">theme</span>(<span class="at">legend.position.inside =</span> <span class="fu">c</span>(.<span class="dv">06</span>, .<span class="dv">7</span>),</span>
+<span id="cb9-91"><a href="#cb9-91"></a>        <span class="at">legend.key.height =</span> <span class="fu">unit</span>(<span class="fl">0.4</span>, <span class="st">"cm"</span>),</span>
+<span id="cb9-92"><a href="#cb9-92"></a>        <span class="at">legend.background =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb9-93"><a href="#cb9-93"></a><span class="in">```</span></span>
+<span id="cb9-94"><a href="#cb9-94"></a></span>
+<span id="cb9-95"><a href="#cb9-95"></a><span class="fu">## Simplified Subsets</span></span>
+<span id="cb9-96"><a href="#cb9-96"></a></span>
+<span id="cb9-97"><a href="#cb9-97"></a><span class="fu">### GINI 2010</span></span>
+<span id="cb9-98"><a href="#cb9-98"></a></span>
+<span id="cb9-99"><a href="#cb9-99"></a>This data set provides the GINI index for each country, at the national *reporting_level*, in the *reporting_year* 2010. Where there is more than one survery per country, we choose the first.</span>
+<span id="cb9-100"><a href="#cb9-100"></a></span>
+<span id="cb9-101"><a href="#cb9-101"></a>This data set is good for distribution plots and descriptive analyses, grouped by world region. </span>
+<span id="cb9-102"><a href="#cb9-102"></a></span>
+<span id="cb9-105"><a href="#cb9-105"></a><span class="in">```{r}</span></span>
+<span id="cb9-106"><a href="#cb9-106"></a><span class="co">#| code-summary: Code to create pip_gini_2010</span></span>
+<span id="cb9-107"><a href="#cb9-107"></a>pip_gini_2010 <span class="ot">&lt;-</span> pip <span class="sc">|&gt;</span></span>
+<span id="cb9-108"><a href="#cb9-108"></a>  <span class="fu">filter</span>(reporting_year <span class="sc">==</span> <span class="dv">2010</span>, </span>
+<span id="cb9-109"><a href="#cb9-109"></a>         reporting_level <span class="sc">==</span> <span class="st">"national"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-110"><a href="#cb9-110"></a>  <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">==</span> <span class="dv">1</span>, <span class="at">.by =</span> country_name) <span class="sc">|&gt;</span></span>
+<span id="cb9-111"><a href="#cb9-111"></a>  <span class="fu">select</span>(region_name<span class="sc">:</span>reporting_year, reporting_level, gini)</span>
+<span id="cb9-112"><a href="#cb9-112"></a><span class="in">```</span></span>
+<span id="cb9-113"><a href="#cb9-113"></a></span>
+<span id="cb9-114"><a href="#cb9-114"></a></span>
+<span id="cb9-117"><a href="#cb9-117"></a><span class="in">```{r}</span></span>
+<span id="cb9-118"><a href="#cb9-118"></a><span class="co">#| echo: false</span></span>
+<span id="cb9-119"><a href="#cb9-119"></a><span class="fu">write_csv</span>(pip_gini_2010, <span class="st">"data/01/pip-gini-2010.csv"</span>)</span>
+<span id="cb9-120"><a href="#cb9-120"></a><span class="in">```</span></span>
+<span id="cb9-121"><a href="#cb9-121"></a></span>
+<span id="cb9-122"><a href="#cb9-122"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-gini-2010.csv</span><span class="co">](data/01/pip-gini-2010.csv)</span>{download=""}</span>
+<span id="cb9-123"><a href="#cb9-123"></a></span>
+<span id="cb9-126"><a href="#cb9-126"></a><span class="in">```{r}</span></span>
+<span id="cb9-127"><a href="#cb9-127"></a><span class="co">#| label: fig-gini-region-2010</span></span>
+<span id="cb9-128"><a href="#cb9-128"></a><span class="co">#| fig-cap: The distribution of wealth inequality across the world regions in 2010</span></span>
+<span id="cb9-129"><a href="#cb9-129"></a><span class="co">#| code-summary: Plot Code</span></span>
+<span id="cb9-130"><a href="#cb9-130"></a></span>
+<span id="cb9-131"><a href="#cb9-131"></a><span class="fu">ggplot</span>(pip_gini_2010, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_rev</span>(region_name), </span>
+<span id="cb9-132"><a href="#cb9-132"></a>                          <span class="at">y =</span> gini, </span>
+<span id="cb9-133"><a href="#cb9-133"></a>                          <span class="at">fill =</span> region_name)) <span class="sc">+</span></span>
+<span id="cb9-134"><a href="#cb9-134"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, </span>
+<span id="cb9-135"><a href="#cb9-135"></a>              <span class="at">bounds =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), </span>
+<span id="cb9-136"><a href="#cb9-136"></a>              <span class="at">scale =</span> <span class="st">"width"</span>,</span>
+<span id="cb9-137"><a href="#cb9-137"></a>              <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb9-138"><a href="#cb9-138"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, .<span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb9-139"><a href="#cb9-139"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"GINI Index"</span>) <span class="sc">+</span></span>
+<span id="cb9-140"><a href="#cb9-140"></a>  <span class="fu">coord_flip</span>()</span>
+<span id="cb9-141"><a href="#cb9-141"></a><span class="in">```</span></span>
+<span id="cb9-142"><a href="#cb9-142"></a></span>
+<span id="cb9-143"><a href="#cb9-143"></a><span class="fu">### Welfare 2010</span></span>
+<span id="cb9-144"><a href="#cb9-144"></a></span>
+<span id="cb9-145"><a href="#cb9-145"></a>This data file provides the mean and median welfare per capita for all countries, at the national *reporting_level*, in the *reporting_year* 2010. Where there is more than one survey per country, we choose the first.</span>
+<span id="cb9-146"><a href="#cb9-146"></a></span>
+<span id="cb9-147"><a href="#cb9-147"></a>In combination with the Gini set above, it is good for teaching about data joining. The resulting set is good for plotting the relationship between two continuous variables and related descriptive and inferential statistics. </span>
+<span id="cb9-148"><a href="#cb9-148"></a></span>
+<span id="cb9-151"><a href="#cb9-151"></a><span class="in">```{r}</span></span>
+<span id="cb9-152"><a href="#cb9-152"></a><span class="co">#| code-summary: Code to create pip_welfare_2010</span></span>
+<span id="cb9-153"><a href="#cb9-153"></a></span>
+<span id="cb9-154"><a href="#cb9-154"></a>pip_welfare_2010 <span class="ot">&lt;-</span> pip <span class="sc">|&gt;</span></span>
+<span id="cb9-155"><a href="#cb9-155"></a>  <span class="fu">filter</span>(reporting_year <span class="sc">==</span> <span class="dv">2010</span>, </span>
+<span id="cb9-156"><a href="#cb9-156"></a>         reporting_level <span class="sc">==</span> <span class="st">"national"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-157"><a href="#cb9-157"></a>  <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">==</span> <span class="dv">1</span>, <span class="at">.by =</span> country_name) <span class="sc">|&gt;</span></span>
+<span id="cb9-158"><a href="#cb9-158"></a>  <span class="fu">select</span>(region_name<span class="sc">:</span>reporting_year, reporting_level, mean, median)</span>
+<span id="cb9-159"><a href="#cb9-159"></a><span class="in">```</span></span>
+<span id="cb9-160"><a href="#cb9-160"></a></span>
+<span id="cb9-163"><a href="#cb9-163"></a><span class="in">```{r}</span></span>
+<span id="cb9-164"><a href="#cb9-164"></a><span class="co">#| echo: false</span></span>
+<span id="cb9-165"><a href="#cb9-165"></a><span class="fu">write_csv</span>(pip_welfare_2010, <span class="st">"data/01/pip-welfare-2010.csv"</span>)</span>
+<span id="cb9-166"><a href="#cb9-166"></a><span class="in">```</span></span>
+<span id="cb9-167"><a href="#cb9-167"></a></span>
+<span id="cb9-168"><a href="#cb9-168"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-welfare-2010.csv</span><span class="co">](data/01/pip-welfare-2010.csv)</span>{download=""}</span>
+<span id="cb9-169"><a href="#cb9-169"></a></span>
+<span id="cb9-170"><a href="#cb9-170"></a></span>
+<span id="cb9-173"><a href="#cb9-173"></a><span class="in">```{r}</span></span>
+<span id="cb9-174"><a href="#cb9-174"></a><span class="co">#| label: fig-gini-median-2010</span></span>
+<span id="cb9-175"><a href="#cb9-175"></a><span class="co">#| fig.cap: The relationship between the Gini index and median welfare per captia across world regions in 2010</span></span>
+<span id="cb9-176"><a href="#cb9-176"></a><span class="co">#| code-summary: Plot Code</span></span>
+<span id="cb9-177"><a href="#cb9-177"></a></span>
+<span id="cb9-178"><a href="#cb9-178"></a><span class="fu">inner_join</span>(pip_gini_2010, pip_welfare_2010, </span>
+<span id="cb9-179"><a href="#cb9-179"></a>           <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"region_name"</span>, <span class="st">"region_code"</span>, <span class="st">"country_name"</span>, <span class="st">"country_code"</span>, <span class="st">"reporting_year"</span>, <span class="st">"reporting_level"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb9-180"><a href="#cb9-180"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> gini, <span class="at">y =</span> median, <span class="at">colour =</span> region_name)) <span class="sc">+</span></span>
+<span id="cb9-181"><a href="#cb9-181"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb9-182"><a href="#cb9-182"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm, <span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">se =</span> F) <span class="sc">+</span></span>
+<span id="cb9-183"><a href="#cb9-183"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, .<span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb9-184"><a href="#cb9-184"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GINI Index"</span>, <span class="at">y =</span> <span class="st">"Median Welfare per Capita"</span>, <span class="at">colour =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb9-185"><a href="#cb9-185"></a>  <span class="fu">scale_color_discrete</span>(</span>
+<span id="cb9-186"><a href="#cb9-186"></a>    <span class="at">guide =</span> <span class="fu">guide_legend</span>(<span class="at">position =</span> <span class="st">"inside"</span>)</span>
+<span id="cb9-187"><a href="#cb9-187"></a>  ) <span class="sc">+</span></span>
+<span id="cb9-188"><a href="#cb9-188"></a>  <span class="fu">theme</span>(</span>
+<span id="cb9-189"><a href="#cb9-189"></a>    <span class="at">legend.position.inside =</span> <span class="fu">c</span>(.<span class="dv">8</span>, .<span class="dv">75</span>),</span>
+<span id="cb9-190"><a href="#cb9-190"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb9-191"><a href="#cb9-191"></a>    <span class="at">legend.key =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb9-192"><a href="#cb9-192"></a>  )</span>
+<span id="cb9-193"><a href="#cb9-193"></a><span class="in">```</span></span>
+<span id="cb9-194"><a href="#cb9-194"></a></span>
+<span id="cb9-195"><a href="#cb9-195"></a></span>
+<span id="cb9-196"><a href="#cb9-196"></a><span class="fu">### Gini for USA, UK and China</span></span>
+<span id="cb9-197"><a href="#cb9-197"></a></span>
+<span id="cb9-198"><a href="#cb9-198"></a>These three data files provide all of the available years of the GINI index for China, USA, and the UK (countries with many years of data). </span>
+<span id="cb9-199"><a href="#cb9-199"></a></span>
+<span id="cb9-200"><a href="#cb9-200"></a>This set is good for teaching about data merging and reshaping.</span>
+<span id="cb9-201"><a href="#cb9-201"></a></span>
+<span id="cb9-204"><a href="#cb9-204"></a><span class="in">```{r}</span></span>
+<span id="cb9-205"><a href="#cb9-205"></a><span class="co">#| code-summary: Code to create pip_gini_china, pip_gini_usa, pip_gini_uk</span></span>
+<span id="cb9-206"><a href="#cb9-206"></a><span class="co">#| </span></span>
+<span id="cb9-207"><a href="#cb9-207"></a>gini <span class="ot">&lt;-</span> pip <span class="sc">|&gt;</span></span>
+<span id="cb9-208"><a href="#cb9-208"></a>  <span class="fu">filter</span>(reporting_level <span class="sc">==</span> <span class="st">"national"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-209"><a href="#cb9-209"></a>  <span class="fu">select</span>(region_name<span class="sc">:</span>reporting_year, reporting_level, gini)</span>
+<span id="cb9-210"><a href="#cb9-210"></a></span>
+<span id="cb9-211"><a href="#cb9-211"></a>pip_gini_usa <span class="ot">&lt;-</span> <span class="fu">filter</span>(gini, country_code <span class="sc">==</span> <span class="st">"USA"</span>)</span>
+<span id="cb9-212"><a href="#cb9-212"></a>pip_gini_china <span class="ot">&lt;-</span> <span class="fu">filter</span>(gini, country_name <span class="sc">==</span> <span class="st">"China"</span>)</span>
+<span id="cb9-213"><a href="#cb9-213"></a>pip_gini_uk <span class="ot">&lt;-</span> <span class="fu">filter</span>(gini, country_name <span class="sc">==</span> <span class="st">"United Kingdom"</span>)</span>
+<span id="cb9-214"><a href="#cb9-214"></a><span class="in">```</span></span>
+<span id="cb9-215"><a href="#cb9-215"></a></span>
+<span id="cb9-216"><a href="#cb9-216"></a></span>
+<span id="cb9-219"><a href="#cb9-219"></a><span class="in">```{r}</span></span>
+<span id="cb9-220"><a href="#cb9-220"></a><span class="co">#| echo: false</span></span>
+<span id="cb9-221"><a href="#cb9-221"></a><span class="fu">write_csv</span>(pip_gini_usa, <span class="st">"data/01/pip-gini-usa.csv"</span>)</span>
+<span id="cb9-222"><a href="#cb9-222"></a><span class="fu">write_csv</span>(pip_gini_china, <span class="st">"data/01/pip-gini-china.csv"</span>)</span>
+<span id="cb9-223"><a href="#cb9-223"></a><span class="fu">write_csv</span>(pip_gini_uk, <span class="st">"data/01/pip-gini-uk.csv"</span>)</span>
+<span id="cb9-224"><a href="#cb9-224"></a><span class="in">```</span></span>
+<span id="cb9-225"><a href="#cb9-225"></a></span>
+<span id="cb9-226"><a href="#cb9-226"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-gini-china.csv</span><span class="co">](data/01/pip-gini-china.csv)</span>{download=""}</span>
+<span id="cb9-227"><a href="#cb9-227"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-gini-uk.csv</span><span class="co">](data/01/pip-gini-uk.csv)</span>{download=""}</span>
+<span id="cb9-228"><a href="#cb9-228"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-gini-usa.csv</span><span class="co">](data/01/pip-gini-usa.csv)</span>{download=""}</span>
+<span id="cb9-229"><a href="#cb9-229"></a></span>
+<span id="cb9-232"><a href="#cb9-232"></a><span class="in">```{r}</span></span>
+<span id="cb9-233"><a href="#cb9-233"></a><span class="co">#| label: fig-gini-countries</span></span>
+<span id="cb9-234"><a href="#cb9-234"></a><span class="co">#| fig.cap: The change in Gini index across time for China, USA and UK</span></span>
+<span id="cb9-235"><a href="#cb9-235"></a><span class="co">#| code-summary: Plot Code</span></span>
+<span id="cb9-236"><a href="#cb9-236"></a></span>
+<span id="cb9-237"><a href="#cb9-237"></a><span class="fu">bind_rows</span>(pip_gini_china, pip_gini_uk, pip_gini_usa) <span class="sc">|&gt;</span></span>
+<span id="cb9-238"><a href="#cb9-238"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> reporting_year, <span class="at">y =</span> gini, <span class="at">color =</span> country_name)) <span class="sc">+</span></span>
+<span id="cb9-239"><a href="#cb9-239"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb9-240"><a href="#cb9-240"></a>  <span class="fu">geom_line</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb9-241"><a href="#cb9-241"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1960</span>, <span class="dv">2030</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb9-242"><a href="#cb9-242"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb9-243"><a href="#cb9-243"></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"firebrick"</span>, <span class="st">"darkgreen"</span>, <span class="st">"royalblue4"</span>), </span>
+<span id="cb9-244"><a href="#cb9-244"></a>    <span class="at">guide =</span> <span class="fu">guide_legend</span>(<span class="at">position =</span> <span class="st">"inside"</span>)</span>
+<span id="cb9-245"><a href="#cb9-245"></a>  ) <span class="sc">+</span></span>
+<span id="cb9-246"><a href="#cb9-246"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Gini Index"</span>, <span class="at">color =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb9-247"><a href="#cb9-247"></a>  <span class="fu">theme</span>(</span>
+<span id="cb9-248"><a href="#cb9-248"></a>    <span class="at">legend.position.inside =</span> <span class="fu">c</span>(.<span class="dv">15</span>, .<span class="dv">85</span>),</span>
+<span id="cb9-249"><a href="#cb9-249"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb9-250"><a href="#cb9-250"></a>    <span class="at">legend.key =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb9-251"><a href="#cb9-251"></a>  )</span>
+<span id="cb9-252"><a href="#cb9-252"></a><span class="in">```</span></span>
+<span id="cb9-253"><a href="#cb9-253"></a></span>
+<span id="cb9-254"><a href="#cb9-254"></a></span>
+<span id="cb9-255"><a href="#cb9-255"></a></span>
+<span id="cb9-256"><a href="#cb9-256"></a></span>
+<span id="cb9-257"><a href="#cb9-257"></a></span>
+<span id="cb9-258"><a href="#cb9-258"></a><span class="fu">## Resources</span></span>
+<span id="cb9-259"><a href="#cb9-259"></a></span>
+<span id="cb9-260"><a href="#cb9-260"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Our World in Data: Poverty</span><span class="co">](https://ourworldindata.org/poverty)</span></span>
+<span id="cb9-261"><a href="#cb9-261"></a><span class="ss">- </span><span class="co">[</span><span class="ot">The World Bank: Poverty and Inequality Platform</span><span class="co">](https://pip.worldbank.org/home)</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">

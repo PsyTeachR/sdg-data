@@ -6,6 +6,8 @@
 
 
 ```{r}
+#| code-summary: Setup Code
+
 library(tidyverse)
 theme_set(theme_bw())
 
@@ -65,6 +67,7 @@ Column names are below, with my best guess at the meaning for some columns. You 
 #| fig-cap: Number of countries per region per year in the dataset
 #| fig-width: 8
 #| fig-height: 2
+#| code-summary: Plot Code
 count(pip, region_name, country_name, reporting_year) |>
   count(region_name, reporting_year) |>
   ggplot(aes(y = fct_rev(region_name), x = reporting_year, fill = n)) +
@@ -94,20 +97,27 @@ This data set provides the GINI index for each country, at the national *reporti
 This data set is good for distribution plots and descriptive analyses, grouped by world region. 
 
 ```{r}
+#| code-summary: Code to create pip_gini_2010
 pip_gini_2010 <- pip |>
   filter(reporting_year == 2010, 
          reporting_level == "national") |>
   filter(n() == 1, .by = country_name) |>
   select(region_name:reporting_year, reporting_level, gini)
+```
 
+
+```{r}
+#| echo: false
 write_csv(pip_gini_2010, "data/01/pip-gini-2010.csv")
 ```
 
-[pip-gini-2010.csv](data/01/pip-gini-2010.csv){download=""}
+- [pip-gini-2010.csv](data/01/pip-gini-2010.csv){download=""}
 
 ```{r}
 #| label: fig-gini-region-2010
 #| fig-cap: The distribution of wealth inequality across the world regions in 2010
+#| code-summary: Plot Code
+
 ggplot(pip_gini_2010, aes(x = fct_rev(region_name), 
                           y = gini, 
                           fill = region_name)) +
@@ -127,12 +137,17 @@ This data file provides the mean and median welfare per capita for all countries
 In combination with the Gini set above, it is good for teaching about data joining. The resulting set is good for plotting the relationship between two continuous variables and related descriptive and inferential statistics. 
 
 ```{r}
+#| code-summary: Code to create pip_welfare_2010
+
 pip_welfare_2010 <- pip |>
   filter(reporting_year == 2010, 
          reporting_level == "national") |>
   filter(n() == 1, .by = country_name) |>
   select(region_name:reporting_year, reporting_level, mean, median)
+```
 
+```{r}
+#| echo: false
 write_csv(pip_welfare_2010, "data/01/pip-welfare-2010.csv")
 ```
 
@@ -142,6 +157,7 @@ write_csv(pip_welfare_2010, "data/01/pip-welfare-2010.csv")
 ```{r}
 #| label: fig-gini-median-2010
 #| fig.cap: The relationship between the Gini index and median welfare per captia across world regions in 2010
+#| code-summary: Plot Code
 
 inner_join(pip_gini_2010, pip_welfare_2010, 
            by = c("region_name", "region_code", "country_name", "country_code", "reporting_year", "reporting_level")) |>
@@ -168,17 +184,22 @@ These three data files provide all of the available years of the GINI index for 
 This set is good for teaching about data merging and reshaping.
 
 ```{r}
+#| code-summary: Code to create pip_gini_china, pip_gini_usa, pip_gini_uk
+#| 
 gini <- pip |>
   filter(reporting_level == "national") |>
   select(region_name:reporting_year, reporting_level, gini)
 
 pip_gini_usa <- filter(gini, country_code == "USA")
-write_csv(pip_gini_usa, "data/01/pip-gini-usa.csv")
-
 pip_gini_china <- filter(gini, country_name == "China")
-write_csv(pip_gini_china, "data/01/pip-gini-china.csv")
-
 pip_gini_uk <- filter(gini, country_name == "United Kingdom")
+```
+
+
+```{r}
+#| echo: false
+write_csv(pip_gini_usa, "data/01/pip-gini-usa.csv")
+write_csv(pip_gini_china, "data/01/pip-gini-china.csv")
 write_csv(pip_gini_uk, "data/01/pip-gini-uk.csv")
 ```
 
@@ -189,7 +210,8 @@ write_csv(pip_gini_uk, "data/01/pip-gini-uk.csv")
 ```{r}
 #| label: fig-gini-countries
 #| fig.cap: The change in Gini index across time for China, USA and UK
-#| 
+#| code-summary: Plot Code
+
 bind_rows(pip_gini_china, pip_gini_uk, pip_gini_usa) |>
   ggplot(aes(x = reporting_year, y = gini, color = country_name)) +
   geom_point(alpha = 0.5) +
