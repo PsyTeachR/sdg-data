@@ -1,3 +1,9 @@
 # Decent Work and Economic Growth
 
-![](images/icons/E-WEB-Goal-08.png)
+![](images/icons/E-WEB-Goal-08.png){.sdg-icon}
+
+## Original Data
+
+## Simplified Subsets
+
+## Resources

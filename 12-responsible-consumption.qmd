@@ -1,3 +1,9 @@
 # Responsible Consumption and Production
 
-![](images/icons/E-WEB-Goal-12.png)
+![](images/icons/E-WEB-Goal-12.png){.sdg-icon}
+
+## Original Data
+
+## Simplified Subsets
+
+## Resources

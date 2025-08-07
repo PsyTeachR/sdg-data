@@ -1,5 +1,10 @@
 /* (edit style.css for your own book styles) */
 
+.sdg-icon {
+  float: right;
+  width: 25%;
+}
+
 mac, pc {
   display: inline;
   border: 1px solid;

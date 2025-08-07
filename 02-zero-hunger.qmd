@@ -1,3 +1,211 @@
 # Zero Hunger
 
-![](images/icons/E-WEB-Goal-02.png)
+![](images/icons/E-WEB-Goal-02.png){.sdg-icon}
+
+```{r}
+#| code-summary: Setup Code
+
+library(tidyverse)
+theme_set(theme_bw())
+```
+
+Source: [The Global Hunger Index](https://www.globalhungerindex.org/download/all.html)
+
+- [ghi-2024.xlsx](data/02/ghi-2024.xlsx){download=""}
+
+Each country’s GHI score is calculated based on a formula that combines four indicators that together capture the multidimensional nature of hunger:
+
+* Undernourishment: the share of the population whose caloric intake is insufficient;
+* Child stunting: the share of children under the age of five who have low height for their age, reflecting chronic undernutrition;
+* Child wasting: the share of children under the age of five who have low weight for their height, reflecting acute undernutrition; and
+* Child mortality: the share of children who die before their fifth birthday, reflecting in part the fatal mix of inadequate nutrition and unhealthy environments.
+
+Read more about the [methods and measures](https://www.globalhungerindex.org/methodology.html).
+
+## Simplified Subsets
+
+### Clean Data
+
+This dataset needs to be cleaned a bit before you can use it. This can be a good exercise for students, or you can use the pre-cleaned version below.
+
+Some of the things to fix are:
+
+- the desired data is on the third sheet
+- the original column names are not ideal
+- the spreadsheet has notes below the data
+- uses "—" to represent missing values
+- contains text cells in numeric columns like "<5"
+- some numeric values import like "35.700000000000003"
+- the country names are unlikely to match other data
+
+Here, we choose to use the value of 5 for all cells with "<5", but you might choose another solution.
+
+```{r}
+#| code-summary: Data Cleaning Code
+cn <- c("country", "2000", "2008", "2016", "2024")
+ghi2024 <- readxl::read_xlsx("data/02/ghi-2024.xlsx", 
+                             sheet = 3, range = "A4:E139", 
+                             col_names = cn, na = "—") |>
+  pivot_longer(-country) |>
+  mutate(value = ifelse(value == "<5", "5", value),
+         value = as.numeric(value) |> round(1)) |>
+  pivot_wider()
+```
+
+One thing generative AI is pretty good at is helping with tedious rote tasks. We need to get the 3-letter country code for all of the countries. We can use the code below to get a quoted and comma-separated list of the country names, and ask genAI:
+
+> Give me the 3-letter ISO country code for each country in this list. Return the data in R vector format, like c('AFG', ALB', ...)
+
+```{r}
+#| code-summary: Get Country Names
+paste0("'", ghi2024$country, "'", collapse = ", ") |> cat()
+```
+
+ChatGPT returned the following, which I added as a new column to the data:
+
+```{r}
+#| code-summary: Add Country Codes
+ghi2024$country_code <- c(
+  'AFG', 'ALB', 'DZA', 'AGO', 'ARG', 'ARM', 'AZE', 'BHR', 'BGD', 'BLR', 'BEN', 'BTN',
+  'BOL', 'BIH', 'BWA', 'BRA', 'BGR', 'BFA', 'BDI', 'CPV', 'KHM', 'CMR', 'CAF', 'TCD',
+  'CHL', 'CHN', 'COL', 'COM', 'COG', 'CRI', 'CIV', 'HRV', 'COD', 'DJI', 'DOM', 'ECU',
+  'EGY', 'SLV', 'GNQ', 'ERI', 'EST', 'SWZ', 'ETH', 'FJI', 'GAB', 'GMB', 'GEO', 'GHA',
+  'GTM', 'GIN', 'GNB', 'GUY', 'HTI', 'HND', 'HUN', 'IND', 'IDN', 'IRN', 'IRQ', 'JAM',
+  'JOR', 'KAZ', 'KEN', 'PRK', 'KWT', 'KGZ', 'LAO', 'LVA', 'LBN', 'LSO', 'LBR', 'LBY',
+  'LTU', 'MDG', 'MWI', 'MYS', 'MDV', 'MLI', 'MRT', 'MUS', 'MEX', 'MDA', 'MNG', 'MNE',
+  'MAR', 'MOZ', 'MMR', 'NAM', 'NPL', 'NIC', 'NER', 'NGA', 'MKD', 'OMN', 'PAK', 'PAN',
+  'PNG', 'PRY', 'PER', 'PHL', 'QAT', 'ROU', 'RUS', 'RWA', 'SAU', 'SEN', 'SRB', 'SLE',
+  'SVK', 'SLB', 'SOM', 'ZAF', 'SSD', 'LKA', 'SDN', 'SUR', 'SYR', 'TJK', 'TZA', 'THA',
+  'TLS', 'TGO', 'TTO', 'TUN', 'TUR', 'TKM', 'UGA', 'UKR', 'ARE', 'URY', 'UZB', 'VEN',
+  'VNM', 'YEM', 'ZMB', 'ZWE'
+)
+```
+
+
+Since I never blindly trust genAI, I'm going to sense check this against the country codes from a [trusted source](https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv), and visually inspect all of the instances where the country in ghi2024 doesn't match the country name. 
+
+```{r}
+#| echo: false
+#| eval: false
+url <- "https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv"
+download.file(url, "data/countries.csv")
+```
+
+
+```{r}
+#| code-summary: Check Country Codes
+countries <- read_csv("data/countries.csv", show_col_types = FALSE)
+
+check <- left_join(ghi2024, countries, by = c(country_code = "alpha-3")) |>
+  select(country, country_code, name)
+
+filter(check, country != name)
+```
+
+You can see that they're all just alternative ways of writing the country name.
+
+
+```{r}
+#| echo: false
+write_csv(ghi2024, "data/02/ghi-2024.csv")
+```
+
+This data set is good for practicing data reshaping from wide to long. You can also join it with data from other sets that have 3-letter ISO country codes.
+
+- [ghi-2024.csv](data/02/ghi-2024.csv)
+
+### Long format
+
+The original data is in wide format, with one column per year. We can also provide the data in long format. It is almost always better to have data in long format for things like wrangling and plotting.
+
+```{r}
+#| code-summary: Code to create ghi_long
+ghi_long <- ghi2024 |>
+  pivot_longer(-c(country, country_code), 
+               names_to = "year",
+               names_transform = as.integer,
+               values_to = "ghi")
+```
+
+```{r}
+#| echo: false
+write_csv(ghi_long, "data/02/ghi-long.csv")
+```
+
+* [ghi-long.csv](data/02/ghi-long.csv)
+
+```{r}
+#| label: fig-ghi-years
+#| fig-cap: The distribution of the global hunger index for four years
+#| code-summary: Plot Code
+
+ggplot(ghi_long, aes(x = as.factor(year), y = ghi)) +
+  geom_violin(fill = "dodgerblue") +
+  scale_y_continuous(breaks = seq(0, 100, 10), expand = c(0,0)) +
+  coord_cartesian(ylim = c(0, 70)) +
+  labs(x = NULL, y = "Global Hunger Index")
+```
+
+### Indicators
+
+The second sheet of the excel file contains indicators used to calculate the GHI. This also needs a fair bit of cleaning.
+
+```{r}
+cn <- c("country", 
+        "undernourishment_2000", 
+        "undernourishment_2008", 
+        "undernourishment_2016", 
+        "undernourishment_2024", 
+        "wasting_2000", NA,
+        "wasting_2008",  NA,
+        "wasting_2016",  NA,
+        "wasting_2024",  NA,
+        "stunting_2000",  NA,
+        "stunting_2008",  NA,
+        "stunting_2016",  NA,
+        "stunting_2024",  NA,
+        "mortality_2000", 
+        "mortality_2008", 
+        "mortality_2016", 
+        "mortality_2024")
+ct <- c("text",
+        rep("text", 4),
+        rep(c("text", "skip"), 8),
+        rep("text", 4))
+  
+ghi_indicators <- readxl::read_xlsx(
+  "data/02/ghi-2024.xlsx",
+  sheet = 2, range = "B4:Z139", na = "—", 
+  col_names = cn, col_types = ct) |>
+  pivot_longer(-country) |>
+  separate(name, c("indicator", "year")) |>
+  mutate(value = ifelse(value == "< 2.5", 2.5, value),
+         value = as.numeric(value) |> round(1)) |>
+  pivot_wider(names_from = indicator)
+```
+
+
+```{r}
+#| echo: false
+write_csv(ghi_indicators, "data/02/ghi-indicators.csv")
+```
+
+This data set is in intermediate format (long for years and wide for measures) and is good for teaching about data reshaping and multivariate correlations.
+
+* [ghi-indicators.csv](data/02/ghi-indicators.csv)
+
+```{r}
+#| label: fig-ghi-indicators
+#| fig-cap: The relationship between undernourishment and child mortality for 4 years of data across all countries
+#| code-summary: Plot Code
+
+ggplot(ghi_indicators, aes(x = undernourishment, y = mortality)) +
+  facet_wrap(~ year) +
+  geom_point(alpha = 0.5, colour = "dodgerblue")
+```
+
+
+## Resources
+
+* [Our World in Data: Hunger and Undernourishment](https://ourworldindata.org/hunger-and-undernourishment)
+* [The Global Hunger Index](https://www.globalhungerindex.org/download/all.html)

@@ -1,3 +1,9 @@
 # Reduced Inequalities
 
-![](images/icons/E-WEB-Goal-10.png)
+![](images/icons/E-WEB-Goal-10.png){.sdg-icon}
+
+## Original Data
+
+## Simplified Subsets
+
+## Resources

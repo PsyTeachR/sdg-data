@@ -1,3 +1,9 @@
 # Industry, Innovation and Infrastructure
 
-![](images/icons/E-WEB-Goal-09.png)
+![](images/icons/E-WEB-Goal-09.png){.sdg-icon}
+
+## Original Data
+
+## Simplified Subsets
+
+## Resources

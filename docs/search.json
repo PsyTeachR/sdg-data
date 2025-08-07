@@ -48,5 +48,455 @@
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>No Poverty</span>"
     ]
+  },
+  {
+    "objectID": "02-zero-hunger.html",
+    "href": "02-zero-hunger.html",
+    "title": "\n2  Zero Hunger\n",
+    "section": "",
+    "text": "2.1 Simplified Subsets\nSource: The Global Hunger Index\nEach country’s GHI score is calculated based on a formula that combines four indicators that together capture the multidimensional nature of hunger:\nRead more about the methods and measures.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zero Hunger</span>"
+    ]
+  },
+  {
+    "objectID": "02-zero-hunger.html#simplified-subsets",
+    "href": "02-zero-hunger.html#simplified-subsets",
+    "title": "\n2  Zero Hunger\n",
+    "section": "",
+    "text": "2.1.1 Clean Data\nThis dataset needs to be cleaned a bit before you can use it. This can be a good exercise for students, or you can use the pre-cleaned version below.\nSome of the things to fix are:\n\nthe desired data is on the third sheet\nthe original column names are not ideal\nthe spreadsheet has notes below the data\nuses “—” to represent missing values\ncontains text cells in numeric columns like “&lt;5”\nsome numeric values import like “35.700000000000003”\nthe country names are unlikely to match other data\n\nHere, we choose to use the value of 5 for all cells with “&lt;5”, but you might choose another solution.\n\nData Cleaning Codecn &lt;- c(\"country\", \"2000\", \"2008\", \"2016\", \"2024\")\nghi2024 &lt;- readxl::read_xlsx(\"data/02/ghi-2024.xlsx\", \n                             sheet = 3, range = \"A4:E139\", \n                             col_names = cn, na = \"—\") |&gt;\n  pivot_longer(-country) |&gt;\n  mutate(value = ifelse(value == \"&lt;5\", \"5\", value),\n         value = as.numeric(value) |&gt; round(1)) |&gt;\n  pivot_wider()\n\n\nOne thing generative AI is pretty good at is helping with tedious rote tasks. We need to get the 3-letter country code for all of the countries. We can use the code below to get a quoted and comma-separated list of the country names, and ask genAI:\n\nGive me the 3-letter ISO country code for each country in this list. Return the data in R vector format, like c(‘AFG’, ALB’, …)\n\n\nGet Country Namespaste0(\"'\", ghi2024$country, \"'\", collapse = \", \") |&gt; cat()\n\n'Afghanistan', 'Albania', 'Algeria', 'Angola', 'Argentina', 'Armenia', 'Azerbaijan', 'Bahrain', 'Bangladesh', 'Belarus', 'Benin', 'Bhutan', 'Bolivia (Plurinat. State of)', 'Bosnia & Herzegovina', 'Botswana', 'Brazil', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia', 'Cameroon', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo (Republic of)', 'Costa Rica', 'Côte d'Ivoire', 'Croatia', 'Dem. Rep. of the Congo', 'Djibouti', 'Dominican Republic', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Gabon', 'Gambia', 'Georgia', 'Ghana', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'India', 'Indonesia', 'Iran (Islamic Republic of)', 'Iraq', 'Jamaica', 'Jordan', 'Kazakhstan', 'Kenya', 'Korea (DPR)', 'Kuwait', 'Kyrgyzstan', 'Lao PDR', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Lithuania', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Mauritania', 'Mauritius', 'Mexico', 'Moldova (Rep. of)', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nepal', 'Nicaragua', 'Niger', 'Nigeria', 'North Macedonia', 'Oman', 'Pakistan', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Qatar', 'Romania', 'Russian Federation', 'Rwanda', 'Saudi Arabia', 'Senegal', 'Serbia', 'Sierra Leone', 'Slovakia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Sudan', 'Sri Lanka', 'Sudan', 'Suriname', 'Syrian Arab Republic', 'Tajikistan', 'Tanzania (United Rep. of)', 'Thailand', 'Timor-Leste', 'Togo', 'Trinidad & Tobago', 'Tunisia', 'Türkiye', 'Turkmenistan', 'Uganda', 'Ukraine', 'United Arab Emirates', 'Uruguay', 'Uzbekistan', 'Venezuela (Boliv. Rep. of)', 'Viet Nam', 'Yemen', 'Zambia', 'Zimbabwe'\n\n\nChatGPT returned the following, which I added as a new column to the data:\n\nAdd Country Codesghi2024$country_code &lt;- c(\n  'AFG', 'ALB', 'DZA', 'AGO', 'ARG', 'ARM', 'AZE', 'BHR', 'BGD', 'BLR', 'BEN', 'BTN',\n  'BOL', 'BIH', 'BWA', 'BRA', 'BGR', 'BFA', 'BDI', 'CPV', 'KHM', 'CMR', 'CAF', 'TCD',\n  'CHL', 'CHN', 'COL', 'COM', 'COG', 'CRI', 'CIV', 'HRV', 'COD', 'DJI', 'DOM', 'ECU',\n  'EGY', 'SLV', 'GNQ', 'ERI', 'EST', 'SWZ', 'ETH', 'FJI', 'GAB', 'GMB', 'GEO', 'GHA',\n  'GTM', 'GIN', 'GNB', 'GUY', 'HTI', 'HND', 'HUN', 'IND', 'IDN', 'IRN', 'IRQ', 'JAM',\n  'JOR', 'KAZ', 'KEN', 'PRK', 'KWT', 'KGZ', 'LAO', 'LVA', 'LBN', 'LSO', 'LBR', 'LBY',\n  'LTU', 'MDG', 'MWI', 'MYS', 'MDV', 'MLI', 'MRT', 'MUS', 'MEX', 'MDA', 'MNG', 'MNE',\n  'MAR', 'MOZ', 'MMR', 'NAM', 'NPL', 'NIC', 'NER', 'NGA', 'MKD', 'OMN', 'PAK', 'PAN',\n  'PNG', 'PRY', 'PER', 'PHL', 'QAT', 'ROU', 'RUS', 'RWA', 'SAU', 'SEN', 'SRB', 'SLE',\n  'SVK', 'SLB', 'SOM', 'ZAF', 'SSD', 'LKA', 'SDN', 'SUR', 'SYR', 'TJK', 'TZA', 'THA',\n  'TLS', 'TGO', 'TTO', 'TUN', 'TUR', 'TKM', 'UGA', 'UKR', 'ARE', 'URY', 'UZB', 'VEN',\n  'VNM', 'YEM', 'ZMB', 'ZWE'\n)\n\n\nSince I never blindly trust genAI, I’m going to sense check this against the country codes from a trusted source, and visually inspect all of the instances where the country in ghi2024 doesn’t match the country name.\n\nCheck Country Codescountries &lt;- read_csv(\"data/countries.csv\", show_col_types = FALSE)\n\ncheck &lt;- left_join(ghi2024, countries, by = c(country_code = \"alpha-3\")) |&gt;\n  select(country, country_code, name)\n\nfilter(check, country != name)\n\n\n\n\n\n\n\n\n\ncountry\ncountry_code\nname\n\n\n\nBolivia (Plurinat. State of)\nBOL\nBolivia, Plurinational State of\n\n\nBosnia & Herzegovina\nBIH\nBosnia and Herzegovina\n\n\nCongo (Republic of)\nCOG\nCongo\n\n\nDem. Rep. of the Congo\nCOD\nCongo, Democratic Republic of the\n\n\nIran (Islamic Republic of)\nIRN\nIran, Islamic Republic of\n\n\nKorea (DPR)\nPRK\nKorea, Democratic People’s Republic of\n\n\nLao PDR\nLAO\nLao People’s Democratic Republic\n\n\nMoldova (Rep. of)\nMDA\nMoldova, Republic of\n\n\nTanzania (United Rep. of)\nTZA\nTanzania, United Republic of\n\n\nTrinidad & Tobago\nTTO\nTrinidad and Tobago\n\n\nVenezuela (Boliv. Rep. of)\nVEN\nVenezuela, Bolivarian Republic of\n\n\n\n\n\n\nYou can see that they’re all just alternative ways of writing the country name.\nThis data set is good for practicing data reshaping from wide to long. You can also join it with data from other sets that have 3-letter ISO country codes.\n\nghi-2024.csv\n\n2.1.2 Long format\nThe original data is in wide format, with one column per year. We can also provide the data in long format. It is almost always better to have data in long format for things like wrangling and plotting.\n\nCode to create ghi_longghi_long &lt;- ghi2024 |&gt;\n  pivot_longer(-c(country, country_code), \n               names_to = \"year\",\n               names_transform = as.integer,\n               values_to = \"ghi\")\n\n\n\nghi-long.csv\n\n\nPlot Codeggplot(ghi_long, aes(x = as.factor(year), y = ghi)) +\n  geom_violin(fill = \"dodgerblue\") +\n  scale_y_continuous(breaks = seq(0, 100, 10), expand = c(0,0)) +\n  coord_cartesian(ylim = c(0, 70)) +\n  labs(x = NULL, y = \"Global Hunger Index\")\n\n\n\n\n\n\nFigure 2.1: The distribution of the global hunger index for four years\n\n\n\n\n\n2.1.3 Indicators\nThe second sheet of the excel file contains indicators used to calculate the GHI. This also needs a fair bit of cleaning.\n\nCodecn &lt;- c(\"country\", \n        \"undernourishment_2000\", \n        \"undernourishment_2008\", \n        \"undernourishment_2016\", \n        \"undernourishment_2024\", \n        \"wasting_2000\", NA,\n        \"wasting_2008\",  NA,\n        \"wasting_2016\",  NA,\n        \"wasting_2024\",  NA,\n        \"stunting_2000\",  NA,\n        \"stunting_2008\",  NA,\n        \"stunting_2016\",  NA,\n        \"stunting_2024\",  NA,\n        \"mortality_2000\", \n        \"mortality_2008\", \n        \"mortality_2016\", \n        \"mortality_2024\")\nct &lt;- c(\"text\",\n        rep(\"text\", 4),\n        rep(c(\"text\", \"skip\"), 8),\n        rep(\"text\", 4))\n  \nghi_indicators &lt;- readxl::read_xlsx(\n  \"data/02/ghi-2024.xlsx\",\n  sheet = 2, range = \"B4:Z139\", na = \"—\", \n  col_names = cn, col_types = ct) |&gt;\n  pivot_longer(-country) |&gt;\n  separate(name, c(\"indicator\", \"year\")) |&gt;\n  mutate(value = ifelse(value == \"&lt; 2.5\", 2.5, value),\n         value = as.numeric(value) |&gt; round(1)) |&gt;\n  pivot_wider(names_from = indicator)\n\n\nThis data set is in intermediate format (long for years and wide for measures) and is good for teaching about data reshaping and multivariate correlations.\n\nghi-indicators.csv\n\n\nPlot Codeggplot(ghi_indicators, aes(x = undernourishment, y = mortality)) +\n  facet_wrap(~ year) +\n  geom_point(alpha = 0.5, colour = \"dodgerblue\")\n\n\n\n\n\n\nFigure 2.2: The relationship between undernourishment and child mortality for 4 years of data across all countries",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zero Hunger</span>"
+    ]
+  },
+  {
+    "objectID": "02-zero-hunger.html#resources",
+    "href": "02-zero-hunger.html#resources",
+    "title": "\n2  Zero Hunger\n",
+    "section": "\n2.2 Resources",
+    "text": "2.2 Resources\n\nOur World in Data: Hunger and Undernourishment\nThe Global Hunger Index",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zero Hunger</span>"
+    ]
+  },
+  {
+    "objectID": "03-good-health.html",
+    "href": "03-good-health.html",
+    "title": "3  Good Health and Well-Being",
+    "section": "",
+    "text": "3.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Good Health and Well-Being</span>"
+    ]
+  },
+  {
+    "objectID": "03-good-health.html#simplified-subsets",
+    "href": "03-good-health.html#simplified-subsets",
+    "title": "3  Good Health and Well-Being",
+    "section": "3.2 Simplified Subsets",
+    "text": "3.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Good Health and Well-Being</span>"
+    ]
+  },
+  {
+    "objectID": "03-good-health.html#resources",
+    "href": "03-good-health.html#resources",
+    "title": "3  Good Health and Well-Being",
+    "section": "3.3 Resources",
+    "text": "3.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Good Health and Well-Being</span>"
+    ]
+  },
+  {
+    "objectID": "04-quality-education.html",
+    "href": "04-quality-education.html",
+    "title": "4  Quality Education",
+    "section": "",
+    "text": "4.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Quality Education</span>"
+    ]
+  },
+  {
+    "objectID": "04-quality-education.html#simplified-subsets",
+    "href": "04-quality-education.html#simplified-subsets",
+    "title": "4  Quality Education",
+    "section": "4.2 Simplified Subsets",
+    "text": "4.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Quality Education</span>"
+    ]
+  },
+  {
+    "objectID": "04-quality-education.html#resources",
+    "href": "04-quality-education.html#resources",
+    "title": "4  Quality Education",
+    "section": "4.3 Resources",
+    "text": "4.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Quality Education</span>"
+    ]
+  },
+  {
+    "objectID": "05-gender-equality.html",
+    "href": "05-gender-equality.html",
+    "title": "5  Gender Equality",
+    "section": "",
+    "text": "5.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gender Equality</span>"
+    ]
+  },
+  {
+    "objectID": "05-gender-equality.html#simplified-subsets",
+    "href": "05-gender-equality.html#simplified-subsets",
+    "title": "5  Gender Equality",
+    "section": "5.2 Simplified Subsets",
+    "text": "5.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gender Equality</span>"
+    ]
+  },
+  {
+    "objectID": "05-gender-equality.html#resources",
+    "href": "05-gender-equality.html#resources",
+    "title": "5  Gender Equality",
+    "section": "5.3 Resources",
+    "text": "5.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gender Equality</span>"
+    ]
+  },
+  {
+    "objectID": "06-clean-water.html",
+    "href": "06-clean-water.html",
+    "title": "6  Clean Water and Sanitation",
+    "section": "",
+    "text": "6.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clean Water and Sanitation</span>"
+    ]
+  },
+  {
+    "objectID": "06-clean-water.html#simplified-subsets",
+    "href": "06-clean-water.html#simplified-subsets",
+    "title": "6  Clean Water and Sanitation",
+    "section": "6.2 Simplified Subsets",
+    "text": "6.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clean Water and Sanitation</span>"
+    ]
+  },
+  {
+    "objectID": "06-clean-water.html#resources",
+    "href": "06-clean-water.html#resources",
+    "title": "6  Clean Water and Sanitation",
+    "section": "6.3 Resources",
+    "text": "6.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clean Water and Sanitation</span>"
+    ]
+  },
+  {
+    "objectID": "07-clean-energy.html",
+    "href": "07-clean-energy.html",
+    "title": "7  Affordable and Clean Energy",
+    "section": "",
+    "text": "7.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Affordable and Clean Energy</span>"
+    ]
+  },
+  {
+    "objectID": "07-clean-energy.html#simplified-subsets",
+    "href": "07-clean-energy.html#simplified-subsets",
+    "title": "7  Affordable and Clean Energy",
+    "section": "7.2 Simplified Subsets",
+    "text": "7.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Affordable and Clean Energy</span>"
+    ]
+  },
+  {
+    "objectID": "07-clean-energy.html#resources",
+    "href": "07-clean-energy.html#resources",
+    "title": "7  Affordable and Clean Energy",
+    "section": "7.3 Resources",
+    "text": "7.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Affordable and Clean Energy</span>"
+    ]
+  },
+  {
+    "objectID": "08-decent-work.html",
+    "href": "08-decent-work.html",
+    "title": "8  Decent Work and Economic Growth",
+    "section": "",
+    "text": "8.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Decent Work and Economic Growth</span>"
+    ]
+  },
+  {
+    "objectID": "08-decent-work.html#simplified-subsets",
+    "href": "08-decent-work.html#simplified-subsets",
+    "title": "8  Decent Work and Economic Growth",
+    "section": "8.2 Simplified Subsets",
+    "text": "8.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Decent Work and Economic Growth</span>"
+    ]
+  },
+  {
+    "objectID": "08-decent-work.html#resources",
+    "href": "08-decent-work.html#resources",
+    "title": "8  Decent Work and Economic Growth",
+    "section": "8.3 Resources",
+    "text": "8.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Decent Work and Economic Growth</span>"
+    ]
+  },
+  {
+    "objectID": "09-industry.html",
+    "href": "09-industry.html",
+    "title": "9  Industry, Innovation and Infrastructure",
+    "section": "",
+    "text": "9.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Industry, Innovation and Infrastructure</span>"
+    ]
+  },
+  {
+    "objectID": "09-industry.html#simplified-subsets",
+    "href": "09-industry.html#simplified-subsets",
+    "title": "9  Industry, Innovation and Infrastructure",
+    "section": "9.2 Simplified Subsets",
+    "text": "9.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Industry, Innovation and Infrastructure</span>"
+    ]
+  },
+  {
+    "objectID": "09-industry.html#resources",
+    "href": "09-industry.html#resources",
+    "title": "9  Industry, Innovation and Infrastructure",
+    "section": "9.3 Resources",
+    "text": "9.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Industry, Innovation and Infrastructure</span>"
+    ]
+  },
+  {
+    "objectID": "10-reduced-inequalities.html",
+    "href": "10-reduced-inequalities.html",
+    "title": "10  Reduced Inequalities",
+    "section": "",
+    "text": "10.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Reduced Inequalities</span>"
+    ]
+  },
+  {
+    "objectID": "10-reduced-inequalities.html#simplified-subsets",
+    "href": "10-reduced-inequalities.html#simplified-subsets",
+    "title": "10  Reduced Inequalities",
+    "section": "10.2 Simplified Subsets",
+    "text": "10.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Reduced Inequalities</span>"
+    ]
+  },
+  {
+    "objectID": "10-reduced-inequalities.html#resources",
+    "href": "10-reduced-inequalities.html#resources",
+    "title": "10  Reduced Inequalities",
+    "section": "10.3 Resources",
+    "text": "10.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Reduced Inequalities</span>"
+    ]
+  },
+  {
+    "objectID": "11-sustainable-cities.html",
+    "href": "11-sustainable-cities.html",
+    "title": "11  Sustainable Cities and Communities",
+    "section": "",
+    "text": "11.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sustainable Cities and Communities</span>"
+    ]
+  },
+  {
+    "objectID": "11-sustainable-cities.html#simplified-subsets",
+    "href": "11-sustainable-cities.html#simplified-subsets",
+    "title": "11  Sustainable Cities and Communities",
+    "section": "11.2 Simplified Subsets",
+    "text": "11.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sustainable Cities and Communities</span>"
+    ]
+  },
+  {
+    "objectID": "11-sustainable-cities.html#resources",
+    "href": "11-sustainable-cities.html#resources",
+    "title": "11  Sustainable Cities and Communities",
+    "section": "11.3 Resources",
+    "text": "11.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sustainable Cities and Communities</span>"
+    ]
+  },
+  {
+    "objectID": "12-responsible-consumption.html",
+    "href": "12-responsible-consumption.html",
+    "title": "12  Responsible Consumption and Production",
+    "section": "",
+    "text": "12.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Responsible Consumption and Production</span>"
+    ]
+  },
+  {
+    "objectID": "12-responsible-consumption.html#simplified-subsets",
+    "href": "12-responsible-consumption.html#simplified-subsets",
+    "title": "12  Responsible Consumption and Production",
+    "section": "12.2 Simplified Subsets",
+    "text": "12.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Responsible Consumption and Production</span>"
+    ]
+  },
+  {
+    "objectID": "12-responsible-consumption.html#resources",
+    "href": "12-responsible-consumption.html#resources",
+    "title": "12  Responsible Consumption and Production",
+    "section": "12.3 Resources",
+    "text": "12.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Responsible Consumption and Production</span>"
+    ]
+  },
+  {
+    "objectID": "13-climate-action.html",
+    "href": "13-climate-action.html",
+    "title": "13  Climate Action",
+    "section": "",
+    "text": "13.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Climate Action</span>"
+    ]
+  },
+  {
+    "objectID": "13-climate-action.html#simplified-subsets",
+    "href": "13-climate-action.html#simplified-subsets",
+    "title": "13  Climate Action",
+    "section": "13.2 Simplified Subsets",
+    "text": "13.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Climate Action</span>"
+    ]
+  },
+  {
+    "objectID": "13-climate-action.html#resources",
+    "href": "13-climate-action.html#resources",
+    "title": "13  Climate Action",
+    "section": "13.3 Resources",
+    "text": "13.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Climate Action</span>"
+    ]
+  },
+  {
+    "objectID": "14-water-life.html",
+    "href": "14-water-life.html",
+    "title": "14  Life Below Water",
+    "section": "",
+    "text": "14.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Life Below Water</span>"
+    ]
+  },
+  {
+    "objectID": "14-water-life.html#simplified-subsets",
+    "href": "14-water-life.html#simplified-subsets",
+    "title": "14  Life Below Water",
+    "section": "14.2 Simplified Subsets",
+    "text": "14.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Life Below Water</span>"
+    ]
+  },
+  {
+    "objectID": "14-water-life.html#resources",
+    "href": "14-water-life.html#resources",
+    "title": "14  Life Below Water",
+    "section": "14.3 Resources",
+    "text": "14.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Life Below Water</span>"
+    ]
+  },
+  {
+    "objectID": "15-land-life.html",
+    "href": "15-land-life.html",
+    "title": "15  Life on Land",
+    "section": "",
+    "text": "15.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Life on Land</span>"
+    ]
+  },
+  {
+    "objectID": "15-land-life.html#simplified-subsets",
+    "href": "15-land-life.html#simplified-subsets",
+    "title": "15  Life on Land",
+    "section": "15.2 Simplified Subsets",
+    "text": "15.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Life on Land</span>"
+    ]
+  },
+  {
+    "objectID": "15-land-life.html#resources",
+    "href": "15-land-life.html#resources",
+    "title": "15  Life on Land",
+    "section": "15.3 Resources",
+    "text": "15.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Life on Land</span>"
+    ]
+  },
+  {
+    "objectID": "16-peace-justice.html",
+    "href": "16-peace-justice.html",
+    "title": "16  Peace, Justice and Strong Institutions",
+    "section": "",
+    "text": "16.1 Original Data",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Peace, Justice and Strong Institutions</span>"
+    ]
+  },
+  {
+    "objectID": "16-peace-justice.html#simplified-subsets",
+    "href": "16-peace-justice.html#simplified-subsets",
+    "title": "16  Peace, Justice and Strong Institutions",
+    "section": "16.2 Simplified Subsets",
+    "text": "16.2 Simplified Subsets",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Peace, Justice and Strong Institutions</span>"
+    ]
+  },
+  {
+    "objectID": "16-peace-justice.html#resources",
+    "href": "16-peace-justice.html#resources",
+    "title": "16  Peace, Justice and Strong Institutions",
+    "section": "16.3 Resources",
+    "text": "16.3 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Peace, Justice and Strong Institutions</span>"
+    ]
   }
 ]

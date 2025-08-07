@@ -81,6 +81,7 @@ format:
     - include/webex.css
     - include/style.css
     number-depth: 3
+    toc-expand: true
     code-link: true
     code-fold: true
     code-tools: true
