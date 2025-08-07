@@ -2,6 +2,10 @@
 
 ![](images/icons/E-WEB-Goal-06.png){.sdg-icon}
 
+::: {.tagline}
+Ensure availability and sustainable management of water and sanitation for all 
+:::
+
 ## Original Data
 
 ## Simplified Subsets

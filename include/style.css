@@ -5,6 +5,42 @@
   width: 25%;
 }
 
+.sdg01 { border-color: #E5243B; } /* No Poverty */
+.sdg02 { border-color: #DDA63A; } /* Zero Hunger */
+.sdg03 { border-color: #4C9F38; } /* Good Health and Well-Being */
+.sdg04 { border-color: #C5192D; } /* Quality Education */
+.sdg05 { border-color: #FF3A21; } /* Gender Equality */
+.sdg06 { border-color: #26BDE2; } /* Clean Water and Sanitation */
+.sdg07 { border-color: #FCC30B; } /* Affordable and Clean Energy */
+.sdg08 { border-color: #A21942; } /* Decent Work and Economic Growth */
+.sdg09 { border-color: #FD6925; } /* Industry, Innovation and Infrastructure */
+.sdg10 { border-color: #DD1367; } /* Reduced Inequalities */
+.sdg11 { border-color: #FD9D24; } /* Sustainable Cities and Communities */
+.sdg12 { border-color: #BF8B2E; } /* Responsible Consumption and Production */
+.sdg13 { border-color: #3F7E44; } /* Climate Action */
+.sdg14 { border-color: #0A97D9; } /* Life Below Water */
+.sdg15 { border-color: #56C02B; } /* Life on Land */
+.sdg16 { border-color: #00689D; } /* Peace, Justice and Strong Institutions */
+.sdg17 { border-color: #19486A; } /* Partnerships for the Goals */
+
+:root {
+  --pink: #C5192D;   /* hsl(315, 42%, 42%) */
+  --orange: #FD6925; /* hsl( 33, 70%, 62%) */
+  --yellow: #DDA63A; /* hsl( 49, 87%, 70%) */
+  --green: #3F7E44;  /* hsl(122, 25%, 46%) */
+  --blue: #00689D;   /* hsl(209, 42%, 47%) */
+  --purple: #19486A; /* hsl(248, 28%, 48%) */
+}
+
+.tagline {
+  border: 3px solid;
+  border-radius: 0.5em;
+  font-size: 120%;
+  width: 70%;
+  padding: 0.5em 1em 0em 1em;
+  margin-bottom: 1em;
+}
+
 mac, pc {
   display: inline;
   border: 1px solid;

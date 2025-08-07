@@ -2,6 +2,10 @@
 
 ![](images/icons/E-WEB-Goal-08.png){.sdg-icon}
 
+::: {.tagline}
+Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all 
+:::
+
 ## Original Data
 
 ## Simplified Subsets

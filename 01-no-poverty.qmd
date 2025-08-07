@@ -1,6 +1,10 @@
-# No Poverty
+# No Poverty {#sec-sdg01}
 
 ![](images/icons/E-WEB-Goal-01.png){.sdg-icon}
+
+::: {.tagline .sdg01}
+End poverty in all its forms everywhere 
+:::
 
 ## Original Data
 
@@ -114,6 +118,13 @@ write_csv(pip_gini_2010, "data/01/pip-gini-2010.csv")
 - [pip-gini-2010.csv](data/01/pip-gini-2010.csv){download=""}
 
 ```{r}
+#| echo: false
+#| label: tbl-pip_gini_2010
+#| tbl-cap: The first rows of pip_gini_2010
+head(pip_gini_2010)
+```
+
+```{r}
 #| label: fig-gini-region-2010
 #| fig-cap: The distribution of wealth inequality across the world regions in 2010
 #| code-summary: Plot Code
@@ -152,6 +163,14 @@ write_csv(pip_welfare_2010, "data/01/pip-welfare-2010.csv")
 ```
 
 - [pip-welfare-2010.csv](data/01/pip-welfare-2010.csv){download=""}
+
+```{r}
+#| echo: false
+#| label: tbl-pip_welfare_2010
+#| tbl-cap: The first rows of pip_welfare_2010
+head(pip_welfare_2010)
+```
+
 
 
 ```{r}
@@ -208,6 +227,13 @@ write_csv(pip_gini_uk, "data/01/pip-gini-uk.csv")
 - [pip-gini-usa.csv](data/01/pip-gini-usa.csv){download=""}
 
 ```{r}
+#| echo: false
+#| label: tbl-pip_gini_china
+#| tbl-cap: The first rows of pip_gini_china
+head(pip_gini_china)
+```
+
+```{r}
 #| label: fig-gini-countries
 #| fig.cap: The change in Gini index across time for China, USA and UK
 #| code-summary: Plot Code
@@ -218,7 +244,7 @@ bind_rows(pip_gini_china, pip_gini_uk, pip_gini_usa) |>
   geom_line(show.legend = FALSE) +
   scale_x_continuous(breaks = seq(1960, 2030, 10)) +
   scale_color_manual(
-    values = c("firebrick", "darkgreen", "royalblue4"), 
+    values = c("#E5243B", "#4C9F38", "#19486A"), 
     guide = guide_legend(position = "inside")
   ) +
   labs(x = NULL, y = "Gini Index", color = NULL) +

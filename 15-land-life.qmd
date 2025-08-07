@@ -2,6 +2,10 @@
 
 ![](images/icons/E-WEB-Goal-15.png){.sdg-icon}
 
+::: {.tagline}
+Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss 
+:::
+
 ## Original Data
 
 ## Simplified Subsets

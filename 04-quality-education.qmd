@@ -1,6 +1,10 @@
-# Quality Education
+# Quality Education {#sec-sdg04}
 
 ![](images/icons/E-WEB-Goal-04.png){.sdg-icon}
+
+::: {.tagline}
+Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all 
+:::
 
 ## Original Data
 

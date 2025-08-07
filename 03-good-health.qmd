@@ -1,9 +1,155 @@
-# Good Health and Well-Being
+# Good Health and Well-Being {#sec-sdg03}
 
 ![](images/icons/E-WEB-Goal-03.png){.sdg-icon}
 
+::: {.tagline .sdg03}
+Ensure healthy lives and promote well-being for all at all ages 
+:::
+
+```{r}
+#| code-summary: Setup Code
+
+library(tidyverse)
+library(readxl)
+library(patchwork)
+theme_set(theme_bw())
+
+# skip the last row
+measles <- read_xlsx("data/03/measles.xlsx", n_max = 44334)
+rubella <- read_xlsx("data/03/rubella.xlsx", n_max = 16567)
+```
+
 ## Original Data
+
+Source: WHO/UNICEF Estimates of National Immunization Coverage (WUENIC), 2023 Revision (completed 15 July 2025), data from 1980-2024. 
+
+Downloaded data for all countries and all antigens, from 1980 to 2024 for [measles](https://immunizationdata.who.int/global/wiise-detail-page/measles-vaccination-coverage?GROUP=Countries) and [rubella](https://immunizationdata.who.int/global/wiise-detail-page/rubella-vaccination-coverage?GROUP=Countries) on 2025-08-07.
+
+You can download more data about coverage of other vaccinations at [immunizationdata.who.int](https://immunizationdata.who.int/global?topic=Vaccination-coverage).
+
+* [measles.xlsx](data/03/measles.xlsx)
+* [rubella.xlsx](data/03/rubella.xlsx)
+
+::: {.callout-tip title="Codebook" collapse="true"}
+
+* GROUP: All "COUNTRIES"
+* CODE: 3-letter ISO country code
+* NAME: Country name
+* YEAR: 1980-2024
+* ANTIGEN: "MCV1", "MCV2", or "RCV1"
+* ANTIGEN_DESCRIPTION: Longer description of ANTIGEN
+* COVERAGE_CATEGORY: "ADMIN", "OFFICIAL" or "WUENIC"
+* COVERAGE_CATEGORY_DESCRIPTION: Longer description of COVERAGE_CATEGORY
+* TARGET_NUMBER: Number of infants in the target population
+* DOSES: How many doses were administered
+* COVERAGE: The percentage in the target population who have received one (RCV1, MCV1) or two (MCV2) doses of antigen-containing vaccine in a given year.
+
+:::
+
+```{r}
+#| label: fig-rubella
+#| fig-cap: The mean rubella vaccination coverage across time for the three categories of estimate
+#| code-summary: Plot Code
+
+ggplot(rubella, aes(x = YEAR, y = COVERAGE, colour = COVERAGE_CATEGORY)) +
+  geom_smooth() +
+  scale_color_manual(values = c("#DD1367", "#00689D", "#FD6925"),
+                     guide = guide_legend(position = "inside")) +
+  coord_cartesian(ylim = c(0, 100)) +
+  labs(x = NULL, color = NULL, y = "Percent Coverage") +
+  theme(legend.position.inside = c(.8, .2),
+        legend.background = element_blank())
+```
+
+
 
 ## Simplified Subsets
 
+### Coverage
+
+Coverage categories are Administrative, Official, or WHO/UNICEF Estimates (wuenic). This set removes redundant columns and simplifies the column names, making them easier to join to data such as that in @sec-sdg01.
+
+```{r}
+#| code-summary: Code to create measles_coverage and rubella_coverage
+ 
+measles_coverage <- measles |>
+  select(country_code = CODE,
+         country_name = NAME,
+         year = YEAR,
+         antigen = ANTIGEN,
+         coverage = COVERAGE,
+         cat = COVERAGE_CATEGORY) |>
+  mutate(cat = tolower(cat)) |>
+  pivot_wider(names_from = cat, values_from = coverage)
+  
+rubella_coverage <- rubella |>
+  select(country_code = CODE,
+         country_name = NAME,
+         year = YEAR,
+         antigen = ANTIGEN,
+         coverage = COVERAGE,
+         cat = COVERAGE_CATEGORY) |>
+  mutate(cat = tolower(cat)) |>
+  pivot_wider(names_from = cat, values_from = coverage)
+```
+
+```{r}
+#| echo: false
+write_csv(measles_coverage, "data/03/measles-coverage.csv")
+write_csv(rubella_coverage, "data/03/rubella-coverage.csv")
+```
+
+These data sets are good for practicing data merging and dealing with missing data.
+
+- [measles-coverage.csv](data/01/measles-coverage.csv){download=""}
+- [rubella-coverage.csv](data/01/rubella-coverage.csv){download=""}
+
+```{r}
+#| echo: false
+#| label: tbl-measles_coverage
+#| tbl-cap: The first rows of measles_coverage
+head(measles_coverage)
+```
+
+```{r}
+#| label: fig-measles-coverage
+#| fig-cap: The relationships among administrative, offical, and WHO/UNICEF estimates for measles 
+#| code-summary: Plot Code
+
+geom <- geom_point(alpha = 0.05, na.rm = TRUE, color = "#4C9F38")
+
+mcv1 <- filter(measles_coverage, antigen == "MCV1")
+
+ao <- ggplot(mcv1, aes(x = admin, y = official)) +
+  geom +
+  coord_cartesian(xlim = c(0, 150), ylim = c(0, 150)) +
+  labs(x = "Administrative",
+       y = "Official")
+
+aw <- ggplot(mcv1, aes(x = wuenic, y = admin)) +
+  geom +
+  coord_cartesian(xlim = c(0, 100), ylim = c(0, 150)) +
+  labs(x = "Estimated",
+       y = "Administrative")
+
+ow <- ggplot(mcv1, aes(x = wuenic, y = official)) +
+  geom +
+  coord_cartesian(xlim = c(0, 100), ylim = c(0, 150)) +
+  labs(x = "Estimated",
+       y = "Official")
+
+design <- "
+  1112
+  1112
+  1113
+  1113
+"
+
+ao + aw + ow + plot_layout(design = design)
+```
+
+
 ## Resources
+
+* [Our World in Health: Vaccination](https://ourworldindata.org/vaccination)
+* [WHO Immunization Data](https://immunizationdata.who.int/global?topic=Vaccination-coverage)

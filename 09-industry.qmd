@@ -2,6 +2,10 @@
 
 ![](images/icons/E-WEB-Goal-09.png){.sdg-icon}
 
+::: {.tagline}
+Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation 
+:::
+
 ## Original Data
 
 ## Simplified Subsets

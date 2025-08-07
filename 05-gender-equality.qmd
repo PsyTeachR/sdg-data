@@ -1,6 +1,10 @@
-# Gender Equality
+# Gender Equality {#sec-sdg05}
 
 ![](images/icons/E-WEB-Goal-05.png){.sdg-icon}
+
+::: {.tagline}
+Achieve gender equality and empower all women and girls 
+:::
 
 ## Original Data
 

@@ -1,11 +1,16 @@
-# Zero Hunger
+# Zero Hunger {#sec-sdg02}
 
 ![](images/icons/E-WEB-Goal-02.png){.sdg-icon}
+
+::: {.tagline .sdg02}
+End hunger, achieve food security and improved nutrition and promote sustainable agriculture 
+:::
 
 ```{r}
 #| code-summary: Setup Code
 
 library(tidyverse)
+library(readxl)
 theme_set(theme_bw())
 ```
 
@@ -114,6 +119,13 @@ This data set is good for practicing data reshaping from wide to long. You can a
 
 - [ghi-2024.csv](data/02/ghi-2024.csv)
 
+```{r}
+#| echo: false
+#| label: tbl-ghi2024
+#| tbl-cap: The first rows of ghi2024
+head(ghi2024)
+```
+
 ### Long format
 
 The original data is in wide format, with one column per year. We can also provide the data in long format. It is almost always better to have data in long format for things like wrangling and plotting.
@@ -135,12 +147,19 @@ write_csv(ghi_long, "data/02/ghi-long.csv")
 * [ghi-long.csv](data/02/ghi-long.csv)
 
 ```{r}
+#| echo: false
+#| label: tbl-ghi_long
+#| tbl-cap: The first rows of ghi_long
+head(ghi_long)
+```
+
+```{r}
 #| label: fig-ghi-years
 #| fig-cap: The distribution of the global hunger index for four years
 #| code-summary: Plot Code
 
 ggplot(ghi_long, aes(x = as.factor(year), y = ghi)) +
-  geom_violin(fill = "dodgerblue") +
+  geom_violin(fill = "#DDA63A") +
   scale_y_continuous(breaks = seq(0, 100, 10), expand = c(0,0)) +
   coord_cartesian(ylim = c(0, 70)) +
   labs(x = NULL, y = "Global Hunger Index")
@@ -195,13 +214,21 @@ This data set is in intermediate format (long for years and wide for measures) a
 * [ghi-indicators.csv](data/02/ghi-indicators.csv)
 
 ```{r}
+#| echo: false
+#| label: tbl-ghi_indicators
+#| tbl-cap: The first rows of ghi_indicators
+head(ghi_indicators)
+```
+
+```{r}
 #| label: fig-ghi-indicators
 #| fig-cap: The relationship between undernourishment and child mortality for 4 years of data across all countries
 #| code-summary: Plot Code
 
 ggplot(ghi_indicators, aes(x = undernourishment, y = mortality)) +
   facet_wrap(~ year) +
-  geom_point(alpha = 0.5, colour = "dodgerblue")
+  geom_point(alpha = 0.5) +
+  theme(strip.background = element_rect(fill = "#DDA63A"))
 ```
 
 

@@ -2,6 +2,10 @@
 
 ![](images/icons/E-WEB-Goal-12.png){.sdg-icon}
 
+::: {.tagline}
+Ensure sustainable consumption and production patterns 
+:::
+
 ## Original Data
 
 ## Simplified Subsets
