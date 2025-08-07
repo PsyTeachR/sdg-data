@@ -1,0 +1,8 @@
+code,name,description,glossaryTerms
+AgeRange,Age Range,,
+AgeRange:15-24,15 to 24,,
+AgeRange:25-54,25 to 54,,
+AgeRange:55-64,55 to 64,,
+Sex,Sex,,2183
+Sex:Female,Female,,3197
+Sex:Male,Male,,3197

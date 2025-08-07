@@ -394,7 +394,7 @@ Figure&nbsp;1.1: Number of countries per region per year in the dataset
 </details>
 </div>
 <ul>
-<li><a href="data/01/pip-gini-2010.csv" download="">pip-gini-2010.csv</a></li>
+<li><a href="data/01/pip_gini_2010.csv" download="">pip_gini_2010.csv</a></li>
 </ul>
 <div class="cell">
 <div id="tbl-pip_gini_2010" class="cell quarto-float quarto-figure quarto-figure-center anchored">
@@ -520,7 +520,7 @@ Figure&nbsp;1.2: The distribution of wealth inequality across the world regions 
 </details>
 </div>
 <ul>
-<li><a href="data/01/pip-welfare-2010.csv" download="">pip-welfare-2010.csv</a></li>
+<li><a href="data/01/pip_welfare_2010.csv" download="">pip_welfare_2010.csv</a></li>
 </ul>
 <div class="cell">
 <div id="tbl-pip_welfare_2010" class="cell quarto-float quarto-figure quarto-figure-center anchored">
@@ -661,9 +661,9 @@ Figure&nbsp;1.3: The relationship between the Gini index and median welfare per 
 </details>
 </div>
 <ul>
-<li><a href="data/01/pip-gini-china.csv" download="">pip-gini-china.csv</a></li>
-<li><a href="data/01/pip-gini-uk.csv" download="">pip-gini-uk.csv</a></li>
-<li><a href="data/01/pip-gini-usa.csv" download="">pip-gini-usa.csv</a></li>
+<li><a href="data/01/pip_gini_china.csv" download="">pip_gini_china.csv</a></li>
+<li><a href="data/01/pip_gini_uk.csv" download="">pip_gini_uk.csv</a></li>
+<li><a href="data/01/pip_gini_usa.csv" download="">pip_gini_usa.csv</a></li>
 </ul>
 <div class="cell">
 <div id="tbl-pip_gini_china" class="cell quarto-float quarto-figure quarto-figure-center anchored">
@@ -1721,10 +1721,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb9-118"><a href="#cb9-118"></a></span>
 <span id="cb9-121"><a href="#cb9-121"></a><span class="in">```{r}</span></span>
 <span id="cb9-122"><a href="#cb9-122"></a><span class="co">#| echo: false</span></span>
-<span id="cb9-123"><a href="#cb9-123"></a><span class="fu">write_csv</span>(pip_gini_2010, <span class="st">"data/01/pip-gini-2010.csv"</span>)</span>
+<span id="cb9-123"><a href="#cb9-123"></a><span class="fu">write_csv</span>(pip_gini_2010, <span class="st">"data/01/pip_gini_2010.csv"</span>)</span>
 <span id="cb9-124"><a href="#cb9-124"></a><span class="in">```</span></span>
 <span id="cb9-125"><a href="#cb9-125"></a></span>
-<span id="cb9-126"><a href="#cb9-126"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-gini-2010.csv</span><span class="co">](data/01/pip-gini-2010.csv)</span>{download=""}</span>
+<span id="cb9-126"><a href="#cb9-126"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip_gini_2010.csv</span><span class="co">](data/01/pip_gini_2010.csv)</span>{download=""}</span>
 <span id="cb9-127"><a href="#cb9-127"></a></span>
 <span id="cb9-130"><a href="#cb9-130"></a><span class="in">```{r}</span></span>
 <span id="cb9-131"><a href="#cb9-131"></a><span class="co">#| echo: false</span></span>
@@ -1768,10 +1768,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb9-173"><a href="#cb9-173"></a></span>
 <span id="cb9-176"><a href="#cb9-176"></a><span class="in">```{r}</span></span>
 <span id="cb9-177"><a href="#cb9-177"></a><span class="co">#| echo: false</span></span>
-<span id="cb9-178"><a href="#cb9-178"></a><span class="fu">write_csv</span>(pip_welfare_2010, <span class="st">"data/01/pip-welfare-2010.csv"</span>)</span>
+<span id="cb9-178"><a href="#cb9-178"></a><span class="fu">write_csv</span>(pip_welfare_2010, <span class="st">"data/01/pip_welfare_2010.csv"</span>)</span>
 <span id="cb9-179"><a href="#cb9-179"></a><span class="in">```</span></span>
 <span id="cb9-180"><a href="#cb9-180"></a></span>
-<span id="cb9-181"><a href="#cb9-181"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-welfare-2010.csv</span><span class="co">](data/01/pip-welfare-2010.csv)</span>{download=""}</span>
+<span id="cb9-181"><a href="#cb9-181"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip_welfare_2010.csv</span><span class="co">](data/01/pip_welfare_2010.csv)</span>{download=""}</span>
 <span id="cb9-182"><a href="#cb9-182"></a></span>
 <span id="cb9-185"><a href="#cb9-185"></a><span class="in">```{r}</span></span>
 <span id="cb9-186"><a href="#cb9-186"></a><span class="co">#| echo: false</span></span>
@@ -1826,14 +1826,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb9-239"><a href="#cb9-239"></a></span>
 <span id="cb9-242"><a href="#cb9-242"></a><span class="in">```{r}</span></span>
 <span id="cb9-243"><a href="#cb9-243"></a><span class="co">#| echo: false</span></span>
-<span id="cb9-244"><a href="#cb9-244"></a><span class="fu">write_csv</span>(pip_gini_usa, <span class="st">"data/01/pip-gini-usa.csv"</span>)</span>
-<span id="cb9-245"><a href="#cb9-245"></a><span class="fu">write_csv</span>(pip_gini_china, <span class="st">"data/01/pip-gini-china.csv"</span>)</span>
-<span id="cb9-246"><a href="#cb9-246"></a><span class="fu">write_csv</span>(pip_gini_uk, <span class="st">"data/01/pip-gini-uk.csv"</span>)</span>
+<span id="cb9-244"><a href="#cb9-244"></a><span class="fu">write_csv</span>(pip_gini_usa, <span class="st">"data/01/pip_gini_usa.csv"</span>)</span>
+<span id="cb9-245"><a href="#cb9-245"></a><span class="fu">write_csv</span>(pip_gini_china, <span class="st">"data/01/pip_gini_china.csv"</span>)</span>
+<span id="cb9-246"><a href="#cb9-246"></a><span class="fu">write_csv</span>(pip_gini_uk, <span class="st">"data/01/pip_gini_uk.csv"</span>)</span>
 <span id="cb9-247"><a href="#cb9-247"></a><span class="in">```</span></span>
 <span id="cb9-248"><a href="#cb9-248"></a></span>
-<span id="cb9-249"><a href="#cb9-249"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-gini-china.csv</span><span class="co">](data/01/pip-gini-china.csv)</span>{download=""}</span>
-<span id="cb9-250"><a href="#cb9-250"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-gini-uk.csv</span><span class="co">](data/01/pip-gini-uk.csv)</span>{download=""}</span>
-<span id="cb9-251"><a href="#cb9-251"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip-gini-usa.csv</span><span class="co">](data/01/pip-gini-usa.csv)</span>{download=""}</span>
+<span id="cb9-249"><a href="#cb9-249"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip_gini_china.csv</span><span class="co">](data/01/pip_gini_china.csv)</span>{download=""}</span>
+<span id="cb9-250"><a href="#cb9-250"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip_gini_uk.csv</span><span class="co">](data/01/pip_gini_uk.csv)</span>{download=""}</span>
+<span id="cb9-251"><a href="#cb9-251"></a><span class="ss">- </span><span class="co">[</span><span class="ot">pip_gini_usa.csv</span><span class="co">](data/01/pip_gini_usa.csv)</span>{download=""}</span>
 <span id="cb9-252"><a href="#cb9-252"></a></span>
 <span id="cb9-255"><a href="#cb9-255"></a><span class="in">```{r}</span></span>
 <span id="cb9-256"><a href="#cb9-256"></a><span class="co">#| echo: false</span></span>

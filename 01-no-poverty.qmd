@@ -112,10 +112,10 @@ pip_gini_2010 <- pip |>
 
 ```{r}
 #| echo: false
-write_csv(pip_gini_2010, "data/01/pip-gini-2010.csv")
+write_csv(pip_gini_2010, "data/01/pip_gini_2010.csv")
 ```
 
-- [pip-gini-2010.csv](data/01/pip-gini-2010.csv){download=""}
+- [pip_gini_2010.csv](data/01/pip_gini_2010.csv){download=""}
 
 ```{r}
 #| echo: false
@@ -159,10 +159,10 @@ pip_welfare_2010 <- pip |>
 
 ```{r}
 #| echo: false
-write_csv(pip_welfare_2010, "data/01/pip-welfare-2010.csv")
+write_csv(pip_welfare_2010, "data/01/pip_welfare_2010.csv")
 ```
 
-- [pip-welfare-2010.csv](data/01/pip-welfare-2010.csv){download=""}
+- [pip_welfare_2010.csv](data/01/pip_welfare_2010.csv){download=""}
 
 ```{r}
 #| echo: false
@@ -217,14 +217,14 @@ pip_gini_uk <- filter(gini, country_name == "United Kingdom")
 
 ```{r}
 #| echo: false
-write_csv(pip_gini_usa, "data/01/pip-gini-usa.csv")
-write_csv(pip_gini_china, "data/01/pip-gini-china.csv")
-write_csv(pip_gini_uk, "data/01/pip-gini-uk.csv")
+write_csv(pip_gini_usa, "data/01/pip_gini_usa.csv")
+write_csv(pip_gini_china, "data/01/pip_gini_china.csv")
+write_csv(pip_gini_uk, "data/01/pip_gini_uk.csv")
 ```
 
-- [pip-gini-china.csv](data/01/pip-gini-china.csv){download=""}
-- [pip-gini-uk.csv](data/01/pip-gini-uk.csv){download=""}
-- [pip-gini-usa.csv](data/01/pip-gini-usa.csv){download=""}
+- [pip_gini_china.csv](data/01/pip_gini_china.csv){download=""}
+- [pip_gini_uk.csv](data/01/pip_gini_uk.csv){download=""}
+- [pip_gini_usa.csv](data/01/pip_gini_usa.csv){download=""}
 
 ```{r}
 #| echo: false

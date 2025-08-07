@@ -2,12 +2,155 @@
 
 ![](images/icons/E-WEB-Goal-04.png){.sdg-icon}
 
-::: {.tagline}
+::: {.tagline .sdg04}
 Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all 
 :::
 
+```{r}
+#| code-summary: Setup Code
+
+library(tidyverse)
+library(gganimate)
+theme_set(theme_bw())
+```
+
 ## Original Data
 
+Indicator 4.3.1, Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex.
+
+[Data](https://databrowser.uis.unesco.org/view#aths=&geoMode=countries&geoUnits=&timeMode=range&view=table&chartMode=multiple&chartHighlightSeries=&chartHighlightEnabled=true&indicatorPaths=UIS-SDG4Monitoring%3A0%3APRYA.12MO.AG15T24.F%2CUIS-SDG4Monitoring%3A0%3APRYA.12MO.AG15T24.M%2CUIS-SDG4Monitoring%3A0%3APRYA.12MO.AG25T54.F%2CUIS-SDG4Monitoring%3A0%3APRYA.12MO.AG25T54.M%2CUIS-SDG4Monitoring%3A0%3APRYA.12MO.AG55T64.F%2CUIS-SDG4Monitoring%3A0%3APRYA.12MO.AG55T64.M)
+
+```{r}
+edu_data <- read_csv("data/04/4.3.1/data.csv", guess_max = 2e5) 
+edu_indicators <- read_csv("data/04/4.3.1/indicators.csv")
+```
+
+
+```{r}
+#| echo: false
+#| label: tbl-edu_data
+#| tbl-cap: The first rows of edu_data
+head(edu_data)
+```
+
+```{r}
+#| echo: false
+#| label: tbl-edu_indicators
+#| tbl-cap: The first row of edu_indicators
+head(edu_indicators, 1)
+```
+
 ## Simplified Subsets
+
+### Joined Data for Countries
+
+The UNESCO data comes in a particular format that requires some joining to make sense of it. The values are all "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months", disaggregated by sex and age range.
+
+The data include both countries and aggregated regions, so we will filter this set to just individual countries with 3-letter geoUnits.
+
+
+```{r}
+sex_levels <- c("Sex:Female", "Sex:Male")
+sex_labels <- c("female", "male")
+age_levels <- c("AgeRange:15-24", "AgeRange:25-54", "AgeRange:55-64")
+age_labels <- c("15-24", "25-54", "55-64")
+
+edu_country <- left_join(edu_data, edu_indicators, by = "indicatorId") |>
+  filter(nchar(geoUnit) == 3) |>
+  select(
+    country_code = geoUnit,
+    year,
+    rate = value,
+    disaggregations
+  ) |>
+  separate(disaggregations, c("sex", "age_range"), sep = ", ") |>
+  mutate(sex = factor(sex, sex_levels, sex_labels),
+         age_range = factor(age_range, age_levels, age_labels))
+```
+
+```{r}
+#| echo: false
+write_csv(edu_country, "data/04/edu_country.csv")
+```
+
+- [edu_country.csv](data/04/edu_country.csv){download=""}
+
+```{r}
+#| echo: false
+#| label: tbl-edu_country
+#| tbl-cap: The first rows of edu_country
+head(edu_country)
+```
+
+```{r}
+#| label: fig-edu-country-youth
+#| fig-cap: The proportion of youth ages 15-24 participating in formal and non-formal education and training in the previous 12 months.
+#| code-summary: Plot Code
+#| fig-height: 18
+#| fig-width: 6
+edu_country |>
+  summarise(rate = mean(rate, na.rm = TRUE), .by = c(country_code, age_range, year)) |>
+  filter(age_range == "15-24") |>
+  ggplot(aes(x = year, y = fct_rev(country_code), fill = rate)) +
+  geom_tile() +
+  scale_fill_viridis_c(limits = c(0, 100)) +
+  guides(fill = guide_colorbar(position = "inside")) +
+  labs(x = NULL, y = NULL, fill = NULL) +
+  theme(legend.position.inside = c(.07, .96))
+```
+
+
+### Complete Data
+
+There is a lot of missing data in the set above. This set is limited to countries that have data for every year between 2005 and 2024.
+
+```{r}
+edu_complete <- edu_country |>
+  filter(year %in% 2005:2024) |>
+  filter(n() == 6, .by = c(country_code, year)) |>
+  filter(n() >= 6 * 19, .by = country_code)
+```
+
+```{r}
+#| echo: false
+write_csv(edu_complete, "data/04/edu_complete.csv")
+```
+
+- [edu_complete.csv](data/04/edu_complete.csv){download=""}
+
+```{r}
+#| echo: false
+#| label: tbl-edu_complete
+#| tbl-cap: The first rows of edu_complete
+head(edu_complete)
+```
+
+
+```{r}
+#| eval: false
+#| code-summary: Plot Code
+anim <- edu_complete |>
+  pivot_wider(names_from = sex, values_from = rate) |>
+  ggplot(aes(x = female, y = male)) +
+  geom_abline(slope = 1, intercept = 0, color = "grey") +
+  geom_point(color = "#C5192D", alpha = 0.2) +
+  facet_wrap(~age_range) +
+  coord_cartesian(xlim = c(0, 100), ylim = c(0, 100)) +
+  labs(x = "Female participation", y = "Male participation",
+       title = "Year: {floor(frame_time)}") +
+  theme(strip.background = element_rect(fill = "#C5192D")) +
+  transition_time(year) +
+  shadow_wake(wake_length = 0.1)
+
+anim_save("images/edu_complete.gif", 
+          animation = anim,
+          nframes = 100, fps = 12, 
+          start_pause = 5, end_pause = 5, 
+          width = 6, height = 3, 
+          units = "in", res = 150,
+          renderer = gifski_renderer())
+```
+
+![The relationship between male and female participnation in education, by age group and year.](images/edu_complete.gif){#fig-edu-complete}
 
 ## Resources

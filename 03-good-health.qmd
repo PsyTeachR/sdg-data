@@ -95,14 +95,14 @@ rubella_coverage <- rubella |>
 
 ```{r}
 #| echo: false
-write_csv(measles_coverage, "data/03/measles-coverage.csv")
-write_csv(rubella_coverage, "data/03/rubella-coverage.csv")
+write_csv(measles_coverage, "data/03/measles_coverage.csv")
+write_csv(rubella_coverage, "data/03/rubella_coverage.csv")
 ```
 
 These data sets are good for practicing data merging and dealing with missing data.
 
-- [measles-coverage.csv](data/01/measles-coverage.csv){download=""}
-- [rubella-coverage.csv](data/01/rubella-coverage.csv){download=""}
+- [measles_coverage.csv](data/01/measles_coverage.csv){download=""}
+- [rubella_coverage.csv](data/01/rubella_coverage.csv){download=""}
 
 ```{r}
 #| echo: false

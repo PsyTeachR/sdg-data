@@ -317,7 +317,7 @@ gtag('config', 'G-6NP3MF25W3', { 'anonymize_ip': true});
 <p>Here, we choose to use the value of 5 for all cells with “&lt;5”, but you might choose another solution.</p>
 <div class="cell">
 <details class="code-fold"><summary>Data Cleaning Code</summary><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>cn <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"country"</span>, <span class="st">"2000"</span>, <span class="st">"2008"</span>, <span class="st">"2016"</span>, <span class="st">"2024"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2"></a>ghi2024 <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"data/02/ghi-2024.xlsx"</span>, </span>
+<span id="cb2-2"><a href="#cb2-2"></a>ghi_2024 <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"data/02/ghi-2024.xlsx"</span>, </span>
 <span id="cb2-3"><a href="#cb2-3"></a>                             <span class="at">sheet =</span> <span class="dv">3</span>, <span class="at">range =</span> <span class="st">"A4:E139"</span>, </span>
 <span id="cb2-4"><a href="#cb2-4"></a>                             <span class="at">col_names =</span> cn, <span class="at">na =</span> <span class="st">"—"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">pivot_longer</span>(<span class="sc">-</span>country) <span class="sc">|&gt;</span></span>
@@ -331,14 +331,14 @@ gtag('config', 'G-6NP3MF25W3', { 'anonymize_ip': true});
 <p>Give me the 3-letter ISO country code for each country in this list. Return the data in R vector format, like c(‘AFG’, ALB’, …)</p>
 </blockquote>
 <div class="cell">
-<details class="code-fold"><summary>Get Country Names</summary><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">paste0</span>(<span class="st">"'"</span>, ghi2024<span class="sc">$</span>country, <span class="st">"'"</span>, <span class="at">collapse =</span> <span class="st">", "</span>) <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>Get Country Names</summary><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">paste0</span>(<span class="st">"'"</span>, ghi_2024<span class="sc">$</span>country, <span class="st">"'"</span>, <span class="at">collapse =</span> <span class="st">", "</span>) <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>'Afghanistan', 'Albania', 'Algeria', 'Angola', 'Argentina', 'Armenia', 'Azerbaijan', 'Bahrain', 'Bangladesh', 'Belarus', 'Benin', 'Bhutan', 'Bolivia (Plurinat. State of)', 'Bosnia &amp; Herzegovina', 'Botswana', 'Brazil', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia', 'Cameroon', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo (Republic of)', 'Costa Rica', 'Côte d'Ivoire', 'Croatia', 'Dem. Rep. of the Congo', 'Djibouti', 'Dominican Republic', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Gabon', 'Gambia', 'Georgia', 'Ghana', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'India', 'Indonesia', 'Iran (Islamic Republic of)', 'Iraq', 'Jamaica', 'Jordan', 'Kazakhstan', 'Kenya', 'Korea (DPR)', 'Kuwait', 'Kyrgyzstan', 'Lao PDR', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Lithuania', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Mauritania', 'Mauritius', 'Mexico', 'Moldova (Rep. of)', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nepal', 'Nicaragua', 'Niger', 'Nigeria', 'North Macedonia', 'Oman', 'Pakistan', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Qatar', 'Romania', 'Russian Federation', 'Rwanda', 'Saudi Arabia', 'Senegal', 'Serbia', 'Sierra Leone', 'Slovakia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Sudan', 'Sri Lanka', 'Sudan', 'Suriname', 'Syrian Arab Republic', 'Tajikistan', 'Tanzania (United Rep. of)', 'Thailand', 'Timor-Leste', 'Togo', 'Trinidad &amp; Tobago', 'Tunisia', 'Türkiye', 'Turkmenistan', 'Uganda', 'Ukraine', 'United Arab Emirates', 'Uruguay', 'Uzbekistan', 'Venezuela (Boliv. Rep. of)', 'Viet Nam', 'Yemen', 'Zambia', 'Zimbabwe'</code></pre>
 </div>
 </div>
 <p>ChatGPT returned the following, which I added as a new column to the data:</p>
 <div class="cell">
-<details class="code-fold"><summary>Add Country Codes</summary><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>ghi2024<span class="sc">$</span>country_code <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<details class="code-fold"><summary>Add Country Codes</summary><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>ghi_2024<span class="sc">$</span>country_code <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb5-2"><a href="#cb5-2"></a>  <span class="st">'AFG'</span>, <span class="st">'ALB'</span>, <span class="st">'DZA'</span>, <span class="st">'AGO'</span>, <span class="st">'ARG'</span>, <span class="st">'ARM'</span>, <span class="st">'AZE'</span>, <span class="st">'BHR'</span>, <span class="st">'BGD'</span>, <span class="st">'BLR'</span>, <span class="st">'BEN'</span>, <span class="st">'BTN'</span>,</span>
 <span id="cb5-3"><a href="#cb5-3"></a>  <span class="st">'BOL'</span>, <span class="st">'BIH'</span>, <span class="st">'BWA'</span>, <span class="st">'BRA'</span>, <span class="st">'BGR'</span>, <span class="st">'BFA'</span>, <span class="st">'BDI'</span>, <span class="st">'CPV'</span>, <span class="st">'KHM'</span>, <span class="st">'CMR'</span>, <span class="st">'CAF'</span>, <span class="st">'TCD'</span>,</span>
 <span id="cb5-4"><a href="#cb5-4"></a>  <span class="st">'CHL'</span>, <span class="st">'CHN'</span>, <span class="st">'COL'</span>, <span class="st">'COM'</span>, <span class="st">'COG'</span>, <span class="st">'CRI'</span>, <span class="st">'CIV'</span>, <span class="st">'HRV'</span>, <span class="st">'COD'</span>, <span class="st">'DJI'</span>, <span class="st">'DOM'</span>, <span class="st">'ECU'</span>,</span>
@@ -354,11 +354,11 @@ gtag('config', 'G-6NP3MF25W3', { 'anonymize_ip': true});
 <span id="cb5-14"><a href="#cb5-14"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>Since I never blindly trust genAI, I’m going to sense check this against the country codes from a <a href="https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv">trusted source</a>, and visually inspect all of the instances where the country in ghi2024 doesn’t match the country name.</p>
+<p>Since I never blindly trust genAI, I’m going to sense check this against the country codes from a <a href="https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv">trusted source</a>, and visually inspect all of the instances where the country in ghi_2024 doesn’t match the country name.</p>
 <div class="cell">
 <details class="code-fold"><summary>Check Country Codes</summary><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>countries <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/countries.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb6-2"><a href="#cb6-2"></a></span>
-<span id="cb6-3"><a href="#cb6-3"></a>check <span class="ot">&lt;-</span> <span class="fu">left_join</span>(ghi2024, countries, <span class="at">by =</span> <span class="fu">c</span>(<span class="at">country_code =</span> <span class="st">"alpha-3"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>check <span class="ot">&lt;-</span> <span class="fu">left_join</span>(ghi_2024, countries, <span class="at">by =</span> <span class="fu">c</span>(<span class="at">country_code =</span> <span class="st">"alpha-3"</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">select</span>(country, country_code, name)</span>
 <span id="cb6-5"><a href="#cb6-5"></a></span>
 <span id="cb6-6"><a href="#cb6-6"></a><span class="fu">filter</span>(check, country <span class="sc">!=</span> name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -442,10 +442,10 @@ gtag('config', 'G-6NP3MF25W3', { 'anonymize_ip': true});
 <li><a href="data/02/ghi-2024.csv">ghi-2024.csv</a></li>
 </ul>
 <div class="cell">
-<div id="tbl-ghi2024" class="cell quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure"><figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ghi2024-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.1: The first rows of ghi2024
-</figcaption><div aria-describedby="tbl-ghi2024-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="tbl-ghi_2024" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure"><figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ghi_2024-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: The first rows of ghi_2024
+</figcaption><div aria-describedby="tbl-ghi_2024-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="do-not-create-environment cell caption-top table table-sm table-striped small">
@@ -518,7 +518,7 @@ Table&nbsp;2.1: The first rows of ghi2024
 <span class="header-section-number">2.1.2</span> Long format</h3>
 <p>The original data is in wide format, with one column per year. We can also provide the data in long format. It is almost always better to have data in long format for things like wrangling and plotting.</p>
 <div class="cell">
-<details class="code-fold"><summary>Code to create ghi_long</summary><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>ghi_long <span class="ot">&lt;-</span> ghi2024 <span class="sc">|&gt;</span></span>
+<details class="code-fold"><summary>Code to create ghi_long</summary><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>ghi_long <span class="ot">&lt;-</span> ghi_2024 <span class="sc">|&gt;</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">pivot_longer</span>(<span class="sc">-</span><span class="fu">c</span>(country, country_code), </span>
 <span id="cb7-3"><a href="#cb7-3"></a>               <span class="at">names_to =</span> <span class="st">"year"</span>,</span>
 <span id="cb7-4"><a href="#cb7-4"></a>               <span class="at">names_transform =</span> as.integer,</span>
@@ -526,7 +526,7 @@ Table&nbsp;2.1: The first rows of ghi2024
 </details>
 </div>
 <ul>
-<li><a href="data/02/ghi-long.csv">ghi-long.csv</a></li>
+<li><a href="data/02/ghi_long.csv">ghi_long.csv</a></li>
 </ul>
 <div class="cell">
 <div id="tbl-ghi_long" class="cell quarto-float quarto-figure quarto-figure-center anchored">
@@ -643,7 +643,7 @@ Figure&nbsp;2.1: The distribution of the global hunger index for four years
 </div>
 <p>This data set is in intermediate format (long for years and wide for measures) and is good for teaching about data reshaping and multivariate correlations.</p>
 <ul>
-<li><a href="data/02/ghi-indicators.csv">ghi-indicators.csv</a></li>
+<li><a href="data/02/ghi_indicators.csv">ghi_indicators.csv</a></li>
 </ul>
 <div class="cell">
 <div id="tbl-ghi_indicators" class="cell quarto-float quarto-figure quarto-figure-center anchored">
@@ -1610,7 +1610,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-52"><a href="#cb11-52"></a><span class="in">```{r}</span></span>
 <span id="cb11-53"><a href="#cb11-53"></a><span class="co">#| code-summary: Data Cleaning Code</span></span>
 <span id="cb11-54"><a href="#cb11-54"></a>cn <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"country"</span>, <span class="st">"2000"</span>, <span class="st">"2008"</span>, <span class="st">"2016"</span>, <span class="st">"2024"</span>)</span>
-<span id="cb11-55"><a href="#cb11-55"></a>ghi2024 <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"data/02/ghi-2024.xlsx"</span>, </span>
+<span id="cb11-55"><a href="#cb11-55"></a>ghi_2024 <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"data/02/ghi-2024.xlsx"</span>, </span>
 <span id="cb11-56"><a href="#cb11-56"></a>                             <span class="at">sheet =</span> <span class="dv">3</span>, <span class="at">range =</span> <span class="st">"A4:E139"</span>, </span>
 <span id="cb11-57"><a href="#cb11-57"></a>                             <span class="at">col_names =</span> cn, <span class="at">na =</span> <span class="st">"—"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb11-58"><a href="#cb11-58"></a>  <span class="fu">pivot_longer</span>(<span class="sc">-</span>country) <span class="sc">|&gt;</span></span>
@@ -1625,14 +1625,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-67"><a href="#cb11-67"></a></span>
 <span id="cb11-70"><a href="#cb11-70"></a><span class="in">```{r}</span></span>
 <span id="cb11-71"><a href="#cb11-71"></a><span class="co">#| code-summary: Get Country Names</span></span>
-<span id="cb11-72"><a href="#cb11-72"></a><span class="fu">paste0</span>(<span class="st">"'"</span>, ghi2024<span class="sc">$</span>country, <span class="st">"'"</span>, <span class="at">collapse =</span> <span class="st">", "</span>) <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span>
+<span id="cb11-72"><a href="#cb11-72"></a><span class="fu">paste0</span>(<span class="st">"'"</span>, ghi_2024<span class="sc">$</span>country, <span class="st">"'"</span>, <span class="at">collapse =</span> <span class="st">", "</span>) <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span>
 <span id="cb11-73"><a href="#cb11-73"></a><span class="in">```</span></span>
 <span id="cb11-74"><a href="#cb11-74"></a></span>
 <span id="cb11-75"><a href="#cb11-75"></a>ChatGPT returned the following, which I added as a new column to the data:</span>
 <span id="cb11-76"><a href="#cb11-76"></a></span>
 <span id="cb11-79"><a href="#cb11-79"></a><span class="in">```{r}</span></span>
 <span id="cb11-80"><a href="#cb11-80"></a><span class="co">#| code-summary: Add Country Codes</span></span>
-<span id="cb11-81"><a href="#cb11-81"></a>ghi2024<span class="sc">$</span>country_code <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb11-81"><a href="#cb11-81"></a>ghi_2024<span class="sc">$</span>country_code <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb11-82"><a href="#cb11-82"></a>  <span class="st">'AFG'</span>, <span class="st">'ALB'</span>, <span class="st">'DZA'</span>, <span class="st">'AGO'</span>, <span class="st">'ARG'</span>, <span class="st">'ARM'</span>, <span class="st">'AZE'</span>, <span class="st">'BHR'</span>, <span class="st">'BGD'</span>, <span class="st">'BLR'</span>, <span class="st">'BEN'</span>, <span class="st">'BTN'</span>,</span>
 <span id="cb11-83"><a href="#cb11-83"></a>  <span class="st">'BOL'</span>, <span class="st">'BIH'</span>, <span class="st">'BWA'</span>, <span class="st">'BRA'</span>, <span class="st">'BGR'</span>, <span class="st">'BFA'</span>, <span class="st">'BDI'</span>, <span class="st">'CPV'</span>, <span class="st">'KHM'</span>, <span class="st">'CMR'</span>, <span class="st">'CAF'</span>, <span class="st">'TCD'</span>,</span>
 <span id="cb11-84"><a href="#cb11-84"></a>  <span class="st">'CHL'</span>, <span class="st">'CHN'</span>, <span class="st">'COL'</span>, <span class="st">'COM'</span>, <span class="st">'COG'</span>, <span class="st">'CRI'</span>, <span class="st">'CIV'</span>, <span class="st">'HRV'</span>, <span class="st">'COD'</span>, <span class="st">'DJI'</span>, <span class="st">'DOM'</span>, <span class="st">'ECU'</span>,</span>
@@ -1649,7 +1649,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-95"><a href="#cb11-95"></a><span class="in">```</span></span>
 <span id="cb11-96"><a href="#cb11-96"></a></span>
 <span id="cb11-97"><a href="#cb11-97"></a></span>
-<span id="cb11-98"><a href="#cb11-98"></a>Since I never blindly trust genAI, I'm going to sense check this against the country codes from a <span class="co">[</span><span class="ot">trusted source</span><span class="co">](https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv)</span>, and visually inspect all of the instances where the country in ghi2024 doesn't match the country name. </span>
+<span id="cb11-98"><a href="#cb11-98"></a>Since I never blindly trust genAI, I'm going to sense check this against the country codes from a <span class="co">[</span><span class="ot">trusted source</span><span class="co">](https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv)</span>, and visually inspect all of the instances where the country in ghi_2024 doesn't match the country name. </span>
 <span id="cb11-99"><a href="#cb11-99"></a></span>
 <span id="cb11-102"><a href="#cb11-102"></a><span class="in">```{r}</span></span>
 <span id="cb11-103"><a href="#cb11-103"></a><span class="co">#| echo: false</span></span>
@@ -1663,7 +1663,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-113"><a href="#cb11-113"></a><span class="co">#| code-summary: Check Country Codes</span></span>
 <span id="cb11-114"><a href="#cb11-114"></a>countries <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/countries.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb11-115"><a href="#cb11-115"></a></span>
-<span id="cb11-116"><a href="#cb11-116"></a>check <span class="ot">&lt;-</span> <span class="fu">left_join</span>(ghi2024, countries, <span class="at">by =</span> <span class="fu">c</span>(<span class="at">country_code =</span> <span class="st">"alpha-3"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb11-116"><a href="#cb11-116"></a>check <span class="ot">&lt;-</span> <span class="fu">left_join</span>(ghi_2024, countries, <span class="at">by =</span> <span class="fu">c</span>(<span class="at">country_code =</span> <span class="st">"alpha-3"</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb11-117"><a href="#cb11-117"></a>  <span class="fu">select</span>(country, country_code, name)</span>
 <span id="cb11-118"><a href="#cb11-118"></a></span>
 <span id="cb11-119"><a href="#cb11-119"></a><span class="fu">filter</span>(check, country <span class="sc">!=</span> name)</span>
@@ -1674,7 +1674,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-124"><a href="#cb11-124"></a></span>
 <span id="cb11-127"><a href="#cb11-127"></a><span class="in">```{r}</span></span>
 <span id="cb11-128"><a href="#cb11-128"></a><span class="co">#| echo: false</span></span>
-<span id="cb11-129"><a href="#cb11-129"></a><span class="fu">write_csv</span>(ghi2024, <span class="st">"data/02/ghi-2024.csv"</span>)</span>
+<span id="cb11-129"><a href="#cb11-129"></a><span class="fu">write_csv</span>(ghi_2024, <span class="st">"data/02/ghi_2024.csv"</span>)</span>
 <span id="cb11-130"><a href="#cb11-130"></a><span class="in">```</span></span>
 <span id="cb11-131"><a href="#cb11-131"></a></span>
 <span id="cb11-132"><a href="#cb11-132"></a>This data set is good for practicing data reshaping from wide to long. You can also join it with data from other sets that have 3-letter ISO country codes.</span>
@@ -1683,9 +1683,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-135"><a href="#cb11-135"></a></span>
 <span id="cb11-138"><a href="#cb11-138"></a><span class="in">```{r}</span></span>
 <span id="cb11-139"><a href="#cb11-139"></a><span class="co">#| echo: false</span></span>
-<span id="cb11-140"><a href="#cb11-140"></a><span class="co">#| label: tbl-ghi2024</span></span>
-<span id="cb11-141"><a href="#cb11-141"></a><span class="co">#| tbl-cap: The first rows of ghi2024</span></span>
-<span id="cb11-142"><a href="#cb11-142"></a><span class="fu">head</span>(ghi2024)</span>
+<span id="cb11-140"><a href="#cb11-140"></a><span class="co">#| label: tbl-ghi_2024</span></span>
+<span id="cb11-141"><a href="#cb11-141"></a><span class="co">#| tbl-cap: The first rows of ghi_2024</span></span>
+<span id="cb11-142"><a href="#cb11-142"></a><span class="fu">head</span>(ghi_2024)</span>
 <span id="cb11-143"><a href="#cb11-143"></a><span class="in">```</span></span>
 <span id="cb11-144"><a href="#cb11-144"></a></span>
 <span id="cb11-145"><a href="#cb11-145"></a><span class="fu">### Long format</span></span>
@@ -1694,7 +1694,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-148"><a href="#cb11-148"></a></span>
 <span id="cb11-151"><a href="#cb11-151"></a><span class="in">```{r}</span></span>
 <span id="cb11-152"><a href="#cb11-152"></a><span class="co">#| code-summary: Code to create ghi_long</span></span>
-<span id="cb11-153"><a href="#cb11-153"></a>ghi_long <span class="ot">&lt;-</span> ghi2024 <span class="sc">|&gt;</span></span>
+<span id="cb11-153"><a href="#cb11-153"></a>ghi_long <span class="ot">&lt;-</span> ghi_2024 <span class="sc">|&gt;</span></span>
 <span id="cb11-154"><a href="#cb11-154"></a>  <span class="fu">pivot_longer</span>(<span class="sc">-</span><span class="fu">c</span>(country, country_code), </span>
 <span id="cb11-155"><a href="#cb11-155"></a>               <span class="at">names_to =</span> <span class="st">"year"</span>,</span>
 <span id="cb11-156"><a href="#cb11-156"></a>               <span class="at">names_transform =</span> as.integer,</span>
@@ -1703,10 +1703,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-159"><a href="#cb11-159"></a></span>
 <span id="cb11-162"><a href="#cb11-162"></a><span class="in">```{r}</span></span>
 <span id="cb11-163"><a href="#cb11-163"></a><span class="co">#| echo: false</span></span>
-<span id="cb11-164"><a href="#cb11-164"></a><span class="fu">write_csv</span>(ghi_long, <span class="st">"data/02/ghi-long.csv"</span>)</span>
+<span id="cb11-164"><a href="#cb11-164"></a><span class="fu">write_csv</span>(ghi_long, <span class="st">"data/02/ghi_long.csv"</span>)</span>
 <span id="cb11-165"><a href="#cb11-165"></a><span class="in">```</span></span>
 <span id="cb11-166"><a href="#cb11-166"></a></span>
-<span id="cb11-167"><a href="#cb11-167"></a><span class="ss">* </span><span class="co">[</span><span class="ot">ghi-long.csv</span><span class="co">](data/02/ghi-long.csv)</span></span>
+<span id="cb11-167"><a href="#cb11-167"></a><span class="ss">* </span><span class="co">[</span><span class="ot">ghi_long.csv</span><span class="co">](data/02/ghi_long.csv)</span></span>
 <span id="cb11-168"><a href="#cb11-168"></a></span>
 <span id="cb11-171"><a href="#cb11-171"></a><span class="in">```{r}</span></span>
 <span id="cb11-172"><a href="#cb11-172"></a><span class="co">#| echo: false</span></span>
@@ -1768,12 +1768,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb11-232"><a href="#cb11-232"></a></span>
 <span id="cb11-235"><a href="#cb11-235"></a><span class="in">```{r}</span></span>
 <span id="cb11-236"><a href="#cb11-236"></a><span class="co">#| echo: false</span></span>
-<span id="cb11-237"><a href="#cb11-237"></a><span class="fu">write_csv</span>(ghi_indicators, <span class="st">"data/02/ghi-indicators.csv"</span>)</span>
+<span id="cb11-237"><a href="#cb11-237"></a><span class="fu">write_csv</span>(ghi_indicators, <span class="st">"data/02/ghi_indicators.csv"</span>)</span>
 <span id="cb11-238"><a href="#cb11-238"></a><span class="in">```</span></span>
 <span id="cb11-239"><a href="#cb11-239"></a></span>
 <span id="cb11-240"><a href="#cb11-240"></a>This data set is in intermediate format (long for years and wide for measures) and is good for teaching about data reshaping and multivariate correlations.</span>
 <span id="cb11-241"><a href="#cb11-241"></a></span>
-<span id="cb11-242"><a href="#cb11-242"></a><span class="ss">* </span><span class="co">[</span><span class="ot">ghi-indicators.csv</span><span class="co">](data/02/ghi-indicators.csv)</span></span>
+<span id="cb11-242"><a href="#cb11-242"></a><span class="ss">* </span><span class="co">[</span><span class="ot">ghi_indicators.csv</span><span class="co">](data/02/ghi_indicators.csv)</span></span>
 <span id="cb11-243"><a href="#cb11-243"></a></span>
 <span id="cb11-246"><a href="#cb11-246"></a><span class="in">```{r}</span></span>
 <span id="cb11-247"><a href="#cb11-247"></a><span class="co">#| echo: false</span></span>

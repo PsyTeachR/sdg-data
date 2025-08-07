@@ -278,6 +278,22 @@ gtag('config', 'G-6NP3MF25W3', { 'anonymize_ip': true});
 </header>
 <section id="overview" class="level1 unnumbered"><h1 class="unnumbered">Overview</h1><p><img src="images/icons/E_SDG_logo_square.png" title="SDG Data" class="quarto-cover-image img-fluid"></p>
 <p>This book provides resources and datasets related to the United Nations <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a>. All original data sources are cited and linked, but these datasets are curated at varying levels of complexity for teaching purposes. The code for creating the dataset from the original data sources is included in code blocks in each chapter.</p>
+<ul>
+<li><a href="https://unstats.un.org/sdgs/dataportal">SDG Data Portal</a></li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This book is under development and only a few chapters have been started.</p>
+</div>
+</div>
 <div>
 
 </div>
@@ -1160,19 +1176,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-2"><a href="#cb1-2"></a></span>
 <span id="cb1-3"><a href="#cb1-3"></a>This book provides resources and datasets related to the United Nations <span class="co">[</span><span class="ot">Sustainable Development Goals</span><span class="co">](https://sdgs.un.org/goals)</span>. All original data sources are cited and linked, but these datasets are curated at varying levels of complexity for teaching purposes. The code for creating the dataset from the original data sources is included in code blocks in each chapter.</span>
 <span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a>::: {layout-ncol=4}</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="ss">* </span><span class="co">[</span><span class="ot">SDG Data Portal</span><span class="co">](https://unstats.un.org/sdgs/dataportal)</span></span>
 <span id="cb1-6"><a href="#cb1-6"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="in">```{r}</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co">#| results: asis</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>::: {.callout-warning}</span>
+<span id="cb1-8"><a href="#cb1-8"></a>This book is under development and only a few chapters have been started.</span>
+<span id="cb1-9"><a href="#cb1-9"></a>:::</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>::: {layout-ncol=4}</span>
 <span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a>chapters <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="st">"."</span>, <span class="st">"</span><span class="sc">\\</span><span class="st">d{2}-.*</span><span class="sc">\\</span><span class="st">.qmd"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14"></a>icons <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"</span><span class="sc">\n\n</span><span class="st">[![](images/icons/E-WEB-Goal-%02d.png)](%s)"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>, chapters)</span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a><span class="fu">cat</span>(icons)</span>
-<span id="cb1-17"><a href="#cb1-17"></a><span class="in">```</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="in">```{r}</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="co">#| results: asis</span></span>
 <span id="cb1-18"><a href="#cb1-18"></a></span>
-<span id="cb1-19"><a href="#cb1-19"></a>:::</span>
+<span id="cb1-19"><a href="#cb1-19"></a>chapters <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="st">"."</span>, <span class="st">"</span><span class="sc">\\</span><span class="st">d{2}-.*</span><span class="sc">\\</span><span class="st">.qmd"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20"></a>icons <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"</span><span class="sc">\n\n</span><span class="st">[![](images/icons/E-WEB-Goal-%02d.png)](%s)"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>, chapters)</span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="fu">cat</span>(icons)</span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="in">```</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a>:::</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

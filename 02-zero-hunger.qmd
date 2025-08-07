@@ -48,7 +48,7 @@ Here, we choose to use the value of 5 for all cells with "<5", but you might cho
 ```{r}
 #| code-summary: Data Cleaning Code
 cn <- c("country", "2000", "2008", "2016", "2024")
-ghi2024 <- readxl::read_xlsx("data/02/ghi-2024.xlsx", 
+ghi_2024 <- readxl::read_xlsx("data/02/ghi-2024.xlsx", 
                              sheet = 3, range = "A4:E139", 
                              col_names = cn, na = "—") |>
   pivot_longer(-country) |>
@@ -63,14 +63,14 @@ One thing generative AI is pretty good at is helping with tedious rote tasks. We
 
 ```{r}
 #| code-summary: Get Country Names
-paste0("'", ghi2024$country, "'", collapse = ", ") |> cat()
+paste0("'", ghi_2024$country, "'", collapse = ", ") |> cat()
 ```
 
 ChatGPT returned the following, which I added as a new column to the data:
 
 ```{r}
 #| code-summary: Add Country Codes
-ghi2024$country_code <- c(
+ghi_2024$country_code <- c(
   'AFG', 'ALB', 'DZA', 'AGO', 'ARG', 'ARM', 'AZE', 'BHR', 'BGD', 'BLR', 'BEN', 'BTN',
   'BOL', 'BIH', 'BWA', 'BRA', 'BGR', 'BFA', 'BDI', 'CPV', 'KHM', 'CMR', 'CAF', 'TCD',
   'CHL', 'CHN', 'COL', 'COM', 'COG', 'CRI', 'CIV', 'HRV', 'COD', 'DJI', 'DOM', 'ECU',
@@ -87,7 +87,7 @@ ghi2024$country_code <- c(
 ```
 
 
-Since I never blindly trust genAI, I'm going to sense check this against the country codes from a [trusted source](https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv), and visually inspect all of the instances where the country in ghi2024 doesn't match the country name. 
+Since I never blindly trust genAI, I'm going to sense check this against the country codes from a [trusted source](https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv), and visually inspect all of the instances where the country in ghi_2024 doesn't match the country name. 
 
 ```{r}
 #| echo: false
@@ -101,7 +101,7 @@ download.file(url, "data/countries.csv")
 #| code-summary: Check Country Codes
 countries <- read_csv("data/countries.csv", show_col_types = FALSE)
 
-check <- left_join(ghi2024, countries, by = c(country_code = "alpha-3")) |>
+check <- left_join(ghi_2024, countries, by = c(country_code = "alpha-3")) |>
   select(country, country_code, name)
 
 filter(check, country != name)
@@ -112,7 +112,7 @@ You can see that they're all just alternative ways of writing the country name.
 
 ```{r}
 #| echo: false
-write_csv(ghi2024, "data/02/ghi-2024.csv")
+write_csv(ghi_2024, "data/02/ghi_2024.csv")
 ```
 
 This data set is good for practicing data reshaping from wide to long. You can also join it with data from other sets that have 3-letter ISO country codes.
@@ -121,9 +121,9 @@ This data set is good for practicing data reshaping from wide to long. You can a
 
 ```{r}
 #| echo: false
-#| label: tbl-ghi2024
-#| tbl-cap: The first rows of ghi2024
-head(ghi2024)
+#| label: tbl-ghi_2024
+#| tbl-cap: The first rows of ghi_2024
+head(ghi_2024)
 ```
 
 ### Long format
@@ -132,7 +132,7 @@ The original data is in wide format, with one column per year. We can also provi
 
 ```{r}
 #| code-summary: Code to create ghi_long
-ghi_long <- ghi2024 |>
+ghi_long <- ghi_2024 |>
   pivot_longer(-c(country, country_code), 
                names_to = "year",
                names_transform = as.integer,
@@ -141,10 +141,10 @@ ghi_long <- ghi2024 |>
 
 ```{r}
 #| echo: false
-write_csv(ghi_long, "data/02/ghi-long.csv")
+write_csv(ghi_long, "data/02/ghi_long.csv")
 ```
 
-* [ghi-long.csv](data/02/ghi-long.csv)
+* [ghi_long.csv](data/02/ghi_long.csv)
 
 ```{r}
 #| echo: false
@@ -206,12 +206,12 @@ ghi_indicators <- readxl::read_xlsx(
 
 ```{r}
 #| echo: false
-write_csv(ghi_indicators, "data/02/ghi-indicators.csv")
+write_csv(ghi_indicators, "data/02/ghi_indicators.csv")
 ```
 
 This data set is in intermediate format (long for years and wide for measures) and is good for teaching about data reshaping and multivariate correlations.
 
-* [ghi-indicators.csv](data/02/ghi-indicators.csv)
+* [ghi_indicators.csv](data/02/ghi_indicators.csv)
 
 ```{r}
 #| echo: false
