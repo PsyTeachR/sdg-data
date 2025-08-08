@@ -1,0 +1,1463 @@
+year,iso_code,country,chamber,status,percentage_of_women,date_from,date_to,notes,structure,chamber_type
+1945,AF,Afghanistan,House of Elders,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,AG,Antigua and Barbuda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,AR,Argentina,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,AU,Australia,Senate,NA,2.8,1945-01-01,1945-12-31,NA,Bicameral,Upper chamber
+1945,AT,Austria,Federal Council,NA,0,1945-01-01,1948-12-31,NA,Bicameral,Upper chamber
+1945,BS,Bahamas,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BB,Barbados,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BE,Belgium,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BZ,Belize,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,BR,Brazil,Federal Senate,NA,0,1945-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1945,BI,Burundi,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,KH,Cambodia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,CA,Canada,Senate,NA,2.5,1945-01-01,1945-12-31,NA,Bicameral,Upper chamber
+1945,TD,Chad,Senate,NA,NA,NA,NA,NA,NA,Upper chamber
+1945,CL,Chile,Senate,NA,0,1945-01-01,1952-12-31,NA,Bicameral,Upper chamber
+1945,CO,Colombia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,CD,Democratic Republic of the Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,DO,Dominican Republic,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1945,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,SZ,Eswatini,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,ET,Ethiopia,House of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,FR,France,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,GD,Grenada,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,HT,Haiti,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,IN,India,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,IE,Ireland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,IT,Italy,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,JM,Jamaica,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,JP,Japan,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,JO,Jordan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,LS,Lesotho,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,MG,Madagascar,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,MY,Malaysia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1945,MX,Mexico,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,NP,Nepal,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,NL,Netherlands,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,PK,Pakistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,PY,Paraguay,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,PH,Philippines,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,LC,Saint Lucia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,ZA,South Africa,National Council of Provinces,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,ES,Spain,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,CH,Switzerland,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1945,TG,Togo,Senate,NA,NA,NA,NA,NA,NA,Upper chamber
+1945,TT,Trinidad and Tobago,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1945,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1945,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,US,United States of America,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,UY,Uruguay,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1945,ZW,Zimbabwe,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,AF,Afghanistan,House of Elders,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,AG,Antigua and Barbuda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,AR,Argentina,Senate,NA,0,1946-02-01,1951-10-31,NA,Bicameral,Upper chamber
+1950,AU,Australia,Senate,NA,6.7,1949-01-01,1954-12-31,NA,Bicameral,Upper chamber
+1950,AT,Austria,Federal Council,NA,2.1,1949-01-01,1952-12-31,NA,Bicameral,Upper chamber
+1950,BS,Bahamas,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,BB,Barbados,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,BE,Belgium,Senate,NA,4,1949-01-01,1953-12-31,NA,Bicameral,Upper chamber
+1950,BZ,Belize,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,BR,Brazil,Federal Senate,NA,0,1945-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1950,BI,Burundi,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,KH,Cambodia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,CA,Canada,Senate,NA,2.3,1950-01-01,1950-12-31,NA,Bicameral,Upper chamber
+1950,TD,Chad,Senate,NA,NA,NA,NA,NA,NA,Upper chamber
+1950,CL,Chile,Senate,NA,0,1945-01-01,1952-12-31,NA,Bicameral,Upper chamber
+1950,CO,Colombia,Senate,NA,0,1947-01-01,1950-12-31,NA,Bicameral,Upper chamber
+1950,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,CD,Democratic Republic of the Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,DO,Dominican Republic,Senate,NA,0,1950-01-01,1953-12-31,NA,Bicameral,Upper chamber
+1950,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1950,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,SZ,Eswatini,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,ET,Ethiopia,House of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,FR,France,Senate,NA,3.8,1948-01-01,1950-12-31,NA,Bicameral,Upper chamber
+1950,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,GD,Grenada,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,HT,Haiti,Senate,NA,0,1946-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1950,IN,India,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,IE,Ireland,Senate,NA,5,1948-04-01,1957-04-30,NA,Bicameral,Upper chamber
+1950,IT,Italy,Senate,NA,1.2,1948-01-01,1952-12-31,NA,Bicameral,Upper chamber
+1950,JM,Jamaica,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,JP,Japan,House of Councillors,NA,4.8,1950-01-01,1952-12-31,NA,Bicameral,Upper chamber
+1950,JO,Jordan,Senate,NA,0,1950-01-01,1966-12-31,NA,Bicameral,Upper chamber
+1950,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,LS,Lesotho,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,MG,Madagascar,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,MY,Malaysia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1950,MX,Mexico,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,NP,Nepal,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,NL,Netherlands,Senate,NA,2,1948-01-01,1954-12-31,NA,Bicameral,Upper chamber
+1950,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,PK,Pakistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,PY,Paraguay,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,PH,Philippines,Senate,NA,0,1949-01-01,1954-12-31,NA,Bicameral,Upper chamber
+1950,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,LC,Saint Lucia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,ZA,South Africa,National Council of Provinces,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,ES,Spain,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,CH,Switzerland,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1950,TG,Togo,Senate,NA,NA,NA,NA,NA,NA,Upper chamber
+1950,TT,Trinidad and Tobago,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1950,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1950,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,US,United States of America,Senate,NA,1,1948-11-01,1954-10-31,NA,Bicameral,Upper chamber
+1950,UY,Uruguay,Senate,NA,0,1946-11-01,1989-10-31,NA,Bicameral,Upper chamber
+1950,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1950,ZW,Zimbabwe,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,AF,Afghanistan,House of Elders,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,AG,Antigua and Barbuda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,AR,Argentina,Senate,NA,20,1951-11-01,1958-01-31,NA,Bicameral,Upper chamber
+1955,AU,Australia,Senate,NA,8.3,1955-01-01,1963-12-31,NA,Bicameral,Upper chamber
+1955,AT,Austria,Federal Council,NA,2.2,1953-01-01,1955-12-31,NA,Bicameral,Upper chamber
+1955,BS,Bahamas,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,BB,Barbados,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,BE,Belgium,Senate,NA,3.4,1954-01-01,1960-12-31,NA,Bicameral,Upper chamber
+1955,BZ,Belize,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,0,1951-01-01,1959-12-31,NA,Bicameral,Upper chamber
+1955,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,BR,Brazil,Federal Senate,NA,0,1945-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1955,BI,Burundi,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,KH,Cambodia,Senate,NA,0,1955-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1955,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,CA,Canada,Senate,NA,6.6,1955-01-01,1955-12-31,NA,Bicameral,Upper chamber
+1955,TD,Chad,Senate,NA,NA,NA,NA,NA,NA,Upper chamber
+1955,CL,Chile,Senate,NA,2.2,1953-01-01,1956-12-31,NA,Bicameral,Upper chamber
+1955,CO,Colombia,Senate,NA,0,1951-01-01,1957-12-31,NA,Bicameral,Upper chamber
+1955,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,CD,Democratic Republic of the Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,DO,Dominican Republic,Senate,NA,13,1954-01-01,1957-12-31,NA,Bicameral,Upper chamber
+1955,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1955,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,SZ,Eswatini,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,ET,Ethiopia,House of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,FR,France,Senate,NA,2.8,1951-01-01,1957-12-31,NA,Bicameral,Upper chamber
+1955,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,GD,Grenada,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,HT,Haiti,Senate,NA,0,1946-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1955,IN,India,Council of States,NA,7.8,1954-01-01,1955-12-31,NA,Bicameral,Upper chamber
+1955,IE,Ireland,Senate,NA,5,1948-04-01,1957-04-30,NA,Bicameral,Upper chamber
+1955,IT,Italy,Senate,NA,0.4,1953-01-01,1957-12-31,NA,Bicameral,Upper chamber
+1955,JM,Jamaica,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,JP,Japan,House of Councillors,NA,6,1953-01-01,1958-12-31,NA,Bicameral,Upper chamber
+1955,JO,Jordan,Senate,NA,0,1950-01-01,1966-12-31,NA,Bicameral,Upper chamber
+1955,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,LS,Lesotho,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,MG,Madagascar,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,MY,Malaysia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1955,MX,Mexico,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,NP,Nepal,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,NL,Netherlands,Senate,NA,4,1955-01-01,1956-05-31,NA,Bicameral,Upper chamber
+1955,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,PK,Pakistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,PY,Paraguay,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,PH,Philippines,Senate,NA,12.5,1955-01-01,1956-12-31,NA,Bicameral,Upper chamber
+1955,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,LC,Saint Lucia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,ZA,South Africa,National Council of Provinces,NA,1.1,1955-11-01,1960-10-31,NA,Bicameral,Upper chamber
+1955,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,ES,Spain,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,CH,Switzerland,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1955,TG,Togo,Senate,NA,NA,NA,NA,NA,NA,Upper chamber
+1955,TT,Trinidad and Tobago,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1955,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1955,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,US,United States of America,Senate,NA,3,1954-11-01,1956-10-31,NA,Bicameral,Upper chamber
+1955,UY,Uruguay,Senate,NA,0,1946-11-01,1989-10-31,NA,Bicameral,Upper chamber
+1955,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1955,ZW,Zimbabwe,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,AF,Afghanistan,House of Elders,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,AG,Antigua and Barbuda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,AR,Argentina,Senate,NA,0,1958-02-01,1963-06-30,NA,Bicameral,Upper chamber
+1960,AU,Australia,Senate,NA,8.3,1955-01-01,1963-12-31,NA,Bicameral,Upper chamber
+1960,AT,Austria,Federal Council,NA,12.5,1956-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1960,BS,Bahamas,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,BB,Barbados,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,BE,Belgium,Senate,NA,3.4,1954-01-01,1960-12-31,NA,Bicameral,Upper chamber
+1960,BZ,Belize,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,0,1960-01-01,1978-12-31,NA,Bicameral,Upper chamber
+1960,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,BR,Brazil,Federal Senate,NA,0,1945-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1960,BI,Burundi,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,KH,Cambodia,Senate,NA,0,1955-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1960,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,CA,Canada,Senate,NA,6.9,1960-01-01,1960-12-31,NA,Bicameral,Upper chamber
+1960,TD,Chad,Senate,NA,NA,NA,NA,NA,NA,Upper chamber
+1960,CL,Chile,Senate,NA,0,1957-01-01,1964-12-31,NA,Bicameral,Upper chamber
+1960,CO,Colombia,Senate,NA,0,1960-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1960,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,CD,Democratic Republic of the Congo,Senate,NA,0,1960-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1960,DO,Dominican Republic,Senate,NA,8.3,1958-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1960,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1960,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,SZ,Eswatini,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,ET,Ethiopia,House of the Federation,NA,0,1957-10-01,1973-06-30,NA,Bicameral,Upper chamber
+1960,FR,France,Senate,NA,1.6,1959-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1960,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,GD,Grenada,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,HT,Haiti,Senate,NA,0,1946-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1960,IN,India,Council of States,NA,10.2,1960-01-01,1961-12-31,NA,Bicameral,Upper chamber
+1960,IE,Ireland,Senate,NA,6.7,1957-05-01,1961-11-30,NA,Bicameral,Upper chamber
+1960,IT,Italy,Senate,NA,1.2,1958-01-01,1962-12-31,NA,Bicameral,Upper chamber
+1960,JM,Jamaica,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,JP,Japan,House of Councillors,NA,6,1960-01-01,1960-12-31,NA,Bicameral,Upper chamber
+1960,JO,Jordan,Senate,NA,0,1950-01-01,1966-12-31,NA,Bicameral,Upper chamber
+1960,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,LS,Lesotho,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,MG,Madagascar,Senate,NA,0,1960-06-01,1965-07-31,NA,Bicameral,Upper chamber
+1960,MY,Malaysia,Senate,NA,0,1960-01-01,1964-12-31,NA,Bicameral,Upper chamber
+1960,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1960,MX,Mexico,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,NP,Nepal,National Assembly,NA,2.8,1959-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1960,NL,Netherlands,Senate,NA,5.3,1957-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1960,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,PK,Pakistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,PY,Paraguay,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,PH,Philippines,Senate,NA,0,1957-01-01,1960-12-31,NA,Bicameral,Upper chamber
+1960,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,LC,Saint Lucia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,ZA,South Africa,National Council of Provinces,NA,3.7,1960-11-01,1965-10-31,NA,Bicameral,Upper chamber
+1960,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,ES,Spain,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,CH,Switzerland,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1960,TG,Togo,Senate,NA,NA,NA,NA,NA,NA,Upper chamber
+1960,TT,Trinidad and Tobago,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1960,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1960,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,US,United States of America,Senate,NA,2,1960-11-01,1968-10-31,NA,Bicameral,Upper chamber
+1960,UY,Uruguay,Senate,NA,0,1946-11-01,1989-10-31,NA,Bicameral,Upper chamber
+1960,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1960,ZW,Zimbabwe,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,AF,Afghanistan,House of Elders,NA,0,1965-07-01,1987-12-31,NA,Bicameral,Upper chamber
+1965,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,AG,Antigua and Barbuda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,AR,Argentina,Senate,NA,0,1963-07-01,1973-03-31,NA,Bicameral,Upper chamber
+1965,AU,Australia,Senate,NA,6.7,1964-01-01,1966-12-31,NA,Bicameral,Upper chamber
+1965,AT,Austria,Federal Council,NA,13.7,1962-01-01,1965-12-31,NA,Bicameral,Upper chamber
+1965,BS,Bahamas,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,BB,Barbados,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,BE,Belgium,Senate,NA,1.1,1965-01-01,1967-12-31,NA,Bicameral,Upper chamber
+1965,BZ,Belize,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,0,1960-01-01,1978-12-31,NA,Bicameral,Upper chamber
+1965,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,BR,Brazil,Federal Senate,NA,0,1962-01-01,1977-12-31,NA,Bicameral,Upper chamber
+1965,BI,Burundi,Senate,NA,0,1965-01-01,2005-06-30,NA,Bicameral,Upper chamber
+1965,KH,Cambodia,Senate,NA,0,1955-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1965,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,CA,Canada,Senate,NA,5.2,1965-01-01,1965-12-31,NA,Bicameral,Upper chamber
+1965,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1965,CL,Chile,Senate,NA,4.4,1965-01-01,1968-12-31,NA,Bicameral,Upper chamber
+1965,CO,Colombia,Senate,NA,0,1964-01-01,1965-12-31,NA,Bicameral,Upper chamber
+1965,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,CD,Democratic Republic of the Congo,Senate,NA,0,1960-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1965,DO,Dominican Republic,Senate,NA,3.7,1962-01-01,1969-12-31,NA,Bicameral,Upper chamber
+1965,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1965,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,SZ,Eswatini,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,ET,Ethiopia,House of the Federation,NA,0,1957-10-01,1973-06-30,NA,Bicameral,Upper chamber
+1965,FR,France,Senate,NA,1.8,1962-01-01,1967-12-31,NA,Bicameral,Upper chamber
+1965,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,GD,Grenada,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,HT,Haiti,Senate,NA,0,1946-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1965,IN,India,Council of States,NA,8.8,1964-01-01,1965-12-31,NA,Bicameral,Upper chamber
+1965,IE,Ireland,Senate,NA,6.7,1965-06-01,1969-07-31,NA,Bicameral,Upper chamber
+1965,IT,Italy,Senate,NA,1.9,1963-01-01,1967-12-31,NA,Bicameral,Upper chamber
+1965,JM,Jamaica,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,JP,Japan,House of Councillors,NA,6.8,1965-01-01,1967-12-31,NA,Bicameral,Upper chamber
+1965,JO,Jordan,Senate,NA,0,1950-01-01,1966-12-31,NA,Bicameral,Upper chamber
+1965,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,LS,Lesotho,Senate,NA,9.1,1965-01-01,1993-02-28,NA,Bicameral,Upper chamber
+1965,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,MG,Madagascar,Senate,NA,2,1965-08-01,1970-08-31,NA,Bicameral,Upper chamber
+1965,MY,Malaysia,Senate,NA,3.4,1965-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1965,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1965,MX,Mexico,Senate,NA,3.3,1964-07-01,1975-12-31,NA,Bicameral,Upper chamber
+1965,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,NP,Nepal,National Assembly,NA,2.8,1959-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1965,NL,Netherlands,Senate,NA,5.3,1957-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1965,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,PK,Pakistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,PY,Paraguay,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,PH,Philippines,Senate,NA,12.5,1961-01-01,1966-12-31,NA,Bicameral,Upper chamber
+1965,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,LC,Saint Lucia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,ZA,South Africa,National Council of Provinces,NA,3.6,1965-11-01,1970-10-31,NA,Bicameral,Upper chamber
+1965,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,ES,Spain,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,CH,Switzerland,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1965,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1965,TT,Trinidad and Tobago,Senate,NA,20.8,1962-01-01,1965-12-31,NA,Bicameral,Upper chamber
+1965,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1965,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1965,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,US,United States of America,Senate,NA,2,1960-11-01,1968-10-31,NA,Bicameral,Upper chamber
+1965,UY,Uruguay,Senate,NA,0,1946-11-01,1989-10-31,NA,Bicameral,Upper chamber
+1965,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1965,ZW,Zimbabwe,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,AF,Afghanistan,House of Elders,NA,0,1965-07-01,1987-12-31,NA,Bicameral,Upper chamber
+1970,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,AG,Antigua and Barbuda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,AR,Argentina,Senate,NA,0,1963-07-01,1973-03-31,NA,Bicameral,Upper chamber
+1970,AU,Australia,Senate,NA,3.3,1970-01-01,1973-12-31,NA,Bicameral,Upper chamber
+1970,AT,Austria,Federal Council,NA,16.7,1970-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,BS,Bahamas,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,BB,Barbados,Senate,NA,9.5,1966-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,BE,Belgium,Senate,NA,0,1968-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,BZ,Belize,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,0,1960-01-01,1978-12-31,NA,Bicameral,Upper chamber
+1970,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,BR,Brazil,Federal Senate,NA,0,1962-01-01,1977-12-31,NA,Bicameral,Upper chamber
+1970,BI,Burundi,Senate,NA,0,1965-01-01,2005-06-30,NA,Bicameral,Upper chamber
+1970,KH,Cambodia,Senate,NA,0,1955-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1970,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,CA,Canada,Senate,NA,6.6,1970-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1970,CL,Chile,Senate,NA,4,1969-01-01,1989-12-31,NA,Bicameral,Upper chamber
+1970,CO,Colombia,Senate,NA,2.5,1970-01-01,1973-12-31,NA,Bicameral,Upper chamber
+1970,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,CD,Democratic Republic of the Congo,Senate,NA,0,1960-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1970,DO,Dominican Republic,Senate,NA,14.8,1970-01-01,1973-12-31,NA,Bicameral,Upper chamber
+1970,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1970,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,SZ,Eswatini,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,ET,Ethiopia,House of the Federation,NA,0,1957-10-01,1973-06-30,NA,Bicameral,Upper chamber
+1970,FR,France,Senate,NA,1.8,1968-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,GD,Grenada,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,HT,Haiti,Senate,NA,0,1946-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1970,IN,India,Council of States,NA,5.8,1970-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1970,IE,Ireland,Senate,NA,8.3,1969-08-01,1973-01-31,NA,Bicameral,Upper chamber
+1970,IT,Italy,Senate,NA,3.4,1968-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1970,JM,Jamaica,Senate,NA,9.5,1967-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1970,JP,Japan,House of Councillors,NA,5.2,1970-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,JO,Jordan,Senate,NA,0,1967-01-01,1988-12-31,NA,Bicameral,Upper chamber
+1970,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,LS,Lesotho,Senate,NA,9.1,1965-01-01,1993-02-28,NA,Bicameral,Upper chamber
+1970,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,MG,Madagascar,Senate,NA,7.8,1970-09-01,2001-02-28,NA,Bicameral,Upper chamber
+1970,MY,Malaysia,Senate,NA,3.4,1965-01-01,1971-12-31,NA,Bicameral,Upper chamber
+1970,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1970,MX,Mexico,Senate,NA,3.3,1964-07-01,1975-12-31,NA,Bicameral,Upper chamber
+1970,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,NP,Nepal,National Assembly,NA,2.8,1959-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1970,NL,Netherlands,Senate,NA,5.3,1957-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,PK,Pakistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,PY,Paraguay,Senate,NA,3.3,1968-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1970,PH,Philippines,Senate,NA,0,1969-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,LC,Saint Lucia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,ZA,South Africa,National Council of Provinces,NA,1.8,1970-11-01,1974-04-30,NA,Bicameral,Upper chamber
+1970,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,ES,Spain,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,CH,Switzerland,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1970,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1970,TT,Trinidad and Tobago,Senate,NA,16.7,1966-01-01,1970-12-31,NA,Bicameral,Upper chamber
+1970,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1970,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1970,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,US,United States of America,Senate,NA,1,1968-11-01,1972-10-31,NA,Bicameral,Upper chamber
+1970,UY,Uruguay,Senate,NA,0,1946-11-01,1989-10-31,NA,Bicameral,Upper chamber
+1970,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1970,ZW,Zimbabwe,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,AF,Afghanistan,House of Elders,NA,0,1965-07-01,1987-12-31,NA,Bicameral,Upper chamber
+1975,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,AG,Antigua and Barbuda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,AR,Argentina,Senate,NA,4.3,1973-04-01,1983-09-30,NA,Bicameral,Upper chamber
+1975,AU,Australia,Senate,NA,9.4,1975-01-01,1979-12-31,NA,Bicameral,Upper chamber
+1975,AT,Austria,Federal Council,NA,20,1975-01-01,1978-12-31,NA,Bicameral,Upper chamber
+1975,BS,Bahamas,Senate,NA,0,1973-01-01,1976-12-31,NA,Bicameral,Upper chamber
+1975,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,BB,Barbados,Senate,NA,14.3,1971-01-01,1980-12-31,NA,Bicameral,Upper chamber
+1975,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,BE,Belgium,Senate,NA,6.6,1975-01-01,1977-12-31,NA,Bicameral,Upper chamber
+1975,BZ,Belize,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,0,1960-01-01,1978-12-31,NA,Bicameral,Upper chamber
+1975,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,BR,Brazil,Federal Senate,NA,0,1962-01-01,1977-12-31,NA,Bicameral,Upper chamber
+1975,BI,Burundi,Senate,NA,0,1965-01-01,2005-06-30,NA,Bicameral,Upper chamber
+1975,KH,Cambodia,Senate,NA,0,1972-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1975,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,CA,Canada,Senate,NA,6.6,1975-01-01,1975-12-31,NA,Bicameral,Upper chamber
+1975,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1975,CL,Chile,Senate,NA,4,1969-01-01,1989-12-31,NA,Bicameral,Upper chamber
+1975,CO,Colombia,Senate,NA,0.9,1974-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1975,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,CD,Democratic Republic of the Congo,Senate,NA,0,1960-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1975,DO,Dominican Republic,Senate,NA,11.1,1974-01-01,1977-12-31,NA,Bicameral,Upper chamber
+1975,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1975,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,SZ,Eswatini,Senate,NA,5,1972-04-01,1983-09-30,NA,Bicameral,Upper chamber
+1975,ET,Ethiopia,House of the Federation,NA,0,1973-07-01,1995-05-31,NA,Bicameral,Upper chamber
+1975,FR,France,Senate,NA,2.5,1974-01-01,1976-12-31,NA,Bicameral,Upper chamber
+1975,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,GD,Grenada,Senate,NA,7.7,1972-01-01,1989-12-31,NA,Bicameral,Upper chamber
+1975,HT,Haiti,Senate,NA,0,1946-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1975,IN,India,Council of States,NA,7,1974-01-01,1975-12-31,NA,Bicameral,Upper chamber
+1975,IE,Ireland,Senate,NA,6.7,1973-02-01,1977-07-31,NA,Bicameral,Upper chamber
+1975,IT,Italy,Senate,NA,1.9,1972-01-01,1975-12-31,NA,Bicameral,Upper chamber
+1975,JM,Jamaica,Senate,NA,14.3,1972-01-01,1979-12-31,NA,Bicameral,Upper chamber
+1975,JP,Japan,House of Councillors,NA,7.1,1974-01-01,1976-12-31,NA,Bicameral,Upper chamber
+1975,JO,Jordan,Senate,NA,0,1967-01-01,1988-12-31,NA,Bicameral,Upper chamber
+1975,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,LS,Lesotho,Senate,NA,9.1,1965-01-01,1993-02-28,NA,Bicameral,Upper chamber
+1975,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,MG,Madagascar,Senate,NA,7.8,1970-09-01,2001-02-28,NA,Bicameral,Upper chamber
+1975,MY,Malaysia,Senate,NA,3.7,1972-01-01,1975-12-31,NA,Bicameral,Upper chamber
+1975,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1975,MX,Mexico,Senate,NA,3.3,1964-07-01,1975-12-31,NA,Bicameral,Upper chamber
+1975,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,NP,Nepal,National Assembly,NA,2.8,1959-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1975,NL,Netherlands,Senate,NA,4,1971-01-01,1976-12-31,NA,Bicameral,Upper chamber
+1975,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,PK,Pakistan,Senate,NA,2.2,1973-01-01,1976-12-31,NA,Bicameral,Upper chamber
+1975,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,PY,Paraguay,Senate,NA,3.3,1968-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1975,PH,Philippines,Senate,NA,12.5,1971-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1975,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,LC,Saint Lucia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,ZA,South Africa,National Council of Provinces,NA,3.6,1974-05-01,1994-03-31,NA,Bicameral,Upper chamber
+1975,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,ES,Spain,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,CH,Switzerland,Council of States,NA,0,1975-01-01,1978-12-31,NA,Bicameral,Upper chamber
+1975,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1975,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1975,TT,Trinidad and Tobago,Senate,NA,12.5,1971-01-01,1975-12-31,NA,Bicameral,Upper chamber
+1975,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1975,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1975,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,US,United States of America,Senate,NA,0,1974-11-01,1978-10-31,NA,Bicameral,Upper chamber
+1975,UY,Uruguay,Senate,NA,0,1946-11-01,1989-10-31,NA,Bicameral,Upper chamber
+1975,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1975,ZW,Zimbabwe,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,AF,Afghanistan,House of Elders,NA,0,1965-07-01,1987-12-31,NA,Bicameral,Upper chamber
+1980,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,AG,Antigua and Barbuda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,AR,Argentina,Senate,NA,4.3,1973-04-01,1983-09-30,NA,Bicameral,Upper chamber
+1980,AU,Australia,Senate,NA,14.1,1980-01-01,1982-12-31,NA,Bicameral,Upper chamber
+1980,AT,Austria,Federal Council,NA,16.4,1979-01-01,1982-12-31,NA,Bicameral,Upper chamber
+1980,BS,Bahamas,Senate,NA,18.8,1977-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1980,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,BB,Barbados,Senate,NA,14.3,1971-01-01,1980-12-31,NA,Bicameral,Upper chamber
+1980,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,BE,Belgium,Senate,NA,10.5,1979-01-01,1980-12-31,NA,Bicameral,Upper chamber
+1980,BZ,Belize,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,7.4,1980-01-01,1988-12-31,NA,Bicameral,Upper chamber
+1980,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,BR,Brazil,Federal Senate,NA,1.5,1978-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1980,BI,Burundi,Senate,NA,0,1965-01-01,2005-06-30,NA,Bicameral,Upper chamber
+1980,KH,Cambodia,Senate,NA,0,1972-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1980,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,CA,Canada,Senate,NA,10.3,1980-01-01,1980-12-31,NA,Bicameral,Upper chamber
+1980,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1980,CL,Chile,Senate,NA,4,1969-01-01,1989-12-31,NA,Bicameral,Upper chamber
+1980,CO,Colombia,Senate,NA,0.9,1974-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1980,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,CD,Democratic Republic of the Congo,Senate,NA,0,1960-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1980,DO,Dominican Republic,Senate,NA,7.4,1978-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1980,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1980,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,SZ,Eswatini,Senate,NA,5,1972-04-01,1983-09-30,NA,Bicameral,Upper chamber
+1980,ET,Ethiopia,House of the Federation,NA,0,1973-07-01,1995-05-31,NA,Bicameral,Upper chamber
+1980,FR,France,Senate,NA,2.3,1980-01-01,1982-12-31,NA,Bicameral,Upper chamber
+1980,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,GD,Grenada,Senate,NA,7.7,1972-01-01,1989-12-31,NA,Bicameral,Upper chamber
+1980,HT,Haiti,Senate,NA,0,1946-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1980,IN,India,Council of States,NA,11.9,1980-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1980,IE,Ireland,Senate,NA,10,1977-08-01,1981-07-31,NA,Bicameral,Upper chamber
+1980,IT,Italy,Senate,NA,3.1,1979-01-01,1982-12-31,NA,Bicameral,Upper chamber
+1980,JM,Jamaica,Senate,NA,19,1980-01-01,1982-12-31,NA,Bicameral,Upper chamber
+1980,JP,Japan,House of Councillors,NA,6.8,1980-01-01,1982-12-31,NA,Bicameral,Upper chamber
+1980,JO,Jordan,Senate,NA,0,1967-01-01,1988-12-31,NA,Bicameral,Upper chamber
+1980,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,LS,Lesotho,Senate,NA,9.1,1965-01-01,1993-02-28,NA,Bicameral,Upper chamber
+1980,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,MG,Madagascar,Senate,NA,7.8,1970-09-01,2001-02-28,NA,Bicameral,Upper chamber
+1980,MY,Malaysia,Senate,NA,10.4,1980-01-01,1983-12-31,NA,Bicameral,Upper chamber
+1980,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1980,MX,Mexico,Senate,NA,6.3,1976-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1980,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,NP,Nepal,National Assembly,NA,2.8,1959-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1980,NL,Netherlands,Senate,NA,16,1980-01-01,1980-12-31,NA,Bicameral,Upper chamber
+1980,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,PK,Pakistan,Senate,NA,4.8,1977-01-01,1984-12-31,NA,Bicameral,Upper chamber
+1980,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,PY,Paraguay,Senate,NA,3.3,1968-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1980,PH,Philippines,Senate,NA,12.5,1971-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1980,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,LC,Saint Lucia,Senate,NA,18.2,1979-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1980,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,ZA,South Africa,National Council of Provinces,NA,3.6,1974-05-01,1994-03-31,NA,Bicameral,Upper chamber
+1980,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,ES,Spain,Senate,NA,2,1979-01-01,1981-12-31,NA,Bicameral,Upper chamber
+1980,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,CH,Switzerland,Council of States,NA,6.5,1979-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1980,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1980,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1980,TT,Trinidad and Tobago,Senate,NA,16.1,1976-01-01,1980-12-31,NA,Bicameral,Upper chamber
+1980,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1980,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1980,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,US,United States of America,Senate,NA,2,1978-11-01,1986-10-31,NA,Bicameral,Upper chamber
+1980,UY,Uruguay,Senate,NA,0,1946-11-01,1989-10-31,NA,Bicameral,Upper chamber
+1980,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1980,ZW,Zimbabwe,Senate,NA,7.5,1980-01-01,1984-12-31,NA,Bicameral,Upper chamber
+1985,AF,Afghanistan,House of Elders,NA,0,1965-07-01,1987-12-31,NA,Bicameral,Upper chamber
+1985,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,AG,Antigua and Barbuda,Senate,NA,11.8,1984-04-01,1989-02-28,NA,Bicameral,Upper chamber
+1985,AR,Argentina,Senate,NA,6.5,1983-10-01,1989-11-30,NA,Bicameral,Upper chamber
+1985,AU,Australia,Senate,NA,18.4,1984-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1985,AT,Austria,Federal Council,NA,16.4,1983-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,BS,Bahamas,Senate,NA,25,1982-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1985,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,BB,Barbados,Senate,NA,19,1981-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1985,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,BE,Belgium,Senate,NA,12,1985-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1985,BZ,Belize,Senate,NA,30,1984-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1985,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,7.4,1980-01-01,1988-12-31,NA,Bicameral,Upper chamber
+1985,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,BR,Brazil,Federal Senate,NA,0,1982-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,BI,Burundi,Senate,NA,0,1965-01-01,2005-06-30,NA,Bicameral,Upper chamber
+1985,KH,Cambodia,Senate,NA,0,1972-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1985,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,CA,Canada,Senate,NA,11.8,1985-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1985,CL,Chile,Senate,NA,4,1969-01-01,1989-12-31,NA,Bicameral,Upper chamber
+1985,CO,Colombia,Senate,NA,2.6,1982-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,CD,Democratic Republic of the Congo,Senate,NA,0,1960-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1985,DO,Dominican Republic,Senate,NA,3.7,1982-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1985,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,SZ,Eswatini,Senate,NA,15,1983-10-01,1993-08-31,NA,Bicameral,Upper chamber
+1985,ET,Ethiopia,House of the Federation,NA,0,1973-07-01,1995-05-31,NA,Bicameral,Upper chamber
+1985,FR,France,Senate,NA,2.8,1983-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,DE,Germany,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,GD,Grenada,Senate,NA,7.7,1972-01-01,1989-12-31,NA,Bicameral,Upper chamber
+1985,HT,Haiti,Senate,NA,0,1946-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1985,IN,India,Council of States,NA,11.5,1984-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,IE,Ireland,Senate,NA,10,1983-01-01,1987-03-31,NA,Bicameral,Upper chamber
+1985,IT,Italy,Senate,NA,5.2,1983-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1985,JM,Jamaica,Senate,NA,14.3,1983-01-01,1988-12-31,NA,Bicameral,Upper chamber
+1985,JP,Japan,House of Councillors,NA,7.2,1983-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,JO,Jordan,Senate,NA,0,1967-01-01,1988-12-31,NA,Bicameral,Upper chamber
+1985,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,LS,Lesotho,Senate,NA,9.1,1965-01-01,1993-02-28,NA,Bicameral,Upper chamber
+1985,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,MG,Madagascar,Senate,NA,7.8,1970-09-01,2001-02-28,NA,Bicameral,Upper chamber
+1985,MY,Malaysia,Senate,NA,13.2,1984-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1985,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1985,MX,Mexico,Senate,NA,15.6,1982-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1985,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,NP,Nepal,National Assembly,NA,2.8,1959-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1985,NL,Netherlands,Senate,NA,21.3,1983-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,PK,Pakistan,Senate,NA,0,1985-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1985,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,PY,Paraguay,Senate,NA,3.3,1968-01-01,1987-12-31,NA,Bicameral,Upper chamber
+1985,PH,Philippines,Senate,NA,12.5,1971-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1985,PL,Poland,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,RO,Romania,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,RU,Russian Federation,Council of the Federation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,LC,Saint Lucia,Senate,NA,27.3,1982-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1985,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,ZA,South Africa,National Council of Provinces,NA,3.6,1974-05-01,1994-03-31,NA,Bicameral,Upper chamber
+1985,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,ES,Spain,Senate,NA,4.3,1982-01-01,1985-12-31,NA,Bicameral,Upper chamber
+1985,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,CH,Switzerland,Council of States,NA,6.5,1979-01-01,1986-12-31,NA,Bicameral,Upper chamber
+1985,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1985,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1985,TT,Trinidad and Tobago,Senate,NA,12.9,1981-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1985,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1985,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1985,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,US,United States of America,Senate,NA,2,1978-11-01,1986-10-31,NA,Bicameral,Upper chamber
+1985,UY,Uruguay,Senate,NA,0,1946-11-01,1989-10-31,NA,Bicameral,Upper chamber
+1985,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1985,ZW,Zimbabwe,Senate,NA,10,1985-01-01,2005-10-31,NA,Bicameral,Upper chamber
+1990,AF,Afghanistan,House of Elders,NA,0,1988-01-01,2005-08-31,NA,Bicameral,Upper chamber
+1990,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,AG,Antigua and Barbuda,Senate,NA,5.9,1989-03-01,1992-02-29,NA,Bicameral,Upper chamber
+1990,AR,Argentina,Senate,NA,8.7,1989-12-01,1991-12-31,NA,Bicameral,Upper chamber
+1990,AU,Australia,Senate,NA,23.7,1990-01-01,1992-12-31,NA,Bicameral,Upper chamber
+1990,AT,Austria,Federal Council,NA,21.7,1990-01-01,1993-12-31,NA,Bicameral,Upper chamber
+1990,BS,Bahamas,Senate,NA,18.8,1987-01-01,1997-10-31,NA,Bicameral,Upper chamber
+1990,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,BB,Barbados,Senate,NA,19,1981-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,BE,Belgium,Senate,NA,8.2,1987-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,BZ,Belize,Senate,NA,30,1984-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1990,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,3.7,1989-01-01,2001-12-31,NA,Bicameral,Upper chamber
+1990,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,BR,Brazil,Federal Senate,NA,2.5,1990-01-01,1993-12-31,NA,Bicameral,Upper chamber
+1990,BI,Burundi,Senate,NA,0,1965-01-01,2005-06-30,NA,Bicameral,Upper chamber
+1990,KH,Cambodia,Senate,NA,0,1972-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1990,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,CA,Canada,Senate,NA,15.3,1990-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1990,CL,Chile,Senate,NA,6.4,1990-01-01,1992-12-31,NA,Bicameral,Upper chamber
+1990,CO,Colombia,Senate,NA,0.9,1990-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,CG,Congo,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,CD,Democratic Republic of the Congo,Senate,NA,0,1960-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1990,DO,Dominican Republic,Senate,NA,0,1990-01-01,1993-12-31,NA,Bicameral,Upper chamber
+1990,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1990,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,SZ,Eswatini,Senate,NA,15,1983-10-01,1993-08-31,NA,Bicameral,Upper chamber
+1990,ET,Ethiopia,House of the Federation,NA,0,1973-07-01,1995-05-31,NA,Bicameral,Upper chamber
+1990,FR,France,Senate,NA,3.1,1989-01-01,1991-12-31,NA,Bicameral,Upper chamber
+1990,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,DE,Germany,Federal Council,NA,14.7,1990-01-01,1993-12-31,NA,Bicameral,Upper chamber
+1990,GD,Grenada,Senate,NA,15.4,1990-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1990,HT,Haiti,Senate,NA,0,1990-01-01,2000-04-30,NA,Bicameral,Upper chamber
+1990,IN,India,Council of States,NA,9.8,1990-01-01,1991-12-31,NA,Bicameral,Upper chamber
+1990,IE,Ireland,Senate,NA,10,1989-08-01,1993-01-31,NA,Bicameral,Upper chamber
+1990,IT,Italy,Senate,NA,6.8,1987-01-01,1991-12-31,NA,Bicameral,Upper chamber
+1990,JM,Jamaica,Senate,NA,19,1989-01-01,1992-12-31,NA,Bicameral,Upper chamber
+1990,JP,Japan,House of Councillors,NA,8.8,1990-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,JO,Jordan,Senate,NA,2.5,1989-01-01,1992-12-31,NA,Bicameral,Upper chamber
+1990,KZ,Kazakhstan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,LS,Lesotho,Senate,NA,9.1,1965-01-01,1993-02-28,NA,Bicameral,Upper chamber
+1990,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,MG,Madagascar,Senate,NA,7.8,1970-09-01,2001-02-28,NA,Bicameral,Upper chamber
+1990,MY,Malaysia,Senate,NA,18,1988-01-01,1991-12-31,NA,Bicameral,Upper chamber
+1990,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1990,MX,Mexico,Senate,NA,15.6,1982-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,NP,Nepal,National Assembly,NA,2.8,1959-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,NL,Netherlands,Senate,NA,21.3,1989-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,NG,Nigeria,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,PK,Pakistan,Senate,NA,0,1985-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,PW,Palau,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,PY,Paraguay,Senate,NA,5.6,1988-01-01,1992-12-31,NA,Bicameral,Upper chamber
+1990,PH,Philippines,Senate,NA,8.3,1987-01-01,1991-12-31,NA,Bicameral,Upper chamber
+1990,PL,Poland,Senate,NA,7,1989-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,RO,Romania,Senate,NA,0.8,1990-01-01,1991-12-31,NA,Bicameral,Upper chamber
+1990,RU,Russian Federation,Council of the Federation,NA,8.7,1990-03-01,1992-12-31,NA,Bicameral,Upper chamber
+1990,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,LC,Saint Lucia,Senate,NA,18.2,1987-01-01,1991-12-31,NA,Bicameral,Upper chamber
+1990,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,ZA,South Africa,National Council of Provinces,NA,3.6,1974-05-01,1994-03-31,NA,Bicameral,Upper chamber
+1990,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,ES,Spain,Senate,NA,10.6,1989-01-01,1992-12-31,NA,Bicameral,Upper chamber
+1990,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,CH,Switzerland,Council of States,NA,10.9,1987-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1990,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1990,TT,Trinidad and Tobago,Senate,NA,12.9,1981-01-01,1990-12-31,NA,Bicameral,Upper chamber
+1990,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1990,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1990,GB,United Kingdom,House of Lords,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,US,United States of America,Senate,NA,2,1988-11-01,1992-10-31,NA,Bicameral,Upper chamber
+1990,UY,Uruguay,Senate,NA,0,1989-11-01,1994-10-31,NA,Bicameral,Upper chamber
+1990,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1990,ZW,Zimbabwe,Senate,NA,10,1985-01-01,2005-10-31,NA,Bicameral,Upper chamber
+1995,AF,Afghanistan,House of Elders,NA,0,1988-01-01,2005-08-31,NA,Bicameral,Upper chamber
+1995,DZ,Algeria,Council of the Nation,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,AG,Antigua and Barbuda,Senate,NA,17.6,1994-03-01,1998-12-31,NA,Bicameral,Upper chamber
+1995,AR,Argentina,Senate,NA,2.8,1995-05-01,1997-10-31,NA,Bicameral,Upper chamber
+1995,AU,Australia,Senate,NA,21.1,1993-01-01,1995-12-31,NA,Bicameral,Upper chamber
+1995,AT,Austria,Federal Council,NA,22.2,1994-01-01,1995-12-31,NA,Bicameral,Upper chamber
+1995,BS,Bahamas,Senate,NA,18.8,1987-01-01,1997-10-31,NA,Bicameral,Upper chamber
+1995,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,BB,Barbados,Senate,NA,28.6,1991-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1995,BY,Belarus,Council of the Republic,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,BE,Belgium,Senate,NA,22.5,1995-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1995,BZ,Belize,Senate,NA,30,1984-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,3.7,1989-01-01,2001-12-31,NA,Bicameral,Upper chamber
+1995,BA,Bosnia and Herzegovina,House of Peoples,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,BR,Brazil,Federal Senate,NA,7.4,1994-01-01,2002-09-30,NA,Bicameral,Upper chamber
+1995,BI,Burundi,Senate,NA,0,1965-01-01,2005-06-30,NA,Bicameral,Upper chamber
+1995,KH,Cambodia,Senate,NA,0,1972-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1995,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,CA,Canada,Senate,NA,18.3,1994-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1995,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1995,CL,Chile,Senate,NA,6.5,1993-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,CO,Colombia,Senate,NA,6.9,1994-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,CG,Congo,Senate,NA,1.7,1993-08-01,2002-04-30,NA,Bicameral,Upper chamber
+1995,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,CZ,Czechia,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,CD,Democratic Republic of the Congo,Senate,NA,0,1960-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1995,DO,Dominican Republic,Senate,NA,3.3,1994-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1995,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,SZ,Eswatini,Senate,NA,20,1993-09-01,1998-09-30,NA,Bicameral,Upper chamber
+1995,ET,Ethiopia,House of the Federation,NA,6.5,1995-06-01,2000-04-30,NA,Bicameral,Upper chamber
+1995,FR,France,Senate,NA,5.6,1995-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,GA,Gabon,Transitional Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,DE,Germany,Federal Council,NA,19.1,1994-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1995,GD,Grenada,Senate,NA,15.4,1990-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1995,HT,Haiti,Senate,NA,0,1990-01-01,2000-04-30,NA,Bicameral,Upper chamber
+1995,IN,India,Council of States,NA,8.2,1994-01-01,1995-12-31,NA,Bicameral,Upper chamber
+1995,IE,Ireland,Senate,NA,13.3,1993-02-01,1997-07-31,NA,Bicameral,Upper chamber
+1995,IT,Italy,Senate,NA,8.9,1994-01-01,1995-12-31,NA,Bicameral,Upper chamber
+1995,JM,Jamaica,Senate,NA,14.3,1993-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,JP,Japan,House of Councillors,NA,13.9,1995-01-01,1995-12-31,NA,Bicameral,Upper chamber
+1995,JO,Jordan,Senate,NA,5,1993-01-01,1997-10-31,NA,Bicameral,Upper chamber
+1995,KZ,Kazakhstan,Senate,NA,10,1995-12-01,1996-12-31,NA,Bicameral,Upper chamber
+1995,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,LS,Lesotho,Senate,NA,24.2,1993-03-01,1998-04-30,NA,Bicameral,Upper chamber
+1995,LR,Liberia,The Liberian Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,MG,Madagascar,Senate,NA,7.8,1970-09-01,2001-02-28,NA,Bicameral,Upper chamber
+1995,MY,Malaysia,Senate,NA,23.1,1995-06-01,1996-12-31,NA,Bicameral,Upper chamber
+1995,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1995,MX,Mexico,Senate,NA,12.5,1994-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,MA,Morocco,House of Councillors,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,NA,Namibia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,NP,Nepal,National Assembly,NA,5,1991-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1995,NL,Netherlands,Senate,NA,22.7,1995-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,NG,Nigeria,Senate,NA,1.1,1992-07-01,1999-05-31,NA,Bicameral,Upper chamber
+1995,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,PK,Pakistan,Senate,NA,1.1,1991-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1995,PW,Palau,Senate,NA,0,1992-01-01,1995-12-31,NA,Bicameral,Upper chamber
+1995,PY,Paraguay,Senate,NA,11.1,1993-01-01,1998-03-31,NA,Bicameral,Upper chamber
+1995,PH,Philippines,Senate,NA,16.7,1992-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,PL,Poland,Senate,NA,13,1993-01-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,RO,Romania,Senate,NA,2.1,1992-01-01,1995-12-31,NA,Bicameral,Upper chamber
+1995,RU,Russian Federation,Council of the Federation,NA,5.1,1993-01-01,1997-11-30,NA,Bicameral,Upper chamber
+1995,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,LC,Saint Lucia,Senate,NA,36.4,1992-01-01,1997-10-31,NA,Bicameral,Upper chamber
+1995,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,ZA,South Africa,National Council of Provinces,NA,17.8,1994-04-01,1997-12-31,NA,Bicameral,Upper chamber
+1995,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,ES,Spain,Senate,NA,12.6,1993-01-01,1995-12-31,NA,Bicameral,Upper chamber
+1995,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,CH,Switzerland,Council of States,NA,17.4,1995-01-01,1998-12-31,NA,Bicameral,Upper chamber
+1995,TJ,Tajikistan,National Assembly,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1995,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+1995,TT,Trinidad and Tobago,Senate,NA,29,1995-12-01,2000-12-31,NA,Bicameral,Upper chamber
+1995,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+1995,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+1995,GB,United Kingdom,House of Lords,NA,6.8,1995-01-01,1996-12-31,NA,Bicameral,Upper chamber
+1995,US,United States of America,Senate,NA,8,1994-11-01,1996-10-31,NA,Bicameral,Upper chamber
+1995,UY,Uruguay,Senate,NA,6.7,1994-11-01,1998-12-31,NA,Bicameral,Upper chamber
+1995,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+1995,ZW,Zimbabwe,Senate,NA,10,1985-01-01,2005-10-31,NA,Bicameral,Upper chamber
+2000,AF,Afghanistan,House of Elders,NA,0,1988-01-01,2005-08-31,NA,Bicameral,Upper chamber
+2000,DZ,Algeria,Council of the Nation,NA,5.6,1998-05-01,2003-11-30,NA,Bicameral,Upper chamber
+2000,AG,Antigua and Barbuda,Senate,NA,11.8,1999-01-01,2004-02-29,NA,Bicameral,Upper chamber
+2000,AR,Argentina,Senate,NA,2.8,1998-01-01,2001-09-30,NA,Bicameral,Upper chamber
+2000,AU,Australia,Senate,NA,28.9,1998-01-01,2001-10-31,NA,Bicameral,Upper chamber
+2000,AT,Austria,Federal Council,NA,14.3,1999-10-01,2002-11-30,NA,Bicameral,Upper chamber
+2000,BS,Bahamas,Senate,NA,43.8,1998-01-01,2007-04-30,NA,Bicameral,Upper chamber
+2000,BH,Bahrain,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,BB,Barbados,Senate,NA,33.3,1999-01-01,2003-04-30,NA,Bicameral,Upper chamber
+2000,BY,Belarus,Council of the Republic,NA,30.6,2000-12-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,BE,Belgium,Senate,NA,28.2,1999-07-01,2003-04-30,NA,Bicameral,Upper chamber
+2000,BZ,Belize,Senate,NA,37.5,1998-01-01,2003-02-28,NA,Bicameral,Upper chamber
+2000,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,3.7,1989-01-01,2001-12-31,NA,Bicameral,Upper chamber
+2000,BA,Bosnia and Herzegovina,House of Peoples,NA,0,1998-09-01,2005-12-31,NA,Bicameral,Upper chamber
+2000,BR,Brazil,Federal Senate,NA,7.4,1994-01-01,2002-09-30,NA,Bicameral,Upper chamber
+2000,BI,Burundi,Senate,NA,0,1965-01-01,2005-06-30,NA,Bicameral,Upper chamber
+2000,KH,Cambodia,Senate,NA,13.1,1999-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2000,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,CA,Canada,Senate,NA,32.4,2000-01-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2000,CL,Chile,Senate,NA,4.1,1998-01-01,2005-11-30,NA,Bicameral,Upper chamber
+2000,CO,Colombia,Senate,NA,12.7,1998-01-01,2002-02-28,NA,Bicameral,Upper chamber
+2000,CG,Congo,Senate,NA,1.7,1993-08-01,2002-04-30,NA,Bicameral,Upper chamber
+2000,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,CZ,Czechia,Senate,NA,12.3,2000-11-01,2006-10-31,NA,Bicameral,Upper chamber
+2000,CD,Democratic Republic of the Congo,Senate,NA,3.3,1997-01-01,2003-07-31,NA,Bicameral,Upper chamber
+2000,DO,Dominican Republic,Senate,NA,6.7,1998-01-01,2002-04-30,NA,Bicameral,Upper chamber
+2000,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2000,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,SZ,Eswatini,Senate,NA,13.3,1998-10-01,2003-09-30,NA,Bicameral,Upper chamber
+2000,ET,Ethiopia,House of the Federation,NA,7.1,2000-05-01,2005-04-30,NA,Bicameral,Upper chamber
+2000,FR,France,Senate,NA,5.9,1998-01-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,GA,Gabon,Transitional Senate,NA,13.2,2000-01-01,2001-12-31,NA,Bicameral,Upper chamber
+2000,DE,Germany,Federal Council,NA,18.8,1997-01-01,2008-12-31,NA,Bicameral,Upper chamber
+2000,GD,Grenada,Senate,NA,7.7,1999-01-01,2003-10-31,NA,Bicameral,Upper chamber
+2000,HT,Haiti,Senate,NA,25.9,2000-05-01,2006-03-31,NA,Bicameral,Upper chamber
+2000,IN,India,Council of States,NA,9,2000-01-01,2001-12-31,NA,Bicameral,Upper chamber
+2000,IE,Ireland,Senate,NA,18.3,2000-01-01,2002-06-30,NA,Bicameral,Upper chamber
+2000,IT,Italy,Senate,NA,8,1996-01-01,2001-04-30,NA,Bicameral,Upper chamber
+2000,JM,Jamaica,Senate,NA,14.3,1999-01-01,2002-09-30,NA,Bicameral,Upper chamber
+2000,JP,Japan,House of Councillors,NA,17.1,1998-01-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,JO,Jordan,Senate,NA,7.5,1997-11-01,2003-10-31,NA,Bicameral,Upper chamber
+2000,KZ,Kazakhstan,Senate,NA,12.8,1999-09-01,2002-09-30,NA,Bicameral,Upper chamber
+2000,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,LS,Lesotho,Senate,NA,27.3,1998-05-01,2002-04-30,NA,Bicameral,Upper chamber
+2000,LR,Liberia,The Liberian Senate,NA,19.2,1997-07-01,2005-09-30,NA,Bicameral,Upper chamber
+2000,MG,Madagascar,Senate,NA,7.8,1970-09-01,2001-02-28,NA,Bicameral,Upper chamber
+2000,MY,Malaysia,Senate,NA,17.4,1997-01-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2000,MX,Mexico,Senate,NA,15.6,2000-07-01,2004-12-31,NA,Bicameral,Upper chamber
+2000,MA,Morocco,House of Councillors,NA,0.4,2000-09-01,2003-09-30,NA,Bicameral,Upper chamber
+2000,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,NA,Namibia,National Council,NA,7.7,1998-01-01,2004-10-31,NA,Bicameral,Upper chamber
+2000,NP,Nepal,National Assembly,NA,15,2000-01-01,2001-05-31,NA,Bicameral,Upper chamber
+2000,NL,Netherlands,Senate,NA,28,1999-05-01,2003-05-31,NA,Bicameral,Upper chamber
+2000,NG,Nigeria,Senate,NA,2.8,2000-03-01,2003-03-31,NA,Bicameral,Upper chamber
+2000,OM,Oman,State Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,PK,Pakistan,Senate,NA,1.1,1998-01-01,2003-01-31,NA,Bicameral,Upper chamber
+2000,PW,Palau,Senate,NA,0,2000-01-01,2008-10-31,NA,Bicameral,Upper chamber
+2000,PY,Paraguay,Senate,NA,12.2,2000-01-01,2003-03-31,NA,Bicameral,Upper chamber
+2000,PH,Philippines,Senate,NA,17.4,1998-01-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,PL,Poland,Senate,NA,11,2000-01-01,2001-08-31,NA,Bicameral,Upper chamber
+2000,RO,Romania,Senate,NA,7.9,2000-11-01,2004-10-31,NA,Bicameral,Upper chamber
+2000,RU,Russian Federation,Council of the Federation,NA,5.1,1998-01-01,2003-11-30,NA,Bicameral,Upper chamber
+2000,RW,Rwanda,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,LC,Saint Lucia,Senate,NA,18.2,1997-11-01,2001-11-30,NA,Bicameral,Upper chamber
+2000,SI,Slovenia,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,ZA,South Africa,National Council of Provinces,NA,31.5,1999-06-01,2004-01-31,NA,Bicameral,Upper chamber
+2000,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,ES,Spain,Senate,NA,22.8,2000-03-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,SD,Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,CH,Switzerland,Council of States,NA,19.6,1999-01-01,2003-09-30,NA,Bicameral,Upper chamber
+2000,TJ,Tajikistan,National Assembly,NA,11.8,2000-02-01,2005-02-28,NA,Bicameral,Upper chamber
+2000,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2000,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2000,TT,Trinidad and Tobago,Senate,NA,29,1995-12-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+2000,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+2000,GB,United Kingdom,House of Lords,NA,15.6,2000-03-01,2000-12-31,NA,Bicameral,Upper chamber
+2000,US,United States of America,Senate,NA,13,2000-11-01,2004-10-31,NA,Bicameral,Upper chamber
+2000,UY,Uruguay,Senate,NA,9.7,1999-01-01,2006-12-31,NA,Bicameral,Upper chamber
+2000,UZ,Uzbekistan,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,YE,Yemen,Shura Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2000,ZW,Zimbabwe,Senate,NA,10,1985-01-01,2005-10-31,NA,Bicameral,Upper chamber
+2005,AF,Afghanistan,House of Elders,NA,22.5,2005-09-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,DZ,Algeria,Council of the Nation,NA,19.4,2005-01-01,2006-11-30,NA,Bicameral,Upper chamber
+2005,AG,Antigua and Barbuda,Senate,NA,17.6,2004-03-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,AR,Argentina,Senate,NA,41.7,2005-10-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,AU,Australia,Senate,NA,35.5,2004-10-01,2010-07-31,NA,Bicameral,Upper chamber
+2005,AT,Austria,Federal Council,NA,25.8,2005-01-01,2006-09-30,NA,Bicameral,Upper chamber
+2005,BS,Bahamas,Senate,NA,43.8,1998-01-01,2007-04-30,NA,Bicameral,Upper chamber
+2005,BH,Bahrain,Shura Council,NA,15,2002-10-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,BB,Barbados,Senate,NA,23.8,2003-05-01,2008-01-31,NA,Bicameral,Upper chamber
+2005,BY,Belarus,Council of the Republic,NA,31,2005-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,BE,Belgium,Senate,NA,31,2005-01-01,2007-05-31,NA,Bicameral,Upper chamber
+2005,BZ,Belize,Senate,NA,23.1,2005-01-01,2008-01-31,NA,Bicameral,Upper chamber
+2005,BT,Bhutan,National Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2005,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,3.7,2005-12-01,2009-11-30,NA,Bicameral,Upper chamber
+2005,BA,Bosnia and Herzegovina,House of Peoples,NA,0,1998-09-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,BR,Brazil,Federal Senate,NA,12.3,2002-10-01,2006-09-30,NA,Bicameral,Upper chamber
+2005,BI,Burundi,Senate,NA,34.7,2005-07-01,2008-12-31,NA,Bicameral,Upper chamber
+2005,KH,Cambodia,Senate,NA,13.1,1999-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2005,CA,Canada,Senate,NA,35.5,2005-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2005,CL,Chile,Senate,NA,4.2,2005-12-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,CO,Colombia,Senate,NA,8.8,2002-03-01,2006-02-28,NA,Bicameral,Upper chamber
+2005,CG,Congo,Senate,NA,13.3,2005-10-01,2008-07-31,NA,Bicameral,Upper chamber
+2005,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2005,CZ,Czechia,Senate,NA,12.3,2000-11-01,2006-10-31,NA,Bicameral,Upper chamber
+2005,CD,Democratic Republic of the Congo,Senate,NA,2.5,2003-08-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,DO,Dominican Republic,Senate,NA,3.1,2002-05-01,2008-12-31,NA,Bicameral,Upper chamber
+2005,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2005,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2005,SZ,Eswatini,Senate,NA,30,2003-10-01,2008-09-30,NA,Bicameral,Upper chamber
+2005,ET,Ethiopia,House of the Federation,NA,18.8,2005-05-01,2010-04-30,NA,Bicameral,Upper chamber
+2005,FR,France,Senate,NA,16.9,2004-09-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,GA,Gabon,Transitional Senate,NA,13.2,2004-01-01,2008-12-31,NA,Bicameral,Upper chamber
+2005,DE,Germany,Federal Council,NA,18.8,1997-01-01,2008-12-31,NA,Bicameral,Upper chamber
+2005,GD,Grenada,Senate,NA,30.8,2003-11-01,2013-02-28,NA,Bicameral,Upper chamber
+2005,HT,Haiti,Senate,NA,25.9,2000-05-01,2006-03-31,NA,Bicameral,Upper chamber
+2005,IN,India,Council of States,NA,11.4,2005-01-01,2006-06-30,NA,Bicameral,Upper chamber
+2005,IE,Ireland,Senate,NA,16.7,2002-07-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,IT,Italy,Senate,NA,7.7,2002-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,JM,Jamaica,Senate,NA,19,2002-10-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,JP,Japan,House of Councillors,NA,14,2005-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,JO,Jordan,Senate,NA,10.9,2005-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,KZ,Kazakhstan,Senate,NA,5.1,2005-08-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2005,LS,Lesotho,Senate,NA,36.4,2002-05-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,LR,Liberia,The Liberian Senate,NA,16.7,2005-10-01,2011-09-30,NA,Bicameral,Upper chamber
+2005,MG,Madagascar,Senate,NA,11.1,2003-01-01,2008-03-31,NA,Bicameral,Upper chamber
+2005,MY,Malaysia,Senate,NA,25.7,2004-03-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2005,MX,Mexico,Senate,NA,21.9,2005-01-01,2006-06-30,NA,Bicameral,Upper chamber
+2005,MA,Morocco,House of Councillors,NA,1.1,2003-10-01,2009-09-30,NA,Bicameral,Upper chamber
+2005,MM,Myanmar,House of Nationalities,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2005,NA,Namibia,National Council,NA,26.9,2004-11-01,2014-11-30,NA,Bicameral,Upper chamber
+2005,NP,Nepal,National Assembly,NA,8.3,2001-06-01,2017-05-31,NA,Bicameral,Upper chamber
+2005,NL,Netherlands,Senate,NA,32,2005-01-01,2007-04-30,NA,Bicameral,Upper chamber
+2005,NG,Nigeria,Senate,NA,3.7,2005-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,OM,Oman,State Council,NA,15.5,2003-10-01,2007-10-31,NA,Bicameral,Upper chamber
+2005,PK,Pakistan,Senate,NA,18,2003-03-01,2006-02-28,NA,Bicameral,Upper chamber
+2005,PW,Palau,Senate,NA,0,2000-01-01,2008-10-31,NA,Bicameral,Upper chamber
+2005,PY,Paraguay,Senate,NA,9.8,2004-01-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,PH,Philippines,Senate,NA,17.4,2004-01-01,2007-05-31,NA,Bicameral,Upper chamber
+2005,PL,Poland,Senate,NA,13,2005-10-01,2007-09-30,NA,Bicameral,Upper chamber
+2005,RO,Romania,Senate,NA,9.5,2004-12-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,RU,Russian Federation,Council of the Federation,NA,5.6,2003-12-01,2007-11-30,NA,Bicameral,Upper chamber
+2005,RW,Rwanda,Senate,NA,23.1,2005-01-01,2011-08-31,NA,Bicameral,Upper chamber
+2005,LC,Saint Lucia,Senate,NA,36.4,2001-12-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,SI,Slovenia,National Council,NA,7.5,2002-12-01,2007-10-31,NA,Bicameral,Upper chamber
+2005,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2005,ZA,South Africa,National Council of Provinces,NA,20,2005-01-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2005,ES,Spain,Senate,NA,25.5,2005-01-01,2008-02-29,NA,Bicameral,Upper chamber
+2005,SD,Sudan,Council of States,NA,4,2005-08-01,2010-04-30,NA,Bicameral,Upper chamber
+2005,CH,Switzerland,Council of States,NA,23.9,2003-10-01,2007-09-30,NA,Bicameral,Upper chamber
+2005,TJ,Tajikistan,National Assembly,NA,23.5,2005-03-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2005,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2005,TT,Trinidad and Tobago,Senate,NA,32.3,2001-01-01,2007-11-30,NA,Bicameral,Upper chamber
+2005,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+2005,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+2005,GB,United Kingdom,House of Lords,NA,17.5,2005-01-01,2005-12-31,NA,Bicameral,Upper chamber
+2005,US,United States of America,Senate,NA,14,2004-11-01,2006-10-31,NA,Bicameral,Upper chamber
+2005,UY,Uruguay,Senate,NA,9.7,1999-01-01,2006-12-31,NA,Bicameral,Upper chamber
+2005,UZ,Uzbekistan,Senate,NA,15,2005-01-01,2014-11-30,NA,Bicameral,Upper chamber
+2005,YE,Yemen,Shura Council,NA,1.8,2001-04-01,2018-11-30,NA,Bicameral,Upper chamber
+2005,ZW,Zimbabwe,Senate,NA,31.8,2005-11-01,2005-12-31,NA,Bicameral,Upper chamber
+2010,AF,Afghanistan,House of Elders,NA,27.5,2010-02-01,2014-12-31,NA,Bicameral,Upper chamber
+2010,DZ,Algeria,Council of the Nation,NA,5.1,2009-12-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,AG,Antigua and Barbuda,Senate,NA,29.4,2009-04-01,2014-05-31,NA,Bicameral,Upper chamber
+2010,AR,Argentina,Senate,NA,35.2,2009-12-01,2011-09-30,NA,Bicameral,Upper chamber
+2010,AU,Australia,Senate,NA,38.2,2010-08-01,2013-08-31,NA,Bicameral,Upper chamber
+2010,AT,Austria,Federal Council,NA,29,2010-01-01,2014-11-30,NA,Bicameral,Upper chamber
+2010,BS,Bahamas,Senate,NA,60,2010-01-01,2012-04-30,NA,Bicameral,Upper chamber
+2010,BH,Bahrain,Shura Council,NA,27.5,2010-11-01,2014-11-30,NA,Bicameral,Upper chamber
+2010,BB,Barbados,Senate,NA,19,2010-01-01,2013-02-28,NA,Bicameral,Upper chamber
+2010,BY,Belarus,Council of the Republic,NA,33.9,2008-01-01,2012-07-31,NA,Bicameral,Upper chamber
+2010,BE,Belgium,Senate,NA,38,2010-06-01,2013-12-31,NA,Bicameral,Upper chamber
+2010,BZ,Belize,Senate,NA,38.5,2008-06-01,2016-11-30,NA,Bicameral,Upper chamber
+2010,BT,Bhutan,National Council,NA,24,2008-01-01,2013-03-31,NA,Bicameral,Upper chamber
+2010,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,47.2,2010-01-01,2012-12-31,NA,Bicameral,Upper chamber
+2010,BA,Bosnia and Herzegovina,House of Peoples,NA,13.3,2007-03-01,2019-01-31,NA,Bicameral,Upper chamber
+2010,BR,Brazil,Federal Senate,NA,16,2010-01-01,2014-09-30,NA,Bicameral,Upper chamber
+2010,BI,Burundi,Senate,NA,46.3,2010-07-01,2015-06-30,NA,Bicameral,Upper chamber
+2010,KH,Cambodia,Senate,NA,14.8,2008-01-01,2012-02-29,NA,Bicameral,Upper chamber
+2010,CM,Cameroon,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2010,CA,Canada,Senate,NA,35,2008-01-01,2011-05-31,NA,Bicameral,Upper chamber
+2010,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2010,CL,Chile,Senate,NA,13.2,2009-12-01,2012-12-31,NA,Bicameral,Upper chamber
+2010,CO,Colombia,Senate,NA,15.7,2010-03-01,2010-12-31,NA,Bicameral,Upper chamber
+2010,CG,Congo,Senate,NA,12.9,2008-08-01,2011-09-30,NA,Bicameral,Upper chamber
+2010,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2010,CZ,Czechia,Senate,NA,18.5,2010-10-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,CD,Democratic Republic of the Congo,Senate,NA,4.6,2007-05-01,2013-12-31,NA,Bicameral,Upper chamber
+2010,DO,Dominican Republic,Senate,NA,9.4,2010-05-01,2020-06-30,NA,Bicameral,Upper chamber
+2010,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2010,GQ,Equatorial Guinea,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2010,SZ,Eswatini,Senate,NA,40,2008-10-01,2013-09-30,NA,Bicameral,Upper chamber
+2010,ET,Ethiopia,House of the Federation,NA,16.3,2010-05-01,2015-09-30,NA,Bicameral,Upper chamber
+2010,FR,France,Senate,NA,21.9,2008-09-01,2011-08-31,NA,Bicameral,Upper chamber
+2010,GA,Gabon,Transitional Senate,NA,17.6,2010-01-01,2010-12-31,NA,Bicameral,Upper chamber
+2010,DE,Germany,Federal Council,NA,27.5,2009-01-01,2014-11-30,NA,Bicameral,Upper chamber
+2010,GD,Grenada,Senate,NA,30.8,2003-11-01,2013-02-28,NA,Bicameral,Upper chamber
+2010,HT,Haiti,Senate,NA,3.3,2010-11-01,2013-12-31,NA,Bicameral,Upper chamber
+2010,IN,India,Council of States,NA,10.3,2010-01-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,IE,Ireland,Senate,NA,20,2007-07-01,2011-01-31,NA,Bicameral,Upper chamber
+2010,IT,Italy,Senate,NA,18,2008-04-01,2012-12-31,NA,Bicameral,Upper chamber
+2010,JM,Jamaica,Senate,NA,9.5,2007-09-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,JP,Japan,House of Councillors,NA,18.2,2010-07-01,2013-06-30,NA,Bicameral,Upper chamber
+2010,JO,Jordan,Senate,NA,15,2010-11-01,2011-09-30,NA,Bicameral,Upper chamber
+2010,KZ,Kazakhstan,Senate,NA,6.5,2009-01-01,2011-07-31,NA,Bicameral,Upper chamber
+2010,KE,Kenya,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2010,LS,Lesotho,Senate,NA,30.3,2010-01-01,2012-05-31,NA,Bicameral,Upper chamber
+2010,LR,Liberia,The Liberian Senate,NA,16.7,2005-10-01,2011-09-30,NA,Bicameral,Upper chamber
+2010,MG,Madagascar,Senate,NA,11.1,2010-10-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,MY,Malaysia,Senate,NA,24.3,2010-01-01,2012-12-31,NA,Bicameral,Upper chamber
+2010,MR,Mauritania,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2010,MX,Mexico,Senate,NA,17.2,2010-01-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,MA,Morocco,House of Councillors,NA,2.2,2009-10-01,2015-09-30,NA,Bicameral,Upper chamber
+2010,MM,Myanmar,House of Nationalities,NA,3.6,2010-11-01,2010-12-31,NA,Bicameral,Upper chamber
+2010,NA,Namibia,National Council,NA,26.9,2004-11-01,2014-11-30,NA,Bicameral,Upper chamber
+2010,NP,Nepal,National Assembly,Suspended,8.3,2001-06-01,2017-05-31,NA,Bicameral,Upper chamber
+2010,NL,Netherlands,Senate,NA,34.7,2007-05-01,2011-04-30,NA,Bicameral,Upper chamber
+2010,NG,Nigeria,Senate,NA,8.3,2008-01-01,2011-03-31,NA,Bicameral,Upper chamber
+2010,OM,Oman,State Council,NA,20,2010-01-01,2011-09-30,NA,Bicameral,Upper chamber
+2010,PK,Pakistan,Senate,NA,18,2009-03-01,2012-02-29,NA,Bicameral,Upper chamber
+2010,PW,Palau,Senate,NA,15.4,2008-11-01,2012-10-31,NA,Bicameral,Upper chamber
+2010,PY,Paraguay,Senate,NA,15.6,2008-04-01,2013-03-31,NA,Bicameral,Upper chamber
+2010,PH,Philippines,Senate,NA,13,2010-05-01,2013-04-30,NA,Bicameral,Upper chamber
+2010,PL,Poland,Senate,NA,8,2007-10-01,2011-09-30,NA,Bicameral,Upper chamber
+2010,RO,Romania,Senate,NA,5.8,2008-11-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,RU,Russian Federation,Council of the Federation,NA,4.7,2007-12-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,RW,Rwanda,Senate,NA,23.1,2005-01-01,2011-08-31,NA,Bicameral,Upper chamber
+2010,LC,Saint Lucia,Senate,NA,18.2,2007-01-01,2012-12-31,NA,Bicameral,Upper chamber
+2010,SI,Slovenia,National Council,NA,2.5,2007-11-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2010,ZA,South Africa,National Council of Provinces,NA,18.9,2010-01-01,2013-12-31,NA,Bicameral,Upper chamber
+2010,SS,South Sudan,Council of States,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2010,ES,Spain,Senate,NA,30,2010-01-01,2011-10-31,NA,Bicameral,Upper chamber
+2010,SD,Sudan,Council of States,NA,10.9,2010-05-01,2013-12-31,NA,Bicameral,Upper chamber
+2010,CH,Switzerland,Council of States,NA,21.7,2008-01-01,2012-12-31,NA,Bicameral,Upper chamber
+2010,TJ,Tajikistan,National Assembly,NA,14.7,2010-03-01,2013-12-31,NA,Bicameral,Upper chamber
+2010,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2010,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2010,TT,Trinidad and Tobago,Senate,NA,25.8,2010-06-01,2012-12-31,NA,Bicameral,Upper chamber
+2010,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+2010,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+2010,GB,United Kingdom,House of Lords,NA,22.6,2010-01-01,2013-12-31,NA,Bicameral,Upper chamber
+2010,US,United States of America,Senate,NA,17,2010-11-01,2011-12-31,NA,Bicameral,Upper chamber
+2010,UY,Uruguay,Senate,NA,13.3,2009-10-01,2012-12-31,NA,Bicameral,Upper chamber
+2010,UZ,Uzbekistan,Senate,NA,15,2005-01-01,2014-11-30,NA,Bicameral,Upper chamber
+2010,YE,Yemen,Shura Council,NA,1.8,2001-04-01,2018-11-30,NA,Bicameral,Upper chamber
+2010,ZW,Zimbabwe,Senate,NA,24.7,2010-01-01,2013-06-30,NA,Bicameral,Upper chamber
+2015,AF,Afghanistan,House of Elders,NA,26.5,2015-11-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,DZ,Algeria,Council of the Nation,NA,5.8,2015-12-01,2016-01-31,NA,Bicameral,Upper chamber
+2015,AG,Antigua and Barbuda,Senate,NA,41.2,2014-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,AR,Argentina,Senate,NA,41.7,2015-12-01,2019-09-30,NA,Bicameral,Upper chamber
+2015,AU,Australia,Senate,NA,38.2,2014-06-01,2016-06-30,NA,Bicameral,Upper chamber
+2015,AT,Austria,Federal Council,NA,29.5,2014-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,BS,Bahamas,Senate,NA,25,2012-05-01,2017-04-30,NA,Bicameral,Upper chamber
+2015,BH,Bahrain,Shura Council,NA,22.5,2014-12-01,2022-10-31,NA,Bicameral,Upper chamber
+2015,BB,Barbados,Senate,NA,23.8,2014-12-01,2018-05-31,NA,Bicameral,Upper chamber
+2015,BY,Belarus,Council of the Republic,NA,32.8,2015-01-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,BE,Belgium,Senate,NA,50.8,2014-07-01,2018-11-30,NA,Bicameral,Upper chamber
+2015,BZ,Belize,Senate,NA,38.5,2008-06-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,BT,Bhutan,National Council,NA,8,2013-04-01,2018-03-31,NA,Bicameral,Upper chamber
+2015,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,47.2,2014-01-01,2020-09-30,NA,Bicameral,Upper chamber
+2015,BA,Bosnia and Herzegovina,House of Peoples,NA,13.3,2007-03-01,2019-01-31,NA,Bicameral,Upper chamber
+2015,BR,Brazil,Federal Senate,NA,16,2015-02-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,BI,Burundi,Senate,NA,41.9,2015-07-01,2018-05-31,NA,Bicameral,Upper chamber
+2015,KH,Cambodia,Senate,NA,16.4,2014-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,CM,Cameroon,Senate,NA,20,2013-04-01,2018-03-31,NA,Bicameral,Upper chamber
+2015,CA,Canada,Senate,NA,37.3,2015-08-01,2015-12-31,NA,Bicameral,Upper chamber
+2015,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2015,CL,Chile,Senate,NA,15.8,2014-12-01,2017-10-31,NA,Bicameral,Upper chamber
+2015,CO,Colombia,Senate,NA,22.5,2014-06-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,CG,Congo,Senate,NA,19.4,2014-10-01,2017-07-31,NA,Bicameral,Upper chamber
+2015,CI,Côte d'Ivoire,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2015,CZ,Czechia,Senate,NA,18.5,2014-12-01,2016-09-30,NA,Bicameral,Upper chamber
+2015,CD,Democratic Republic of the Congo,Senate,NA,4.6,2014-12-01,2019-02-28,NA,Bicameral,Upper chamber
+2015,DO,Dominican Republic,Senate,NA,9.4,2010-05-01,2020-06-30,NA,Bicameral,Upper chamber
+2015,EG,Egypt,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2015,GQ,Equatorial Guinea,Senate,NA,13.7,2014-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,SZ,Eswatini,Senate,NA,33.3,2013-10-01,2018-09-30,NA,Bicameral,Upper chamber
+2015,ET,Ethiopia,House of the Federation,NA,32,2015-10-01,2021-09-30,NA,Bicameral,Upper chamber
+2015,FR,France,Senate,NA,25,2014-09-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,GA,Gabon,Transitional Senate,NA,18.2,2015-04-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,DE,Germany,Federal Council,NA,40.6,2014-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,GD,Grenada,Senate,NA,15.4,2013-03-01,2018-03-31,NA,Bicameral,Upper chamber
+2015,HT,Haiti,Senate,NA,0,2015-12-01,2016-01-31,NA,Bicameral,Upper chamber
+2015,IN,India,Council of States,NA,12.8,2014-11-01,2016-02-29,NA,Bicameral,Upper chamber
+2015,IE,Ireland,Senate,NA,30,2014-10-01,2016-03-31,NA,Bicameral,Upper chamber
+2015,IT,Italy,Senate,NA,28.3,2014-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,JM,Jamaica,Senate,NA,28.6,2014-01-01,2016-02-29,NA,Bicameral,Upper chamber
+2015,JP,Japan,House of Councillors,NA,15.7,2014-12-01,2016-06-30,NA,Bicameral,Upper chamber
+2015,JO,Jordan,Senate,NA,10.7,2014-12-01,2016-08-31,NA,Bicameral,Upper chamber
+2015,KZ,Kazakhstan,Senate,NA,6.4,2013-01-01,2017-05-31,NA,Bicameral,Upper chamber
+2015,KE,Kenya,Senate,NA,26.5,2013-03-01,2017-07-31,NA,Bicameral,Upper chamber
+2015,LS,Lesotho,Senate,NA,24.2,2015-04-01,2017-06-30,NA,Bicameral,Upper chamber
+2015,LR,Liberia,The Liberian Senate,NA,10,2015-01-01,2019-11-30,NA,Bicameral,Upper chamber
+2015,MG,Madagascar,Senate,NA,12.2,2012-01-01,2014-12-31,NA,Bicameral,Upper chamber
+2015,MY,Malaysia,Senate,NA,23.1,2015-06-01,2015-12-31,NA,Bicameral,Upper chamber
+2015,MR,Mauritania,Senate,NA,14.3,2014-01-01,NA,NA,Bicameral,Upper chamber
+2015,MX,Mexico,Senate,NA,33.6,2014-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,MA,Morocco,House of Councillors,NA,11.7,2015-10-01,2021-09-30,NA,Bicameral,Upper chamber
+2015,MM,Myanmar,House of Nationalities,NA,10.3,2015-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,NA,Namibia,National Council,NA,23.8,2015-12-01,2017-12-31,NA,Bicameral,Upper chamber
+2015,NP,Nepal,National Assembly,Suspended,8.3,2001-06-01,2017-05-31,NA,Bicameral,Upper chamber
+2015,NL,Netherlands,Senate,NA,34.7,2015-05-01,2018-11-30,NA,Bicameral,Upper chamber
+2015,NG,Nigeria,Senate,NA,6.5,2015-05-01,2018-11-30,NA,Bicameral,Upper chamber
+2015,OM,Oman,State Council,NA,15.3,2015-11-01,2016-01-31,NA,Bicameral,Upper chamber
+2015,PK,Pakistan,Senate,NA,18.3,2015-06-01,2018-02-28,NA,Bicameral,Upper chamber
+2015,PW,Palau,Senate,NA,23.1,2012-11-01,2016-10-31,NA,Bicameral,Upper chamber
+2015,PY,Paraguay,Senate,NA,20,2013-04-01,2018-03-31,NA,Bicameral,Upper chamber
+2015,PH,Philippines,Senate,NA,25,2013-05-01,2019-04-30,NA,Bicameral,Upper chamber
+2015,PL,Poland,Senate,NA,13,2011-10-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,RO,Romania,Senate,NA,7.7,2014-12-01,2016-11-30,NA,Bicameral,Upper chamber
+2015,RU,Russian Federation,Council of the Federation,NA,17.1,2014-12-01,2018-11-30,NA,Bicameral,Upper chamber
+2015,RW,Rwanda,Senate,NA,38.5,2011-09-01,2021-11-30,NA,Bicameral,Upper chamber
+2015,LC,Saint Lucia,Senate,NA,27.3,2014-12-01,2021-07-31,NA,Bicameral,Upper chamber
+2015,SI,Slovenia,National Council,NA,7.5,2012-01-01,2017-10-31,NA,Bicameral,Upper chamber
+2015,SO,Somalia,Upper House,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2015,ZA,South Africa,National Council of Provinces,NA,35.2,2014-05-01,2019-04-30,NA,Bicameral,Upper chamber
+2015,SS,South Sudan,Council of States,NA,10,2011-08-01,2016-07-31,NA,Bicameral,Upper chamber
+2015,ES,Spain,Senate,NA,39.2,2015-12-01,2016-05-31,NA,Bicameral,Upper chamber
+2015,SD,Sudan,Council of States,NA,35.2,2015-05-01,2018-11-30,NA,Bicameral,Upper chamber
+2015,CH,Switzerland,Council of States,NA,15.2,2015-11-01,2019-09-30,NA,Bicameral,Upper chamber
+2015,TJ,Tajikistan,National Assembly,NA,6.3,2015-03-01,2016-05-31,NA,Bicameral,Upper chamber
+2015,TH,Thailand,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2015,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2015,TT,Trinidad and Tobago,Senate,NA,32.3,2015-09-01,2016-12-31,NA,Bicameral,Upper chamber
+2015,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+2015,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+2015,GB,United Kingdom,House of Lords,NA,24.6,2015-07-01,2016-05-31,NA,Bicameral,Upper chamber
+2015,US,United States of America,Senate,NA,20,2015-01-01,2016-10-31,NA,Bicameral,Upper chamber
+2015,UY,Uruguay,Senate,NA,29,2015-03-01,2018-11-30,NA,Bicameral,Upper chamber
+2015,UZ,Uzbekistan,Senate,NA,17,2014-12-01,2019-12-31,NA,Bicameral,Upper chamber
+2015,YE,Yemen,Shura Council,NA,1.8,2001-04-01,2018-11-30,NA,Bicameral,Upper chamber
+2015,ZW,Zimbabwe,Senate,NA,47.5,2013-07-01,2017-10-31,NA,Bicameral,Upper chamber
+2020,AF,Afghanistan,House of Elders,NA,27.9,2019-12-01,2022-02-28,NA,Bicameral,Upper chamber
+2020,DZ,Algeria,Council of the Nation,NA,5.7,2020-06-01,2022-01-31,NA,Bicameral,Upper chamber
+2020,AG,Antigua and Barbuda,Senate,NA,52.9,2018-03-01,2023-01-31,NA,Bicameral,Upper chamber
+2020,AR,Argentina,Senate,NA,40.3,2019-12-01,2021-10-31,NA,Bicameral,Upper chamber
+2020,AU,Australia,Senate,NA,51.3,2020-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,AT,Austria,Federal Council,NA,42.6,2020-12-01,2020-12-31,NA,Bicameral,Upper chamber
+2020,BS,Bahamas,Senate,NA,43.8,2017-05-01,2021-09-30,NA,Bicameral,Upper chamber
+2020,BH,Bahrain,Shura Council,NA,22.5,2014-12-01,2022-10-31,NA,Bicameral,Upper chamber
+2020,BB,Barbados,Senate,NA,42.9,2019-04-01,2022-01-31,NA,Bicameral,Upper chamber
+2020,BY,Belarus,Council of the Republic,NA,25,2019-12-01,2023-11-30,NA,Bicameral,Upper chamber
+2020,BE,Belgium,Senate,NA,45.8,2019-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,BZ,Belize,Senate,NA,35.7,2020-12-01,2022-11-30,NA,Bicameral,Upper chamber
+2020,BT,Bhutan,National Council,NA,16,2018-06-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,55.6,2020-10-01,NA,NA,Bicameral,Upper chamber
+2020,BA,Bosnia and Herzegovina,House of Peoples,NA,20,2019-02-01,2023-01-31,NA,Bicameral,Upper chamber
+2020,BR,Brazil,Federal Senate,NA,12.3,2020-10-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,BI,Burundi,Senate,NA,41,2020-07-01,2025-07-22,NA,Bicameral,Upper chamber
+2020,KH,Cambodia,Senate,NA,16.1,2019-12-01,2024-01-31,NA,Bicameral,Upper chamber
+2020,CM,Cameroon,Senate,NA,26,2018-04-01,2023-02-28,NA,Bicameral,Upper chamber
+2020,CA,Canada,Senate,NA,49.5,2020-12-01,2020-12-31,NA,Bicameral,Upper chamber
+2020,TD,Chad,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2020,CL,Chile,Senate,NA,25.6,2020-12-01,2021-02-28,NA,Bicameral,Upper chamber
+2020,CO,Colombia,Senate,NA,21,2020-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,CG,Congo,Senate,NA,18.8,2018-12-01,2023-07-31,NA,Bicameral,Upper chamber
+2020,CI,Côte d'Ivoire,Senate,NA,19.2,2019-04-01,2022-11-30,NA,Bicameral,Upper chamber
+2020,CZ,Czechia,Senate,NA,14.8,2019-12-01,2022-08-31,NA,Bicameral,Upper chamber
+2020,CD,Democratic Republic of the Congo,Senate,NA,21.1,2019-05-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,DO,Dominican Republic,Senate,NA,12.5,2020-07-01,2024-04-30,NA,Bicameral,Upper chamber
+2020,EG,Egypt,Senate,NA,13.3,2020-10-01,2022-11-30,NA,Bicameral,Upper chamber
+2020,GQ,Equatorial Guinea,Senate,NA,16.7,2019-03-01,2022-10-31,NA,Bicameral,Upper chamber
+2020,SZ,Eswatini,Senate,NA,40,2020-01-01,2023-10-31,NA,Bicameral,Upper chamber
+2020,ET,Ethiopia,House of the Federation,NA,32,2015-10-01,2021-09-30,NA,Bicameral,Upper chamber
+2020,FR,France,Senate,NA,34.8,2020-12-01,2021-08-31,NA,Bicameral,Upper chamber
+2020,GA,Gabon,Transitional Senate,NA,17.3,2020-12-01,2020-12-31,NA,Bicameral,Upper chamber
+2020,DE,Germany,Federal Council,NA,36.2,2019-12-01,2021-07-31,NA,Bicameral,Upper chamber
+2020,GD,Grenada,Senate,NA,15.4,2020-12-01,2022-07-31,NA,Bicameral,Upper chamber
+2020,HT,Haiti,Senate,NA,0,2019-12-01,2022-11-30,NA,Bicameral,Upper chamber
+2020,IN,India,Council of States,NA,11.2,2020-11-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,IE,Ireland,Senate,NA,40,2020-06-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,IT,Italy,Senate,NA,34.4,2018-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,JM,Jamaica,Senate,NA,38.1,2020-09-01,2024-12-29,NA,Bicameral,Upper chamber
+2020,JP,Japan,House of Councillors,NA,23,2020-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,JO,Jordan,Senate,NA,12.3,2020-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,KZ,Kazakhstan,Senate,NA,18.8,2020-08-01,2022-12-31,NA,Bicameral,Upper chamber
+2020,KE,Kenya,Senate,NA,31.8,2020-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,LS,Lesotho,Senate,NA,21.2,2020-12-01,2022-10-31,NA,Bicameral,Upper chamber
+2020,LR,Liberia,The Liberian Senate,NA,3.3,2019-12-01,2021-03-31,NA,Bicameral,Upper chamber
+2020,MG,Madagascar,Senate,NA,11.1,2020-12-01,2023-10-31,NA,Bicameral,Upper chamber
+2020,MY,Malaysia,Senate,NA,13.6,2020-12-01,2021-08-31,NA,Bicameral,Upper chamber
+2020,MR,Mauritania,Senate,Suspended,14.3,2014-01-01,NA,NA,Unicameral,NA
+2020,MX,Mexico,Senate,NA,49.2,2018-07-01,2022-11-30,NA,Bicameral,Upper chamber
+2020,MA,Morocco,House of Councillors,NA,11.7,2015-10-01,2021-09-30,NA,Bicameral,Upper chamber
+2020,MM,Myanmar,House of Nationalities,NA,14.4,2020-12-01,2022-02-28,NA,Bicameral,Upper chamber
+2020,NA,Namibia,National Council,NA,14.3,2020-12-01,NA,NA,Bicameral,Upper chamber
+2020,NP,Nepal,National Assembly,NA,37.9,2020-01-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,NL,Netherlands,Senate,NA,38.7,2019-05-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,NG,Nigeria,Senate,NA,7.3,2019-12-01,2023-01-31,NA,Bicameral,Upper chamber
+2020,OM,Oman,State Council,NA,17.4,2019-11-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,PK,Pakistan,Senate,NA,19.2,2018-03-01,2021-02-28,NA,Bicameral,Upper chamber
+2020,PW,Palau,Senate,NA,7.7,2020-11-01,2024-10-31,NA,Bicameral,Upper chamber
+2020,PY,Paraguay,Senate,NA,17.8,2020-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,PH,Philippines,Senate,NA,29.2,2019-05-01,2024-12-29,NA,Bicameral,Upper chamber
+2020,PL,Poland,Senate,NA,24,2019-10-01,2023-09-30,NA,Bicameral,Upper chamber
+2020,RO,Romania,Senate,NA,18.4,2020-12-01,2023-11-30,NA,Bicameral,Upper chamber
+2020,RU,Russian Federation,Council of the Federation,NA,17.1,2019-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,RW,Rwanda,Senate,NA,38.5,2011-09-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,LC,Saint Lucia,Senate,NA,27.3,2014-12-01,2021-07-31,NA,Bicameral,Upper chamber
+2020,SI,Slovenia,National Council,NA,10,2018-06-01,2022-10-31,NA,Bicameral,Upper chamber
+2020,SO,Somalia,Upper House,NA,24.1,2017-02-01,2021-06-30,NA,Bicameral,Upper chamber
+2020,ZA,South Africa,National Council of Provinces,NA,41.5,2020-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,SS,South Sudan,Council of States,NA,12,2016-08-01,2021-07-31,NA,Bicameral,Upper chamber
+2020,ES,Spain,Senate,NA,40.8,2020-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,SD,Sudan,Council of States,Suspended,NA,2019-04-01,NA,NA,Bicameral,Upper chamber
+2020,CH,Switzerland,Council of States,NA,26.1,2019-10-01,2021-10-31,NA,Bicameral,Upper chamber
+2020,TJ,Tajikistan,National Assembly,NA,22.6,2020-04-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,TH,Thailand,Senate,NA,10.4,2019-12-01,2021-11-30,NA,Bicameral,Upper chamber
+2020,TG,Togo,Senate,NA,NA,NA,NA,NA,Unicameral,NA
+2020,TT,Trinidad and Tobago,Senate,NA,40.6,2020-08-01,2022-11-30,NA,Bicameral,Upper chamber
+2020,TN,Tunisia,National Council of Regions and Districts,NA,NA,NA,NA,NA,Unicameral,NA
+2020,TM,Turkmenistan,People’s Council,NA,NA,NA,NA,NA,Unicameral,NA
+2020,GB,United Kingdom,House of Lords,NA,27.9,2020-12-01,2021-04-30,NA,Bicameral,Upper chamber
+2020,US,United States of America,Senate,NA,25,2020-12-01,2020-12-31,NA,Bicameral,Upper chamber
+2020,UY,Uruguay,Senate,NA,32.3,2020-12-01,2022-11-30,NA,Bicameral,Upper chamber
+2020,UZ,Uzbekistan,Senate,NA,23,2020-12-01,2022-11-30,NA,Bicameral,Upper chamber
+2020,YE,Yemen,Shura Council,NA,2.7,2018-12-01,2021-09-30,NA,Bicameral,Upper chamber
+2020,ZW,Zimbabwe,Senate,NA,43.8,2018-07-01,2021-11-30,NA,Bicameral,Upper chamber
+2025,AF,Afghanistan,House of Elders,Suspended,NA,2022-03-01,NA,NA,Bicameral,Upper chamber
+2025,DZ,Algeria,Council of the Nation,NA,2.5,2025-05-19,NA,NA,Bicameral,Upper chamber
+2025,AG,Antigua and Barbuda,Senate,NA,41.2,2023-02-01,NA,NA,Bicameral,Upper chamber
+2025,AR,Argentina,Senate,NA,45.8,2023-10-01,NA,NA,Bicameral,Upper chamber
+2025,AU,Australia,Senate,NA,56.6,2025-05-03,NA,NA,Bicameral,Upper chamber
+2025,AT,Austria,Federal Council,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2025,BS,Bahamas,Senate,NA,31.3,2024-10-17,NA,NA,Bicameral,Upper chamber
+2025,BH,Bahrain,Shura Council,NA,25,2022-11-01,NA,NA,Bicameral,Upper chamber
+2025,BB,Barbados,Senate,NA,33.3,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,BY,Belarus,Council of the Republic,NA,30.5,2024-04-01,NA,NA,Bicameral,Upper chamber
+2025,BE,Belgium,Senate,NA,47.5,2024-07-01,NA,NA,Bicameral,Upper chamber
+2025,BZ,Belize,Senate,NA,35.7,2025-05-09,NA,NA,Bicameral,Upper chamber
+2025,BT,Bhutan,National Council,NA,12,2023-04-01,NA,NA,Bicameral,Upper chamber
+2025,BO,Bolivia (Plurinational State of),Chamber of Senators,NA,55.6,2020-10-01,NA,NA,Bicameral,Upper chamber
+2025,BA,Bosnia and Herzegovina,House of Peoples,NA,6.7,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,BR,Brazil,Federal Senate,NA,19.8,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,BI,Burundi,Senate,NA,46.2,2025-07-23,NA,NA,Bicameral,Upper chamber
+2025,KH,Cambodia,Senate,NA,19.4,2024-02-01,NA,NA,Bicameral,Upper chamber
+2025,CM,Cameroon,Senate,NA,33,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,CA,Canada,Senate,NA,54.8,2025-05-26,NA,NA,Bicameral,Upper chamber
+2025,TD,Chad,Senate,NA,36.2,2025-04-01,NA,NA,Bicameral,Upper chamber
+2025,CL,Chile,Senate,NA,26,2023-12-01,NA,NA,Bicameral,Upper chamber
+2025,CO,Colombia,Senate,NA,31.4,2024-07-24,NA,NA,Bicameral,Upper chamber
+2025,CG,Congo,Senate,NA,31.9,2023-08-01,NA,NA,Bicameral,Upper chamber
+2025,CI,Côte d'Ivoire,Senate,NA,24.5,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,CZ,Czechia,Senate,NA,21.3,2024-10-30,NA,NA,Bicameral,Upper chamber
+2025,CD,Democratic Republic of the Congo,Senate,NA,15.8,2024-04-01,NA,NA,Bicameral,Upper chamber
+2025,DO,Dominican Republic,Senate,NA,12.5,2024-05-01,NA,NA,Bicameral,Upper chamber
+2025,EG,Egypt,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2025,GQ,Equatorial Guinea,Senate,NA,25,2023-12-01,NA,NA,Bicameral,Upper chamber
+2025,SZ,Eswatini,Senate,NA,46.7,2023-12-01,NA,NA,Bicameral,Upper chamber
+2025,ET,Ethiopia,House of the Federation,NA,29.7,2023-12-01,NA,NA,Bicameral,Upper chamber
+2025,FR,France,Senate,NA,37.1,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,GA,Gabon,Transitional Senate,NA,20.3,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,DE,Germany,Federal Council,NA,34.8,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,GD,Grenada,Senate,NA,30.8,2022-08-01,NA,NA,Bicameral,Upper chamber
+2025,HT,Haiti,Senate,NA,NA,2025-02-01,NA,NA,Bicameral,Upper chamber
+2025,IN,India,Council of States,NA,16.7,2024-09-16,NA,NA,Bicameral,Upper chamber
+2025,IE,Ireland,Senate,NA,45,2025-01-29,NA,NA,Bicameral,Upper chamber
+2025,IT,Italy,Senate,NA,36.3,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,JM,Jamaica,Senate,NA,40,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,JP,Japan,House of Councillors,NA,29.4,2025-07-20,NA,NA,Bicameral,Upper chamber
+2025,JO,Jordan,Senate,NA,14.5,2024-10-01,NA,NA,Bicameral,Upper chamber
+2025,KZ,Kazakhstan,Senate,NA,20,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,KE,Kenya,Senate,NA,31.3,2023-05-01,NA,NA,Bicameral,Upper chamber
+2025,LS,Lesotho,Senate,NA,21.2,2024-12-13,NA,NA,Bicameral,Upper chamber
+2025,LR,Liberia,The Liberian Senate,NA,10,2023-10-01,NA,NA,Bicameral,Upper chamber
+2025,MG,Madagascar,Senate,NA,11.1,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,MY,Malaysia,Senate,NA,16.1,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,MR,Mauritania,Senate,Suspended,14.3,2014-01-01,NA,NA,Unicameral,NA
+2025,MX,Mexico,Senate,NA,50,2024-06-01,NA,NA,Bicameral,Upper chamber
+2025,MA,Morocco,House of Councillors,NA,11.7,2022-12-01,NA,NA,Bicameral,Upper chamber
+2025,MM,Myanmar,House of Nationalities,Suspended,NA,2022-03-01,NA,NA,Bicameral,Upper chamber
+2025,NA,Namibia,National Council,NA,14.3,2020-12-01,NA,NA,Bicameral,Upper chamber
+2025,NP,Nepal,National Assembly,NA,37.3,2024-01-01,NA,NA,Bicameral,Upper chamber
+2025,NL,Netherlands,Senate,NA,40,2023-12-01,NA,NA,Bicameral,Upper chamber
+2025,NG,Nigeria,Senate,NA,2.8,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,OM,Oman,State Council,NA,20.9,2023-12-01,NA,NA,Bicameral,Upper chamber
+2025,PK,Pakistan,Senate,NA,18.8,2024-04-01,NA,NA,Bicameral,Upper chamber
+2025,PW,Palau,Senate,NA,13.3,2024-11-01,NA,NA,Bicameral,Upper chamber
+2025,PY,Paraguay,Senate,NA,22.2,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,PH,Philippines,Senate,NA,20.8,2025-05-12,NA,NA,Bicameral,Upper chamber
+2025,PL,Poland,Senate,NA,19,2023-10-01,NA,NA,Bicameral,Upper chamber
+2025,RO,Romania,Senate,NA,20.9,2025-07-08,NA,NA,Bicameral,Upper chamber
+2025,RU,Russian Federation,Council of the Federation,NA,18.5,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,RW,Rwanda,Senate,NA,53.8,2024-09-01,NA,NA,Bicameral,Upper chamber
+2025,LC,Saint Lucia,Senate,NA,54.5,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,SI,Slovenia,National Council,NA,17.5,2022-11-01,NA,NA,Bicameral,Upper chamber
+2025,SO,Somalia,Upper House,NA,25.9,2021-11-01,NA,NA,Bicameral,Upper chamber
+2025,ZA,South Africa,National Council of Provinces,NA,44.4,2024-06-01,NA,NA,Bicameral,Upper chamber
+2025,SS,South Sudan,Council of States,NA,32.1,2021-08-01,NA,NA,Bicameral,Upper chamber
+2025,ES,Spain,Senate,NA,42.5,2024-12-30,NA,NA,Bicameral,Upper chamber
+2025,SD,Sudan,Council of States,Suspended,NA,2019-04-01,NA,NA,Bicameral,Upper chamber
+2025,CH,Switzerland,Council of States,NA,33.3,2025-06-02,NA,NA,Bicameral,Upper chamber
+2025,TJ,Tajikistan,National Assembly,NA,30.3,2025-03-28,NA,NA,Bicameral,Upper chamber
+2025,TH,Thailand,Senate,NA,22.5,2024-06-01,NA,NA,Bicameral,Upper chamber
+2025,TG,Togo,Senate,NA,24.6,2025-02-15,NA,NA,Bicameral,Upper chamber
+2025,TT,Trinidad and Tobago,Senate,NA,25.8,2025-05-23,NA,NA,Bicameral,Upper chamber
+2025,TN,Tunisia,National Council of Regions and Districts,NA,13,2024-04-19,NA,NA,Bicameral,Upper chamber
+2025,TM,Turkmenistan,People’s Council,Suspended,25.5,2021-12-01,NA,NA,Unicameral,NA
+2025,GB,United Kingdom,House of Lords,NA,31,2025-03-12,NA,NA,Bicameral,Upper chamber
+2025,US,United States of America,Senate,NA,26,2025-01-21,NA,NA,Bicameral,Upper chamber
+2025,UY,Uruguay,Senate,NA,NA,NA,NA,NA,Bicameral,Upper chamber
+2025,UZ,Uzbekistan,Senate,NA,24.6,2024-11-01,NA,NA,Bicameral,Upper chamber
+2025,YE,Yemen,Shura Council,NA,1.1,2021-10-01,NA,NA,Bicameral,Upper chamber
+2025,ZW,Zimbabwe,Senate,NA,44.3,2024-12-30,NA,NA,Bicameral,Upper chamber

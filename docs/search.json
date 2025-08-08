@@ -144,7 +144,7 @@
     "href": "04-quality-education.html#resources",
     "title": "4  Quality Education",
     "section": "\n4.3 Resources",
-    "text": "4.3 Resources",
+    "text": "4.3 Resources\n\nUNESCO SDG Data",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Quality Education</span>"
     ]
@@ -154,7 +154,17 @@
     "href": "05-gender-equality.html",
     "title": "5  Gender Equality",
     "section": "",
-    "text": "5.1 Original Data",
+    "text": "5.1 Original Data\nIPU Parline holds longitudinal data on national parliaments. We accessed data on the percentage of women in the upper house from 1945 to 2025, in 5-year increments. Each year has to be downloaded as a separate file, so we provide a zip file of them below.\nTable 5.1: The first 15 lines of each data file give some metadata.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gender Equality</span>"
+    ]
+  },
+  {
+    "objectID": "05-gender-equality.html#original-data",
+    "href": "05-gender-equality.html#original-data",
+    "title": "5  Gender Equality",
+    "section": "",
+    "text": "ipu.zip",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gender Equality</span>"
     ]
@@ -163,8 +173,8 @@
     "objectID": "05-gender-equality.html#simplified-subsets",
     "href": "05-gender-equality.html#simplified-subsets",
     "title": "5  Gender Equality",
-    "section": "5.2 Simplified Subsets",
-    "text": "5.2 Simplified Subsets",
+    "section": "\n5.2 Simplified Subsets",
+    "text": "5.2 Simplified Subsets\n\n5.2.1 Import Multiple Files\nThese files are a little tricky to import. You have to download a separate file for each year, and they all start with 15 rows of metadata.\nThe code below imports all of the files, fixes some column type problems (e.g., Status is NA for most files, but “Suspended” on 9 occasions, so you need to specify it should be a text column for all files). The Year column is blank for all entries, so I’ve skipped it and reconstructed the year from the filename ID. Finally, I used the {janitor} package to clean up the names.\n\nCodena_values &lt;- c(\"-\", \"\", \n               \"No information available\", \n               \"Not applicable\")\n\nparliament &lt;- list.files(\"data/05/ipu\", \"\\\\.csv\", full.names = TRUE) |&gt;\n  read_csv(id = \"filename\", \n           skip = 15, \n           na = na_values, \n           col_types = \"ccccn-DDccc\") |&gt;\n  # get year from filename\n  separate(filename, c(NA, NA, \"year\", NA, NA, NA), \n           sep = \"--\", convert = TRUE) |&gt;\n  janitor::clean_names()\n\n\n\nparliament.csv\n\n\n\n\nTable 5.2: The first rows of parliament\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\niso_code\ncountry\nchamber\nstatus\npercentage_of_women\ndate_from\ndate_to\nnotes\nstructure\nchamber_type\n\n\n\n1945\nAF\nAfghanistan\nHouse of Elders\nNA\nNA\nNA\nNA\nNA\nBicameral\nUpper chamber\n\n\n1945\nDZ\nAlgeria\nCouncil of the Nation\nNA\nNA\nNA\nNA\nNA\nBicameral\nUpper chamber\n\n\n1945\nAG\nAntigua and Barbuda\nSenate\nNA\nNA\nNA\nNA\nNA\nBicameral\nUpper chamber\n\n\n1945\nAR\nArgentina\nSenate\nNA\nNA\nNA\nNA\nNA\nBicameral\nUpper chamber\n\n\n1945\nAU\nAustralia\nSenate\nNA\n2.8\n1945-01-01\n1945-12-31\nNA\nBicameral\nUpper chamber\n\n\n1945\nAT\nAustria\nFederal Council\nNA\n0.0\n1945-01-01\n1948-12-31\nNA\nBicameral\nUpper chamber\n\n\n\n\n\n\n\n\n\n\nPlot Codeuk &lt;- filter(parliament, iso_code == \"GB\")\n\nggplot(parliament, aes(x = year, y = percentage_of_women, group = iso_code)) +\n  geom_hline(yintercept = 50, color = \"grey\") +\n  geom_line(show.legend = FALSE, color = \"grey40\", na.rm = TRUE) +\n  geom_line(data = uk, linewidth = 1, color = \"#FF3A21\", na.rm = TRUE) +\n  coord_cartesian(ylim = c(0,100)) +\n  scale_x_continuous(breaks = seq(1945, 2025, 5), minor_breaks = NULL) +\n  scale_y_continuous(breaks = seq(0, 100, 10)) +\n  labs(x = NULL, y = \"Percent Women in the Upper House\")\n\n\n\n\n\n\nFigure 5.1: The percentage of women in the upper house of parliament for 86 countries from 1945 to 2025. The UK is highlighted in red.\n\n\n\n\n\n5.2.2 Simplified\nThe dataset has some columns we don’t really need, and uses 2-character ISO country codes, so we’ll simplify it by including only the most relevant columns, adding 3-letter codes, and removing rows with no data.\n\nCodecount(parliament, structure, chamber_type)\n\n\nTable 5.3: We probably don’t need to know whether the parliaments are the upper chamber in a bicameral system or the only chamber in a unicameral system.\n\n\n\n\n\nstructure\nchamber_type\nn\n\n\n\nBicameral\nUpper chamber\n1351\n\n\nUnicameral\nNA\n103\n\n\nNA\nUpper chamber\n8\n\n\n\n\n\n\n\n\n\n\nCodecountries &lt;- read_csv(\"data/countries.csv\") |&gt;\n  select(iso_code = `alpha-2`, country_code = `alpha-3`)\n\nparliament_simple &lt;- parliament |&gt;\n  left_join(countries, by = \"iso_code\") |&gt;\n  select(country_name = country,\n         country_code,\n         year,\n         pcnt_women = percentage_of_women) |&gt;\n  filter(!is.na(pcnt_women))\n\n\n\nparliament_simple.csv\n\n\n\n\nTable 5.4: The first rows of parliament_simple\n\n\n\n\n\ncountry_name\ncountry_code\nyear\npcnt_women\n\n\n\nAustralia\nAUS\n1945\n2.8\n\n\nAustria\nAUT\n1945\n0.0\n\n\nBrazil\nBRA\n1945\n0.0\n\n\nCanada\nCAN\n1945\n2.5\n\n\nChile\nCHL\n1945\n0.0\n\n\nArgentina\nARG\n1950\n0.0\n\n\n\n\n\n\n\n\n\n\nPlot Codeparliament_simple |&gt;\n  mutate(mean = mean(pcnt_women), \n         n_countries = n(),\n         .by = year) |&gt;\n  ggplot(aes(x = factor(year), y = pcnt_women, fill = mean)) +\n  geom_hline(yintercept = 50, color = \"grey\") +\n  geom_violin(scale = \"width\") +\n  geom_text(aes(label = n_countries), y = -2.5, color = \"grey30\") +\n  stat_summary(fun.data = mean_se, geom = \"point\") +\n  coord_cartesian(ylim = c(0,100)) +\n  scale_y_continuous(breaks = seq(0, 100, 10)) +\n  labs(x = NULL, y = \"Percent Women in the Upper House\") +\n  scale_fill_viridis_c(guide = NULL)\n\n\n\n\n\n\nFigure 5.2: The distribution of the percentage of women in the upper house of parliament across up to 86 countries from 1945 to 2025. The number below each violin is the number of countries with data from that year.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gender Equality</span>"
     ]
@@ -173,8 +183,8 @@
     "objectID": "05-gender-equality.html#resources",
     "href": "05-gender-equality.html#resources",
     "title": "5  Gender Equality",
-    "section": "5.3 Resources",
-    "text": "5.3 Resources",
+    "section": "\n5.3 Resources",
+    "text": "5.3 Resources\n\n[IPU](https://data.ipu.org/",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gender Equality</span>"
     ]
@@ -182,9 +192,19 @@
   {
     "objectID": "06-clean-water.html",
     "href": "06-clean-water.html",
-    "title": "6  Clean Water and Sanitation",
+    "title": "\n6  Clean Water and Sanitation\n",
     "section": "",
-    "text": "6.1 Original Data",
+    "text": "6.1 Original Data\nWHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (JMP) (2024) – with major processing by Our World in Data)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clean Water and Sanitation</span>"
+    ]
+  },
+  {
+    "objectID": "06-clean-water.html#original-data",
+    "href": "06-clean-water.html#original-data",
+    "title": "\n6  Clean Water and Sanitation\n",
+    "section": "",
+    "text": "access-drinking-water-stacked.csv\n\n\n\n\n\n\n\nCodebook\n\n\n\n\n\n\nEntity: Country\nCode: 3-letter ISO country code\nYear\nShare of the population using safely managed drinking water services: safe\nShare of the population using only basic drinking water services: basic\nShare of the population using limited drinking water services: limited\nShare of the population using unimproved drinking water services: unimproved\nShare of the population using surface water as a primary source of drinking water: surface",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clean Water and Sanitation</span>"
     ]
@@ -192,9 +212,9 @@
   {
     "objectID": "06-clean-water.html#simplified-subsets",
     "href": "06-clean-water.html#simplified-subsets",
-    "title": "6  Clean Water and Sanitation",
-    "section": "6.2 Simplified Subsets",
-    "text": "6.2 Simplified Subsets",
+    "title": "\n6  Clean Water and Sanitation\n",
+    "section": "\n6.2 Simplified Subsets",
+    "text": "6.2 Simplified Subsets\n\n6.2.1 Long Countries\nA data set with long structure and short column names consistent with other data sets in this book, limited to individual countries.\n\nCodeaccess_levels &lt;- c(\"safe\", \"basic\", \"limited\", \"unimproved\", \"surface\")\n\nwater_countries &lt;- read_csv(\n  \"data/06/access-drinking-water/access-drinking-water-stacked.csv\", \n  col_names = c(\"country_name\", \"country_code\", \"year\", access_levels),\n  skip = 1, show_col_types = FALSE\n) |&gt; \n  filter(!is.na(country_code)) |&gt;\n  pivot_longer(safe:surface, names_to = \"access\", values_to = \"pcnt\") |&gt;\n  mutate(access = factor(access, access_levels),\n         pcnt = round(pcnt, 2),\n         country_code = gsub(\"OWID_\", \"\", country_code))\n\n\nThis set is good for dealing with categorical columns with a clear order that isn’t the default on import.\n\nwater_countries.csv\n\n\n\n\nTable 6.1: The first rows of water_countries\n\n\n\n\n\ncountry_name\ncountry_code\nyear\naccess\npcnt\n\n\n\nAfghanistan\nAFG\n2000\nsafe\n11.09\n\n\nAfghanistan\nAFG\n2000\nbasic\n16.35\n\n\nAfghanistan\nAFG\n2000\nlimited\n3.30\n\n\nAfghanistan\nAFG\n2000\nunimproved\n43.86\n\n\nAfghanistan\nAFG\n2000\nsurface\n25.40\n\n\nAfghanistan\nAFG\n2001\nsafe\n11.11\n\n\n\n\n\n\n\n\n\n\nCodeaccess_col &lt;- c(\"#26BDE2\", \"#4C9F38\", \"#DDA63A\", \"#FD6925\", \"#DD1367\")\n\nwater_countries |&gt; \n  # narorw to complete entries\n  filter(year == 2022) |&gt;\n  #filter(sum(pcnt) &gt; 99, .by = c(country_name)) |&gt;\n  mutate(quantile = case_when(row_number()&lt;= n()/4 ~ 1,\n                              row_number()&lt;= 2*n()/4 ~ 2,\n                              row_number()&lt;= 3*n()/4 ~ 3,\n                              .default = 4)) |&gt;\n  ggplot(aes(x = fct_rev(country_code), y = pcnt, fill = access)) +\n  facet_wrap(~quantile, scales = \"free\", ncol = 4) +\n  geom_col() +\n  coord_flip() +\n  scale_fill_manual(values = access_col) +\n  labs(x = NULL, y = NULL) +\n  theme(legend.position = \"top\",\n        strip.background = element_blank(),\n        strip.text = element_blank())\n\n\n\n\n\n\nFigure 6.1: Water access by country for the most recent year in the data set (2022)\n\n\n\n\n\n6.2.2 Water Regions\nThe data are also grouped by WHO and SDG regions, and by development levels. This set includes just those regions, with region_type as the grouping (WHO, SDG, DEV).\n\nCodeaccess_levels &lt;- c(\"safe\", \"basic\", \"limited\", \"unimproved\", \"surface\")\n\nwater_regions &lt;- read_csv(\n  \"data/06/access-drinking-water/access-drinking-water-stacked.csv\", \n  col_names = c(\"region_name\", \"country_code\", \"year\", access_levels),\n  skip = 1, show_col_types = FALSE\n) |&gt; \n  filter(is.na(country_code), region_name != \"Bonaire, Sint Eustatius and Saba\") |&gt;\n  select(-country_code) |&gt;\n  pivot_longer(safe:surface, names_to = \"access\", values_to = \"pcnt\") |&gt;\n  mutate(access = factor(access, access_levels),\n         pcnt = round(pcnt, 2)) |&gt;\n  separate(region_name, c(\"region\", \"region_type\"), sep = \"\\\\(|\\\\)\", extra = \"drop\", fill = \"right\") |&gt;\n  mutate(region_type = replace_na(region_type, \"DEV\"),\n         region = trimws(region))\n\n\n\nwater_regions.csv\n\n\n\n\nTable 6.2: The first rows of water_regions\n\n\n\n\n\nregion\nregion_type\nyear\naccess\npcnt\n\n\n\nAfrica\nWHO\n2000\nsafe\n19.31\n\n\nAfrica\nWHO\n2000\nbasic\n28.48\n\n\nAfrica\nWHO\n2000\nlimited\n8.81\n\n\nAfrica\nWHO\n2000\nunimproved\n25.89\n\n\nAfrica\nWHO\n2000\nsurface\n17.50\n\n\nAfrica\nWHO\n2001\nsafe\n19.61\n\n\n\n\n\n\n\n\n\n\nCoderegion_names &lt;- c(\"Low-income countries\", \n                  \"Lower-middle-income countries\",\n                  \"Upper-middle-income countries\", \n                  \"High-income countries\")\nregion_labels &lt;- c(\"low\", \"lower-middle\", \"upper-middle\", \"high\")\naccess_col &lt;- c(\"#26BDE2\", \"#4C9F38\", \"#DDA63A\", \"#FD6925\", \"#DD1367\")\n\nwater_regions |&gt; \n  filter(grepl(\"income\", region)) |&gt;\n  mutate(region = factor(region, region_names, region_labels)) |&gt;\n  ggplot(aes(x = year, y = pcnt, fill = access)) +\n  geom_area() +\n  facet_wrap(~region, ncol = 4) +\n  scale_x_continuous(breaks = seq(2000, 2020, 10)) +\n  scale_fill_manual(values = access_col) +\n  guides(fill = guide_legend(position = \"inside\")) +\n  labs(x = NULL, y = NULL, fill = NULL) +\n  theme(axis.text.x = element_text(angle = -45, hjust = 0),\n        legend.background = element_blank(),\n        legend.position.inside = c(.87,.75),\n        legend.text = element_text(color = \"white\", face = \"bold\"))\n\n\n\n\n\n\nFigure 6.2: Water access by development level from 2000 to 2022",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clean Water and Sanitation</span>"
     ]
@@ -202,9 +222,9 @@
   {
     "objectID": "06-clean-water.html#resources",
     "href": "06-clean-water.html#resources",
-    "title": "6  Clean Water and Sanitation",
-    "section": "6.3 Resources",
-    "text": "6.3 Resources",
+    "title": "\n6  Clean Water and Sanitation\n",
+    "section": "\n6.3 Resources",
+    "text": "6.3 Resources\n\nOWiD Drinking Water Access",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clean Water and Sanitation</span>"
     ]

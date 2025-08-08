@@ -27,8 +27,8 @@ Downloaded data for all countries and all antigens, from 1980 to 2024 for [measl
 
 You can download more data about coverage of other vaccinations at [immunizationdata.who.int](https://immunizationdata.who.int/global?topic=Vaccination-coverage).
 
-* [measles.xlsx](data/03/measles.xlsx)
-* [rubella.xlsx](data/03/rubella.xlsx)
+* [measles.xlsx](data/03/measles.xlsx){download=""}
+* [rubella.xlsx](data/03/rubella.xlsx){download=""}
 
 ::: {.callout-tip title="Codebook" collapse="true"}
 

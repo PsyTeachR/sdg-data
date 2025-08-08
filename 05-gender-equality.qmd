@@ -6,8 +6,147 @@
 Achieve gender equality and empower all women and girls 
 :::
 
+```{r}
+#| code-summary: Setup Code
+
+library(tidyverse)
+theme_set(theme_bw())
+```
+
 ## Original Data
+
+[IPU Parline](https://data.ipu.org/) holds longitudinal data on national parliaments. We accessed data on the [percentage of women in the upper house](https://data.ipu.org/compare/?field=current_women_percent&region=0&structure=any__upper_chamber&chart=map&year_to=#) from 1945 to 2025, in 5-year increments. Each year has to be downloaded as a separate file, so we provide a zip file of them below.
+
+* [ipu.zip](data/05/ipu.zip){download=""}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: tbl-parl-prefix
+#| tbl-cap: The first 15 lines of each data file give some metadata.
+
+x <- read_csv("data/05/ipu/compare--current_women_percent--2025--export--250808-110852--EN.csv", col_names = FALSE, n_max = 15, col_select = 1:2)
+```
+
+
 
 ## Simplified Subsets
 
+### Import Multiple Files
+
+These files are a little tricky to import. You have to download a separate file for each year, and they all start with 15 rows of metadata. 
+
+The code below imports all of the files, fixes some column type problems (e.g., Status is NA for most files, but "Suspended" on 9 occasions, so you need to specify it should be a text column for all files). The `Year` column is blank for all entries, so I've skipped it and reconstructed the year from the filename ID. Finally, I used the {janitor} package to clean up the names.
+
+```{r}
+na_values <- c("-", "", 
+               "No information available", 
+               "Not applicable")
+
+parliament <- list.files("data/05/ipu", "\\.csv", full.names = TRUE) |>
+  read_csv(id = "filename", 
+           skip = 15, 
+           na = na_values, 
+           col_types = "ccccn-DDccc") |>
+  # get year from filename
+  separate(filename, c(NA, NA, "year", NA, NA, NA), 
+           sep = "--", convert = TRUE) |>
+  janitor::clean_names()
+```
+
+
+```{r}
+#| echo: false
+write_csv(parliament, "data/05/parliament.csv")
+```
+
+- [parliament.csv](data/04/parliament.csv){download=""}
+
+```{r}
+#| echo: false
+#| label: tbl-parliament
+#| tbl-cap: The first rows of parliament
+head(parliament)
+```
+
+
+```{r}
+#| label: fig-parliament-all
+#| fig-cap: The percentage of women in the upper house of parliament for 86 countries from 1945 to 2025. The UK is highlighted in red.
+#| code-summary: Plot Code
+
+uk <- filter(parliament, iso_code == "GB")
+
+ggplot(parliament, aes(x = year, y = percentage_of_women, group = iso_code)) +
+  geom_hline(yintercept = 50, color = "grey") +
+  geom_line(show.legend = FALSE, color = "grey40", na.rm = TRUE) +
+  geom_line(data = uk, linewidth = 1, color = "#FF3A21", na.rm = TRUE) +
+  coord_cartesian(ylim = c(0,100)) +
+  scale_x_continuous(breaks = seq(1945, 2025, 5), minor_breaks = NULL) +
+  scale_y_continuous(breaks = seq(0, 100, 10)) +
+  labs(x = NULL, y = "Percent Women in the Upper House")
+```
+
+### Simplified
+
+The dataset has some columns we don't really need, and uses 2-character ISO country codes, so we'll simplify it by including only the most relevant columns, adding 3-letter codes, and removing rows with no data.
+
+```{r}
+#| label: tbl-parl-structure
+#| tbl-cap: We probably don't need to know whether the parliaments are the upper chamber in a bicameral system or the only chamber in a unicameral system.
+count(parliament, structure, chamber_type)
+```
+
+
+```{r}
+countries <- read_csv("data/countries.csv") |>
+  select(iso_code = `alpha-2`, country_code = `alpha-3`)
+
+parliament_simple <- parliament |>
+  left_join(countries, by = "iso_code") |>
+  select(country_name = country,
+         country_code,
+         year,
+         pcnt_women = percentage_of_women) |>
+  filter(!is.na(pcnt_women))
+```
+
+```{r}
+#| echo: false
+write_csv(parliament_simple, "data/05/parliament_simple.csv")
+```
+
+- [parliament_simple.csv](data/04/parliament_simple.csv){download=""}
+
+```{r}
+#| echo: false
+#| label: tbl-parliament_simple
+#| tbl-cap: The first rows of parliament_simple
+head(parliament_simple)
+```
+
+
+```{r}
+#| label: fig-parliament-dist
+#| fig-cap: The distribution of the percentage of women in the upper house of parliament across up to 86 countries from 1945 to 2025. The number below each violin is the number of countries with data from that year.
+#| code-summary: Plot Code
+
+parliament_simple |>
+  mutate(mean = mean(pcnt_women), 
+         n_countries = n(),
+         .by = year) |>
+  ggplot(aes(x = factor(year), y = pcnt_women, fill = mean)) +
+  geom_hline(yintercept = 50, color = "grey") +
+  geom_violin(scale = "width") +
+  geom_text(aes(label = n_countries), y = -2.5, color = "grey30") +
+  stat_summary(fun.data = mean_se, geom = "point") +
+  coord_cartesian(ylim = c(0,100)) +
+  scale_y_continuous(breaks = seq(0, 100, 10)) +
+  labs(x = NULL, y = "Percent Women in the Upper House") +
+  scale_fill_viridis_c(guide = NULL)
+```
+
 ## Resources
+
+* [IPU](https://data.ipu.org/
